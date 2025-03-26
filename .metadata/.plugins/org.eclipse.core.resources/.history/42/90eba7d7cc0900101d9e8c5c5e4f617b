@@ -1,0 +1,136 @@
+/**
+ * lab6_template.c
+ *
+ * Template file for CprE 288 Lab 6
+ *
+ * @author Diane Rover, 2/15/2020
+ *
+ */
+
+#include "Timer.h"
+#include "lcd.h"
+#include "cyBot_Scan.h"  // For scan sensors
+#include "uart-interrupt.h"
+
+// Uncomment or add any include directives that are needed
+#include "open_interface.h"
+// #include "movement.h"
+// #include "button.h"
+#include<stdlib.h>
+#include <math.h>
+//Calibration Values:
+//1318-3: Right: 243250   Left: 1177750
+
+#define RIGHT_CALIB 243250
+#define LEFT_CALIB 1177750
+
+#define IR_THRESH 300
+
+
+void multiScanTest(void);
+void checkpoint1(void);
+int multiScanIR(int angle, int numScans);
+
+void calibrateServos(void);
+
+int main(void) {
+    //calibrateServos();
+    multiScanTest();
+}
+
+void multiScanTest(void){
+    timer_init();
+    lcd_init();
+    uart_interrupt_init();
+    cyBOT_init_Scan(0b0111);
+    right_calibration_value = RIGHT_CALIB;
+    left_calibration_value = LEFT_CALIB;
+
+    oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+    oi_init(sensor_data); // do this only once at start of main()
+
+    char outputLine[50];
+
+
+
+    int i;
+    int currScan;
+    for(i = 0; i < 180; i +=2){
+        currScan = multiScanIR(i, 3);
+        sprintf(outputLine, "%d: %d\n\r", i, currScan);
+        uart_sendStr(outputLine);
+    }
+
+    oi_free(sensor_data);
+}
+
+void checkpoint1(void){
+    timer_init();
+    lcd_init();
+    uart_interrupt_init();
+    cyBOT_init_Scan(0b0111);
+    right_calibration_value = RIGHT_CALIB;
+    left_calibration_value = LEFT_CALIB;
+
+    oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+    oi_init(sensor_data); // do this only once at start of main()
+
+    char outputLine[50];
+
+
+
+    int i;
+    cyBOT_Scan_t scan;
+    for(i = 0; i < 180; i++){
+        cyBOT_Scan(i, &scan);
+        sprintf(outputLine, "%d: %d\n\r", i, scan.IR_raw_val);
+        uart_sendStr(outputLine);
+    }
+
+    oi_free(sensor_data);
+}
+
+int multiScanIR(int angle, int numScans){
+
+    int scanSum = 0.0;
+    int i = 0;
+    int change = 0;
+    int currAvg = 0;
+
+
+    cyBOT_Scan_t scan;
+
+    while(i < numScans){
+        cyBOT_Scan(angle, &scan);
+        scanSum += scan.IR_raw_val;
+
+        currAvg = scanSum / i;
+        change = abs(currAvg - scan.IR_raw_val);
+        if(change > IR_THRESH){
+            numScans = 0;
+            scanSum = 0;
+        }
+        else {
+            numScans++;
+        }
+    }
+
+    return scanSum /numScans;
+
+}
+
+void calibrateServos(void){
+
+    timer_init();
+    lcd_init();
+
+    cyBOT_init_Scan(0b0111);
+    cyBOT_SERVO_cal();
+
+}
+
+/*Cybot2:
+ * Right(0): 253750
+ * Left(180): 1225000
+ *
+ */

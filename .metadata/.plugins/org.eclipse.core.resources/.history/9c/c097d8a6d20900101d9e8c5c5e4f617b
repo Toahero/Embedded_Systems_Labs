@@ -1,0 +1,231 @@
+/**
+ * lab6_template.c
+ *
+ * Template file for CprE 288 Lab 6
+ *
+ * @author Diane Rover, 2/15/2020
+ *
+ */
+
+#include "Timer.h"
+#include "lcd.h"
+#include "cyBot_Scan.h"  // For scan sensors
+#include "uart-interrupt.h"
+
+// Uncomment or add any include directives that are needed
+#include "open_interface.h"
+// #include "movement.h"
+// #include "button.h"
+#include<stdlib.h>
+#include <math.h>
+//Calibration Values:
+//1318-3: Right: 243250   Left: 1177750
+
+#define RIGHT_CALIB 243250
+#define LEFT_CALIB 1177750
+
+#define IR_THRESH 100
+#define OBJ_THRESH 100
+
+struct obstacle{
+    int firstDeg;
+    int lastDeg;
+    int midDeg;
+
+    float midDist;
+    float linWidth;
+};
+
+void nextObjTest(void);
+void multiScanTest(void);
+void checkpoint1(void);
+
+int nextObjEdges(int* angle, int endAng, int interval, struct obstacle* nextObs);
+int multiScanIR(int angle, int numScans);
+
+void calibrateServos(void);
+
+
+
+int main(void) {
+    //calibrateServos();
+    //multiScanTest();
+    nextObjTest();
+}
+
+void nextObjTest(void){
+    timer_init();
+    lcd_init();
+    uart_interrupt_init();
+    cyBOT_init_Scan(0b0111);
+    right_calibration_value = RIGHT_CALIB;
+    left_calibration_value = LEFT_CALIB;
+
+    oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+    oi_init(sensor_data); // do this only once at start of main()
+
+    char outputLine[50];
+
+
+    int obsCount = 0;
+    struct obstacle obstacleList[10];
+    int angle = 0;
+
+    while(obsCount < 10 && angle < 180){
+        obsCount += nextObjEdges(&angle, 180, 2, &obstacleList[obsCount]);
+
+        if(obsCount > 0){
+            sprintf(outputLine, "Start: %d, End: %d, Mid:%d\n\r", obstacleList[obsCount].firstDeg, obstacleList[obsCount].lastDeg, obstacleList[obsCount].midDeg );
+            uart_sendStr(outputLine);
+        }
+
+
+    }
+
+
+
+
+    oi_free(sensor_data);
+}
+
+void multiScanTest(void){
+    timer_init();
+    lcd_init();
+    uart_interrupt_init();
+    cyBOT_init_Scan(0b0111);
+    right_calibration_value = RIGHT_CALIB;
+    left_calibration_value = LEFT_CALIB;
+
+    oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+    oi_init(sensor_data); // do this only once at start of main()
+
+    char outputLine[50];
+
+
+
+    int i;
+    int currScan;
+    for(i = 0; i < 180; i +=2){
+        currScan = multiScanIR(i, 3);
+        sprintf(outputLine, "%d: %d\n\r", i, currScan);
+        uart_sendStr(outputLine);
+    }
+
+    oi_free(sensor_data);
+}
+
+void checkpoint1(void){
+    timer_init();
+    lcd_init();
+    uart_interrupt_init();
+    cyBOT_init_Scan(0b0111);
+    right_calibration_value = RIGHT_CALIB;
+    left_calibration_value = LEFT_CALIB;
+
+    oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+    oi_init(sensor_data); // do this only once at start of main()
+
+    char outputLine[50];
+
+
+
+    int i;
+    cyBOT_Scan_t scan;
+    for(i = 0; i < 180; i++){
+        cyBOT_Scan(i, &scan);
+        sprintf(outputLine, "%d: %d\n\r", i, scan.IR_raw_val);
+        uart_sendStr(outputLine);
+    }
+
+    oi_free(sensor_data);
+}
+
+int nextObjEdges(int* angle, int endAng, int interval, struct obstacle* nextObs){
+    int avgDist;
+    int prevDist;
+    int currObj;
+
+    avgDist = multiScanIR(*angle, 3);
+
+    while(*angle < endAng){
+        prevDist = avgDist;
+
+        //If value increases substantially and no object currently found, record the first degree and object present.
+        if(((avgDist - prevDist) < (OBJ_THRESH * -1)) && currObj == 0){
+            currObj = 1;
+            nextObs->firstDeg = *angle;
+        }
+
+        //If the value decreases substantially and an object is currently found, mark the end point;
+        if(((avgDist - prevDist) > OBJ_THRESH) && currObj == 1){
+            nextObs->lastDeg = *angle;
+            int angleWidth = ((nextObs->lastDeg) - (nextObs -> firstDeg));
+
+            //If the object is smaller than two interval movements, assume it was a false reading
+            if(angleWidth < (2 * interval) + 1){
+                currObj = 0;
+            }
+            //Otherwise, return that it's a true reading.
+            else{
+                int midDegree =  ((angleWidth/2)  + (nextObs -> firstDeg));
+                nextObs -> midDeg = midDegree;
+                break;
+            }
+
+        }
+        *angle += interval;
+
+    }
+
+    return currObj;
+}
+
+int multiScanIR(int angle, int numScans){
+
+    int scanSum = 0.0;
+    int i = 0;
+    int change = 0;
+    int currAvg = 0;
+
+
+    cyBOT_Scan_t scan;
+
+    while(i < numScans){
+        cyBOT_Scan(angle, &scan);
+        scanSum += scan.IR_raw_val;
+
+
+        currAvg = scanSum / (i+1);
+        change = abs(currAvg - scan.IR_raw_val);
+
+        //lcd_printf("%d %d %d", currAvg, scan.IR_raw_val, change);
+        //timer_waitMillis(250);
+
+        if(change > IR_THRESH){
+            i = 0;
+            scanSum = 0;
+        }
+        else {
+            i++;
+        }
+    }
+
+    return scanSum /numScans;
+
+}
+
+void calibrateServos(void){
+
+    timer_init();
+    lcd_init();
+
+    cyBOT_init_Scan(0b0111);
+    cyBOT_SERVO_cal();
+
+}
+
+/*Cybot2:
+ * Right(0): 253750
+ * Left(180): 1225000
+ *
+ */
