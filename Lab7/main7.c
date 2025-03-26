@@ -45,8 +45,15 @@ void PingMultiScanTest(void);
 void checkpoint1(void);
 
 int nextObjEdges(int* angle, int endAng, int interval, struct obstacle* nextObs);
+
+void pingObstacle(struct obstacle* currObs, int numPings);
+
 int multiScanIR(int angle, int numScans);
+
 float multiScanPing(int angle, int numScans);
+
+float getLinWidth(int degWidth, float dist);
+
 
 void calibrateServos(void);
 
@@ -54,8 +61,8 @@ void calibrateServos(void);
 
 int main(void) {
     //calibrateServos();
-    PingMultiScanTest();
-    //nextObjTest();
+    //PingMultiScanTest();
+    nextObjTest();
 }
 
 void nextObjTest(void){
@@ -72,12 +79,26 @@ void nextObjTest(void){
     char outputLine[50];
 
 
-    int obsCount = 0;
-    struct obstacle obstacleList[10];
+    int maxObs = 10;
+
+    struct obstacle obstacleList[maxObs];
     int angle = 0;
+    int obsCount = 0;
     int nextObs;
 
     uart_sendStr("\n\rStarting\n\r");
+
+    int i;
+
+    //Set all values to 0
+    /*for(i = 0; i < maxObs; i++){
+        obstacleList[i].firstDeg = 0;
+        obstacleList[i].lastDeg = 0;
+        obstacleList[i].midDeg = 0;
+
+        obstacleList[i].midDist = 0.0;
+        obstacleList[i].linWidth = 0.0;
+    }*/
 
     while(obsCount < 10 && angle < 180){
 
@@ -86,11 +107,17 @@ void nextObjTest(void){
         obsCount += nextObs;
 
         if(nextObs > 0){
+            pingObstacle(&obstacleList[obsCount], 5);
             lcd_printf("start: %d", obstacleList[obsCount].firstDeg);
             timer_waitMillis(250);
 
-            sprintf(outputLine, "Obstacle %d\n\rStart: %d, End: %d, Mid: %d \n\r", obsCount, obstacleList[obsCount].firstDeg, obstacleList[obsCount].lastDeg, obstacleList[obsCount].midDeg );
+            sprintf(outputLine, "Obstacle %d\n\rStart: %d, End: %d, Mid: %d\n\r", obsCount, obstacleList[obsCount].firstDeg, obstacleList[obsCount].lastDeg, obstacleList[obsCount].midDeg);
             uart_sendStr(outputLine);
+
+            sprintf(outputLine, "Distance: %.5f  Linear Width: %.5f\n\r", obstacleList[obsCount].midDist, obstacleList[obsCount].linWidth);
+            uart_sendStr(outputLine);
+
+
         }
 
 
@@ -238,6 +265,16 @@ int nextObjEdges(int* angle, int endAng, int interval, struct obstacle* nextObs)
     return currObj;
 }
 
+void pingObstacle(struct obstacle* currObs, int numPings){
+    int midPoint = currObs->midDeg;
+    int degWidth = currObs->lastDeg - currObs->firstDeg;
+
+    float dist = multiScanPing(midPoint, numPings);
+    currObs -> midDist = dist;
+    currObs -> linWidth = getLinWidth(degWidth, dist);
+
+}
+
 int multiScanIR(int angle, int numScans){
 
     int scanSum = 0.0;
@@ -300,6 +337,14 @@ float multiScanPing(int angle, int numScans){
 
 }
 
+float getLinWidth(int degWidth, float dist){
+
+    float radAng = (180 / 3.14);
+    float linWidth = 2 * dist * tan(radAng / 2);
+    return linWidth;
+}
+
+
 void calibrateServos(void){
 
     timer_init();
@@ -309,9 +354,3 @@ void calibrateServos(void){
     cyBOT_SERVO_cal();
 
 }
-
-/*Cybot2:
- * Right(0): 253750
- * Left(180): 1225000
- *
- */
