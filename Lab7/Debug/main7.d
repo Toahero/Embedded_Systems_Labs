@@ -22,7 +22,8 @@ main7.obj: C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/string
 main7.obj: C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_string.h
 main7.obj: ../cyBot_Scan.h
 main7.obj: ../uart-interrupt.h
-main7.obj: ../open_interface.h
+main7.obj: ../movement.h
+main7.obj: U:/spring2025/cpre288/Workspace/Lab7/open_interface.h
 main7.obj: C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdlib.h
 main7.obj: C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/math.h
 main7.obj: C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_defs.h
@@ -73,7 +74,9 @@ C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_string.h
 
 ../uart-interrupt.h:
 
-../open_interface.h:
+../movement.h:
+
+U:/spring2025/cpre288/Workspace/Lab7/open_interface.h:
 
 C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdlib.h:
 

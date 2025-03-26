@@ -11,6 +11,7 @@
 #include "lcd.h"
 #include "cyBot_Scan.h"  // For scan sensors
 #include "uart-interrupt.h"
+#include "movement.h"
 
 // Uncomment or add any include directives that are needed
 #include "open_interface.h"
@@ -22,10 +23,12 @@
 //1318-3: Right: 243250   Left: 1177750
 //1318-6  Right: 348250   Left: 1356250
 
-#define RIGHT_CALIB 348250
-#define LEFT_CALIB 1356250
+//1318-5: Right: 332500   Left: 1309000
 
-#define IR_THRESH 100
+#define RIGHT_CALIB 332500
+#define LEFT_CALIB 1309000
+
+#define IR_RESCAN_THRESH 100
 #define OBJ_THRESH 100
 
 #define PING_RESCAN_THRESH 0.40
@@ -39,12 +42,17 @@ struct obstacle{
     float linWidth;
 };
 
+void moveToSmallest(void);
+
 void nextObjTest(void);
 void IRmultiScanTest(void);
 void PingMultiScanTest(void);
+void scanTest(void);
 void checkpoint1(void);
 
-int nextObjEdges(int* angle, int endAng, int interval, struct obstacle* nextObs);
+
+
+int nextObjEdges(int* angle, int endAng, int interval, int numScans, struct obstacle* nextObs);
 
 void pingObstacle(struct obstacle* currObs, int numPings);
 
@@ -61,8 +69,78 @@ void calibrateServos(void);
 
 int main(void) {
     //calibrateServos();
+    scanTest();
     //PingMultiScanTest();
-    nextObjTest();
+    //nextObjTest();
+    //moveToSmallest();
+}
+
+void moveToSmallest(){
+   timer_init();
+   lcd_init();
+   uart_interrupt_init();
+   cyBOT_init_Scan(0b0111);
+   right_calibration_value = RIGHT_CALIB;
+   left_calibration_value = LEFT_CALIB;
+
+   oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+   oi_init(sensor_data); // do this only once at start of main()
+
+   char outputLine[100];
+
+
+   int maxObs = 10;
+
+   struct obstacle obstacleList[maxObs];
+   int angle = 0;
+   int obsCount = 0;
+   int nextObs;
+
+   uart_sendStr("\n\rStarting\n\r");
+
+
+
+
+   while(obsCount < maxObs && angle < 180){
+
+       //lcd_printf("Scanning %d", angle);
+       nextObs = nextObjEdges(&angle, 180, 1, 1, &obstacleList[obsCount]);
+
+       if(nextObs > 0){
+
+           pingObstacle(&obstacleList[obsCount], 5);
+           lcd_printf("start: %d\nend: %d\nmid: %d", obstacleList[obsCount].firstDeg, obstacleList[obsCount].lastDeg, obstacleList[obsCount].midDeg);
+           timer_waitMillis(250);
+
+           sprintf(outputLine, "Obstacle %d\n\rStart: %d, End: %d, Mid: %d\n\r", obsCount, obstacleList[obsCount].firstDeg, obstacleList[obsCount].lastDeg, obstacleList[obsCount].midDeg);
+           uart_sendStr(outputLine);
+
+           sprintf(outputLine, "Distance: %.5f  Linear Width: %.5f\n\r", obstacleList[obsCount].midDist, obstacleList[obsCount].linWidth);
+           uart_sendStr(outputLine);
+
+           obsCount++;
+       }
+
+
+   }
+
+   int i;
+   int minObstacle = 0;
+   float minWidth = obstacleList[0].linWidth;
+   for(i = 1; i < obsCount; i++){
+       if(obstacleList[i].linWidth < minWidth){
+           minWidth = obstacleList[i].linWidth;
+           minObstacle = i;
+       }
+   }
+   sprintf(outputLine, "Obstacle %d is the thinnest\n\r", minObstacle);
+   turn_right(sensor_data, obstacleList[minObstacle].midDeg);
+   uart_sendStr(outputLine);
+
+
+
+
+   oi_free(sensor_data);
 }
 
 void nextObjTest(void){
@@ -76,7 +154,7 @@ void nextObjTest(void){
     oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
     oi_init(sensor_data); // do this only once at start of main()
 
-    char outputLine[50];
+    char outputLine[100];
 
 
     int maxObs = 10;
@@ -90,25 +168,16 @@ void nextObjTest(void){
 
     int i;
 
-    //Set all values to 0
-    /*for(i = 0; i < maxObs; i++){
-        obstacleList[i].firstDeg = 0;
-        obstacleList[i].lastDeg = 0;
-        obstacleList[i].midDeg = 0;
 
-        obstacleList[i].midDist = 0.0;
-        obstacleList[i].linWidth = 0.0;
-    }*/
-
-    while(obsCount < 10 && angle < 180){
+    while(obsCount < maxObs && angle < 180){
 
         //lcd_printf("Scanning %d", angle);
-        nextObs = nextObjEdges(&angle, 180, 2, &obstacleList[obsCount]);
-        obsCount += nextObs;
+        nextObs = nextObjEdges(&angle, 180, 2, 2, &obstacleList[obsCount]);
 
         if(nextObs > 0){
+
             pingObstacle(&obstacleList[obsCount], 5);
-            lcd_printf("start: %d", obstacleList[obsCount].firstDeg);
+            lcd_printf("start: %d\nend: %d\nmid: %d", obstacleList[obsCount].firstDeg, obstacleList[obsCount].lastDeg, obstacleList[obsCount].midDeg);
             timer_waitMillis(250);
 
             sprintf(outputLine, "Obstacle %d\n\rStart: %d, End: %d, Mid: %d\n\r", obsCount, obstacleList[obsCount].firstDeg, obstacleList[obsCount].lastDeg, obstacleList[obsCount].midDeg);
@@ -117,7 +186,7 @@ void nextObjTest(void){
             sprintf(outputLine, "Distance: %.5f  Linear Width: %.5f\n\r", obstacleList[obsCount].midDist, obstacleList[obsCount].linWidth);
             uart_sendStr(outputLine);
 
-
+            obsCount++;
         }
 
 
@@ -133,6 +202,55 @@ void nextObjTest(void){
 
 
 
+
+    oi_free(sensor_data);
+}
+
+void scanTest(void){
+    timer_init();
+    lcd_init();
+    uart_interrupt_init();
+    cyBOT_init_Scan(0b0111);
+    right_calibration_value = RIGHT_CALIB;
+    left_calibration_value = LEFT_CALIB;
+
+    oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+    oi_init(sensor_data); // do this only once at start of main()
+
+    char outputLine[50];
+
+    int numScans = 2;
+
+    int i, j;
+    int buffSum;
+    int buffAvg;
+    int currScan;
+    int change;
+
+    int bufferSize = 5;
+
+    int buffer[bufferSize];
+
+    for(i = 0; i < bufferSize; i++){
+        buffer[i] = multiScanIR(i, numScans);
+    }
+
+    for(i = bufferSize; i < 180; i += 1){
+        buffSum = buffer[0];
+        for(j = 1; j < bufferSize; j++){
+            buffSum += buffer[j];
+        }
+        buffAvg = buffSum / bufferSize;
+
+
+        currScan = multiScanIR(i, 2);
+
+        change = currScan - buffAvg;
+
+        buffer[i % bufferSize] = currScan;
+        sprintf(outputLine, "%d, %d, %d, %d\n\r", i, currScan, buffAvg, change);
+        uart_sendStr(outputLine);
+    }
 
     oi_free(sensor_data);
 }
@@ -154,9 +272,9 @@ void IRmultiScanTest(void){
 
     int i;
     int currScan;
-    for(i = 0; i < 180; i +=2){
+    for(i = 0; i < 180; i +=1){
         currScan = multiScanIR(i, 3);
-        sprintf(outputLine, "%d: %d\n\r", i, currScan);
+        sprintf(outputLine, "%d, %d\n\r", i, currScan);
         uart_sendStr(outputLine);
     }
 
@@ -215,7 +333,7 @@ void checkpoint1(void){
     oi_free(sensor_data);
 }
 
-int nextObjEdges(int* angle, int endAng, int interval, struct obstacle* nextObs){
+int nextObjEdges(int* angle, int endAng, int interval, int numScans, struct obstacle* nextObs){
     int startVal;
     int avgDist;
     int prevDist;
@@ -223,13 +341,13 @@ int nextObjEdges(int* angle, int endAng, int interval, struct obstacle* nextObs)
     int distChange;
 
     startVal = *angle;
-    avgDist = multiScanIR(*angle, 2);
+    avgDist = multiScanIR(*angle, numScans);
 
     while(*angle < endAng){
         prevDist = avgDist;
         *angle += interval;
 
-        avgDist = multiScanIR(*angle, 2);
+        avgDist = multiScanIR(*angle, numScans);
 
         distChange = avgDist - prevDist;
         lcd_printf("%d: objPres: %d\n Change: %d", *angle, currObj, distChange);
@@ -248,7 +366,7 @@ int nextObjEdges(int* angle, int endAng, int interval, struct obstacle* nextObs)
             //If the object is smaller than two interval movements, assume it was a false reading
             if(angleWidth < (2 * interval) + 1){
                 currObj = 0;
-                *angle = startVal;
+                //*angle = startVal;
             }
             //Otherwise, return that it's a true reading.
             else{
@@ -293,7 +411,7 @@ int multiScanIR(int angle, int numScans){
         currAvg = scanSum / (i+1);
         change = abs(currAvg - scan.IR_raw_val);
 
-        if(change > IR_THRESH){
+        if(change > IR_RESCAN_THRESH){
             i = 0;
             scanSum = 0;
         }
