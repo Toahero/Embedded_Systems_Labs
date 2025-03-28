@@ -29,8 +29,10 @@
 // Extern does not allocate storage for a variable. It tells the compiler that the variable is defined in another file.
 //extern volatile char receive_buffer[]; // buffer for characters received from PuTTY
 //extern volatile int receive_index; // index to keep track of characters in buffer
-extern volatile char command_byte; // byte value for special character used as a command
-extern volatile int command_flag; // flag to tell the main program a special command was received
+extern volatile char command_byte0; // byte value for special character used as a command
+extern volatile int command_flag0; // flag to tell the main program a special command was received
+extern volatile char command_byte1; // byte value for special character used as a command
+extern volatile int command_flag1; // flag to tell the main program a special command was received
 
 // UART1 device initialization for CyBot to PuTTY
 void uart_interrupt_init(void);

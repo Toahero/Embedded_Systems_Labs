@@ -22,13 +22,13 @@
 //Calibration Values:
 //1318-3: Right: 243250   Left: 1177750
 //1318-6  Right: 348250   Left: 1356250
-
 //1318-5: Right: 332500   Left: 1309000
 
-#define RIGHT_CALIB 332500
-#define LEFT_CALIB 1309000
+#define RIGHT_CALIB 243250
+#define LEFT_CALIB 1177750
 
-#define IR_RESCAN_THRESH 100
+#define IR_MINIMUM 400
+#define IR_RESCAN_THRESH 75
 #define OBJ_THRESH 100
 
 #define PING_RESCAN_THRESH 0.40
@@ -42,6 +42,7 @@ struct obstacle{
     float linWidth;
 };
 
+void manAndAuto(void);
 void moveToSmallest(void);
 
 void nextObjTest(void);
@@ -49,7 +50,7 @@ void IRmultiScanTest(void);
 void PingMultiScanTest(void);
 void scanTest(void);
 void checkpoint1(void);
-
+void sensorTest(void);
 
 
 int nextObjEdges(int* angle, int endAng, int interval, int numScans, struct obstacle* nextObs);
@@ -65,14 +66,85 @@ float getLinWidth(int degWidth, float dist);
 
 void calibrateServos(void);
 
-
+int bufferAvg(int buffer[], int bufferSize);
 
 int main(void) {
     //calibrateServos();
-    scanTest();
+    //scanTest();
     //PingMultiScanTest();
     //nextObjTest();
-    //moveToSmallest();
+    moveToSmallest();
+    //manAndAuto();
+
+}
+
+void manAndAuto(){
+    timer_init();
+   lcd_init();
+   uart_interrupt_init();
+   cyBOT_init_Scan(0b0111);
+   right_calibration_value = RIGHT_CALIB;
+   left_calibration_value = LEFT_CALIB;
+
+   oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+   oi_init(sensor_data); // do this only once at start of main()
+
+   char outputLine[100];
+
+   int maxObs = 10;
+
+  struct obstacle obstacleList[maxObs];
+  int angle = 5;
+  int obsCount = 0;
+  int nextObs;
+
+  command_byte0 = 'q';
+  command_byte1 = 't';
+
+  uart_sendStr("\n\rStarting\n\r");
+
+  int manual = 0;
+  int exit = 0;
+
+  while(exit == 0){
+      uart_sendStr("\rAutoMode\n\r");
+
+      while(manual == 0){
+          if(command_flag0){
+                command_flag0 = 0;
+                exit = 1;
+                break;
+            }
+
+          if(command_flag1){
+              command_flag1 = 0;
+              manual = 1;
+              break;
+          }
+
+
+      }
+
+      uart_sendStr("\rManual\n\r");
+
+      while (manual == 1){
+
+          if(command_flag0){
+              command_flag0 = 0;
+              exit = 1;
+              break;
+          }
+          if(command_flag1){
+                command_flag1 = 0;
+                manual = 0;
+                break;
+            }
+
+
+      }
+  }
+
+  uart_sendStr("\n\rExiting");
 }
 
 void moveToSmallest(){
@@ -92,7 +164,7 @@ void moveToSmallest(){
    int maxObs = 10;
 
    struct obstacle obstacleList[maxObs];
-   int angle = 0;
+   int angle = 5;
    int obsCount = 0;
    int nextObs;
 
@@ -104,11 +176,10 @@ void moveToSmallest(){
    while(obsCount < maxObs && angle < 180){
 
        //lcd_printf("Scanning %d", angle);
-       nextObs = nextObjEdges(&angle, 180, 1, 1, &obstacleList[obsCount]);
+       nextObs = nextObjEdges(&angle, 180, 1, 2, &obstacleList[obsCount]);
 
        if(nextObs > 0){
-
-           pingObstacle(&obstacleList[obsCount], 5);
+           pingObstacle(&obstacleList[obsCount], 3);
            lcd_printf("start: %d\nend: %d\nmid: %d", obstacleList[obsCount].firstDeg, obstacleList[obsCount].lastDeg, obstacleList[obsCount].midDeg);
            timer_waitMillis(250);
 
@@ -134,10 +205,10 @@ void moveToSmallest(){
        }
    }
    sprintf(outputLine, "Obstacle %d is the thinnest\n\r", minObstacle);
-   turn_right(sensor_data, obstacleList[minObstacle].midDeg);
    uart_sendStr(outputLine);
 
-
+   turn_right(sensor_data, obstacleList[minObstacle].midDeg);
+   multiScanIR(90, 1);
 
 
    oi_free(sensor_data);
@@ -160,23 +231,23 @@ void nextObjTest(void){
     int maxObs = 10;
 
     struct obstacle obstacleList[maxObs];
-    int angle = 0;
+    int angle = 5;
     int obsCount = 0;
     int nextObs;
 
     uart_sendStr("\n\rStarting\n\r");
 
-    int i;
-
 
     while(obsCount < maxObs && angle < 180){
 
         //lcd_printf("Scanning %d", angle);
-        nextObs = nextObjEdges(&angle, 180, 2, 2, &obstacleList[obsCount]);
+        nextObs = nextObjEdges(&angle, 180, 1, 2, &obstacleList[obsCount]);
 
         if(nextObs > 0){
 
-            pingObstacle(&obstacleList[obsCount], 5);
+            pingObstacle(&obstacleList[obsCount], 1);
+
+
             lcd_printf("start: %d\nend: %d\nmid: %d", obstacleList[obsCount].firstDeg, obstacleList[obsCount].lastDeg, obstacleList[obsCount].midDeg);
             timer_waitMillis(250);
 
@@ -199,9 +270,6 @@ void nextObjTest(void){
     else{
         uart_sendStr("No objects found.");
     }
-
-
-
 
     oi_free(sensor_data);
 }
@@ -333,23 +401,65 @@ void checkpoint1(void){
     oi_free(sensor_data);
 }
 
+void sensorTest(){
+    timer_init();
+   lcd_init();
+   uart_interrupt_init();
+   cyBOT_init_Scan(0b0111);
+   right_calibration_value = RIGHT_CALIB;
+   left_calibration_value = LEFT_CALIB;
+
+   oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+   oi_init(sensor_data); // do this only once at start of main()
+
+   char outputLine[100];
+   int i;
+   float distance;
+   for(i = 0; i < 50; i++){
+       distance = multiScanPing(90, 3);
+       sprintf(outputLine, "%.5f\n\r", distance);
+       uart_sendStr(outputLine);
+       timer_waitMillis(250);
+   }
+
+   oi_free(sensor_data);
+}
+
+
 int nextObjEdges(int* angle, int endAng, int interval, int numScans, struct obstacle* nextObs){
-    int startVal;
     int avgDist;
-    int prevDist;
+    int buffAvg;
     int currObj = 0;
     int distChange;
 
-    startVal = *angle;
+    int bufferSize = 5;
+
+    int buffer[bufferSize];
+    int i;
+
+    //TEMP: Line for putty output
+    //char outputLine[50];
+
+    *angle = *angle - (bufferSize * interval);
+    for(i = 0; i < bufferSize; i++){
+        buffer[i] = multiScanIR(*angle, numScans);
+        *angle += interval;
+    }
+    i = 0;
     avgDist = multiScanIR(*angle, numScans);
 
     while(*angle < endAng){
-        prevDist = avgDist;
+
+
         *angle += interval;
 
         avgDist = multiScanIR(*angle, numScans);
 
-        distChange = avgDist - prevDist;
+        buffer[i % bufferSize] = avgDist;
+        buffAvg = bufferAvg(buffer, bufferSize);
+        i++;
+
+        distChange = avgDist - buffAvg;
         lcd_printf("%d: objPres: %d\n Change: %d", *angle, currObj, distChange);
 
         //If value increases substantially and no object currently found, record the first degree and object present.
@@ -357,6 +467,11 @@ int nextObjEdges(int* angle, int endAng, int interval, int numScans, struct obst
             currObj = 1;
             nextObs->firstDeg = *angle;
         }
+
+
+        //TEMP: Send the Data to Putty
+        //sprintf(outputLine, "%d, %d, %d, %d\n\r", *angle, currObj, avgDist, buffAvg);
+        //uart_sendStr(outputLine);
 
         //If the value decreases substantially and an object is currently found, mark the end point;
         if((distChange < OBJ_THRESH * -1) && currObj == 1){
@@ -383,6 +498,7 @@ int nextObjEdges(int* angle, int endAng, int interval, int numScans, struct obst
     return currObj;
 }
 
+
 void pingObstacle(struct obstacle* currObs, int numPings){
     int midPoint = currObs->midDeg;
     int degWidth = currObs->lastDeg - currObs->firstDeg;
@@ -395,25 +511,37 @@ void pingObstacle(struct obstacle* currObs, int numPings){
 
 int multiScanIR(int angle, int numScans){
 
+    int scanVal;
     int scanSum = 0.0;
     int i = 0;
     int change = 0;
     int currAvg = 0;
 
+    int failCount = 0;
+    int failMax = 5;
 
     cyBOT_Scan_t scan;
 
     while(i < numScans){
         cyBOT_Scan(angle, &scan);
-        scanSum += scan.IR_raw_val;
+        scanVal = scan.IR_raw_val;
+
+        if(scanVal < IR_MINIMUM){
+            scanVal = IR_MINIMUM;
+        }
+
+        scanSum += scanVal;
+
+
 
 
         currAvg = scanSum / (i+1);
         change = abs(currAvg - scan.IR_raw_val);
 
-        if(change > IR_RESCAN_THRESH){
+        if(change > IR_RESCAN_THRESH && failCount < failMax){
             i = 0;
             scanSum = 0;
+            failCount++;
         }
         else {
             i++;
@@ -431,20 +559,24 @@ float multiScanPing(int angle, int numScans){
     float change = 0.0;
     float currAvg = 0;
 
+    int failCount = 0;
+    int failMax = 5;
 
     cyBOT_Scan_t scan;
 
     while(i < numScans){
         cyBOT_Scan(angle, &scan);
+        timer_waitMillis(10);
         scanSum += scan.sound_dist;
 
 
         currAvg = scanSum / (i+1);
         change = fabs(currAvg - scan.sound_dist);
 
-        if(change > PING_RESCAN_THRESH){
+        if(change > PING_RESCAN_THRESH && failCount < failMax){
             i = 0;
             scanSum = 0;
+            failCount++;
         }
         else {
             i++;
@@ -455,10 +587,19 @@ float multiScanPing(int angle, int numScans){
 
 }
 
+int bufferAvg(int buffer[], int bufferSize){
+    int buffSum = 0;
+    int i;
+    for(i = 0; i < bufferSize; i++){
+        buffSum += buffer[i];
+    }
+    return buffSum / bufferSize;
+}
+
 float getLinWidth(int degWidth, float dist){
 
     float radAng = (180 / 3.14);
-    float linWidth = 2 * dist * tan(radAng / 2);
+    float linWidth = dist * tan(radAng / 2);
     return linWidth;
 }
 

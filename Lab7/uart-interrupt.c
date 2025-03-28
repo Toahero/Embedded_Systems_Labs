@@ -16,16 +16,14 @@
 #include "uart-interrupt.h"
 
 // These variables are declared as examples for your use in the interrupt handler.
+volatile char command_byte0 = -1; // byte value for special character used as a command
+volatile int command_flag0 = 0; // flag to tell the main program a special command was received
 
-volatile char command_byte = -1; // byte value for special character used as a command
-volatile int command_flag = 0; // flag to tell the main program a special command was received
+volatile char command_byte1 = -1; // byte value for special character used as a command
+volatile int command_flag1 = 0; // flag to tell the main program a special command was received
 
-/*volatile char start_command_byte = -1; // byte value for special character used as a command
-volatile int start_command_flag = 0; // flag to tell the main program a special command was received
 
-volatile char stop_command_byte = -1; // byte value for special character used as a command
-volatile int stop_command_flag = 0; // flag to tell the main program a special command was received
-*/
+
 
 void uart_interrupt_init(void){
 	//TODO
@@ -159,19 +157,13 @@ void UART1_Handler(void)
             //code to update global shared variables
             //DO NOT PUT TIME-CONSUMING CODE IN AN ISR
 
-            if(byte_received == command_byte){
-                command_flag = 1;
+            if(byte_received == command_byte0){
+                command_flag0 = 1;
+            }
+            if(byte_received == command_byte1){
+                command_flag1 = 1;
             }
 
-
-            /*if (byte_received == start_command_byte)
-            {
-              start_command_flag = 1;
-            }
-
-            if(byte_received == stop_command_byte){
-                stop_command_flag = 1;
-            }*/
         }
     }
 }
