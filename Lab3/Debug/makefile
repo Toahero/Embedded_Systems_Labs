@@ -13,7 +13,7 @@ ORDERED_OBJS += \
 "./Timer.obj" \
 "./helloworld.obj" \
 "./lcd.obj" \
-"./main.obj" \
+"./main3.obj" \
 "./movement.obj" \
 "./movement_functions.obj" \
 "./open_interface.obj" \
@@ -151,8 +151,8 @@ Lab3.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "Timer.obj" "helloworld.obj" "lcd.obj" "main.obj" "movement.obj" "movement_functions.obj" "open_interface.obj" "tm4c123gh6pm_startup_ccs.obj" 
-	-$(RM) "Timer.d" "helloworld.d" "lcd.d" "main.d" "movement.d" "movement_functions.d" "open_interface.d" "tm4c123gh6pm_startup_ccs.d" 
+	-$(RM) "Timer.obj" "helloworld.obj" "lcd.obj" "main3.obj" "movement.obj" "movement_functions.obj" "open_interface.obj" "tm4c123gh6pm_startup_ccs.obj" 
+	-$(RM) "Timer.d" "helloworld.d" "lcd.d" "main3.d" "movement.d" "movement_functions.d" "open_interface.d" "tm4c123gh6pm_startup_ccs.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

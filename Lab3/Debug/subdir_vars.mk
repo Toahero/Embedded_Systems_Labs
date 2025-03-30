@@ -16,7 +16,7 @@ C_SRCS += \
 ../Timer.c \
 ../helloworld.c \
 ../lcd.c \
-../main.c \
+../main3.c \
 ../movement.c \
 ../movement_functions.c \
 ../open_interface.c \
@@ -26,7 +26,7 @@ C_DEPS += \
 ./Timer.d \
 ./helloworld.d \
 ./lcd.d \
-./main.d \
+./main3.d \
 ./movement.d \
 ./movement_functions.d \
 ./open_interface.d \
@@ -36,7 +36,7 @@ OBJS += \
 ./Timer.obj \
 ./helloworld.obj \
 ./lcd.obj \
-./main.obj \
+./main3.obj \
 ./movement.obj \
 ./movement_functions.obj \
 ./open_interface.obj \
@@ -46,7 +46,7 @@ OBJS__QUOTED += \
 "Timer.obj" \
 "helloworld.obj" \
 "lcd.obj" \
-"main.obj" \
+"main3.obj" \
 "movement.obj" \
 "movement_functions.obj" \
 "open_interface.obj" \
@@ -56,7 +56,7 @@ C_DEPS__QUOTED += \
 "Timer.d" \
 "helloworld.d" \
 "lcd.d" \
-"main.d" \
+"main3.d" \
 "movement.d" \
 "movement_functions.d" \
 "open_interface.d" \
@@ -66,7 +66,7 @@ C_SRCS__QUOTED += \
 "../Timer.c" \
 "../helloworld.c" \
 "../lcd.c" \
-"../main.c" \
+"../main3.c" \
 "../movement.c" \
 "../movement_functions.c" \
 "../open_interface.c" \

@@ -1,7 +1,7 @@
 "./Timer.obj"
 "./helloworld.obj"
 "./lcd.obj"
-"./main.obj"
+"./main3.obj"
 "./movement.obj"
 "./movement_functions.obj"
 "./open_interface.obj"

@@ -21,6 +21,8 @@ double turn_right (oi_t *sensor, double degrees);
 
 double turn_left (oi_t *sensor, double degrees);
 
+void forward_mm_redirect(oi_t *sensor_data, int distance_mm);
+
 void forward_mm_detours(oi_t *sensor_data, int distance_mm);
 
 #endif /* MOVEMENT_H_ */

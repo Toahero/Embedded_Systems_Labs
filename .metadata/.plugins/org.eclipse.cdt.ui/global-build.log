@@ -19289,3 +19289,2080 @@ Finished building target: "Lab7.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 94: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 96: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 169: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 216: error #169: argument of type "struct obstacle" is incompatible with parameter of type "struct obstacle *"
+"../main7.c", line 220: error #20: identifier "obstacleList" is undefined
+2 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 94: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 96: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 169: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 220: error #20: identifier "obstacleList" is undefined
+1 error detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 94: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 96: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 169: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 220: error #169: argument of type "struct obstacle" is incompatible with parameter of type "struct obstacle *"
+"../main7.c", line 223: error #20: identifier "obstacleList" is undefined
+2 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 94: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 96: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 169: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 220: error #169: argument of type "struct obstacle" is incompatible with parameter of type "struct obstacle *"
+"../main7.c", line 223: error #20: identifier "obstacleList" is undefined
+2 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 94: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 96: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 169: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 223: error #20: identifier "obstacleList" is undefined
+1 error detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 94: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 96: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 169: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 223: error #45: expression must have pointer type
+"../main7.c", line 223: error #45: expression must have pointer type
+"../main7.c", line 223: error #45: expression must have pointer type
+"../main7.c", line 226: error #45: expression must have pointer type
+"../main7.c", line 226: error #45: expression must have pointer type
+"../main7.c", line 226: error #45: expression must have pointer type
+"../main7.c", line 229: error #45: expression must have pointer type
+"../main7.c", line 229: error #45: expression must have pointer type
+8 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 94: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 96: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 169: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 223: error #45: expression must have pointer type
+"../main7.c", line 223: error #45: expression must have pointer type
+"../main7.c", line 223: error #45: expression must have pointer type
+"../main7.c", line 226: error #45: expression must have pointer type
+"../main7.c", line 226: error #45: expression must have pointer type
+"../main7.c", line 226: error #45: expression must have pointer type
+"../main7.c", line 229: error #45: expression must have pointer type
+"../main7.c", line 229: error #45: expression must have pointer type
+8 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 94: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 96: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 169: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 223: error #45: expression must have pointer type
+"../main7.c", line 223: error #45: expression must have pointer type
+"../main7.c", line 223: error #45: expression must have pointer type
+"../main7.c", line 226: error #45: expression must have pointer type
+"../main7.c", line 226: error #45: expression must have pointer type
+"../main7.c", line 226: error #45: expression must have pointer type
+"../main7.c", line 229: error #45: expression must have pointer type
+"../main7.c", line 229: error #45: expression must have pointer type
+8 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 94: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 96: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 169: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 203: warning #179-D: variable "outputLine" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 94: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 96: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 169: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 203: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 233: error #45: expression must have pointer type
+"../main7.c", line 234: error #45: expression must have pointer type
+"../main7.c", line 235: error #45: expression must have pointer type
+"../main7.c", line 236: error #45: expression must have pointer type
+"../main7.c", line 237: error #45: expression must have pointer type
+"../main7.c", line 239: error #20: identifier "obstacleList" is undefined
+"../main7.c", line 239: error #20: identifier "obsCount" is undefined
+"../main7.c", line 241: error #20: identifier "outputLine" is undefined
+"../main7.c", line 229: warning #552-D: variable "firstAng" was set but never used
+"../main7.c", line 229: warning #552-D: variable "lastAng" was set but never used
+"../main7.c", line 229: warning #552-D: variable "midAng" was set but never used
+"../main7.c", line 230: warning #552-D: variable "dist" was set but never used
+"../main7.c", line 230: warning #552-D: variable "width" was set but never used
+8 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 204: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 234: error #45: expression must have pointer type
+"../main7.c", line 235: error #45: expression must have pointer type
+"../main7.c", line 236: error #45: expression must have pointer type
+"../main7.c", line 237: error #45: expression must have pointer type
+"../main7.c", line 238: error #45: expression must have pointer type
+"../main7.c", line 240: error #20: identifier "obstacleList" is undefined
+"../main7.c", line 240: error #20: identifier "obsCount" is undefined
+"../main7.c", line 242: error #20: identifier "outputLine" is undefined
+"../main7.c", line 230: warning #552-D: variable "firstAng" was set but never used
+"../main7.c", line 230: warning #552-D: variable "lastAng" was set but never used
+"../main7.c", line 230: warning #552-D: variable "midAng" was set but never used
+"../main7.c", line 231: warning #552-D: variable "dist" was set but never used
+"../main7.c", line 231: warning #552-D: variable "width" was set but never used
+8 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 204: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 234: error #45: expression must have pointer type
+"../main7.c", line 235: error #45: expression must have pointer type
+"../main7.c", line 236: error #45: expression must have pointer type
+"../main7.c", line 237: error #45: expression must have pointer type
+"../main7.c", line 238: error #45: expression must have pointer type
+"../main7.c", line 240: error #20: identifier "obstacleList" is undefined
+"../main7.c", line 240: error #20: identifier "obsCount" is undefined
+"../main7.c", line 242: error #20: identifier "outputLine" is undefined
+"../main7.c", line 230: warning #552-D: variable "firstAng" was set but never used
+"../main7.c", line 230: warning #552-D: variable "lastAng" was set but never used
+"../main7.c", line 230: warning #552-D: variable "midAng" was set but never used
+"../main7.c", line 231: warning #552-D: variable "dist" was set but never used
+"../main7.c", line 231: warning #552-D: variable "width" was set but never used
+8 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 204: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 234: error #45: expression must have pointer type
+"../main7.c", line 235: error #45: expression must have pointer type
+"../main7.c", line 236: error #45: expression must have pointer type
+"../main7.c", line 237: error #45: expression must have pointer type
+"../main7.c", line 238: error #45: expression must have pointer type
+"../main7.c", line 242: error #20: identifier "outputLine" is undefined
+"../main7.c", line 242: error #20: identifier "obsCount" is undefined
+7 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 204: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 234: error #45: expression must have pointer type
+"../main7.c", line 235: error #45: expression must have pointer type
+"../main7.c", line 236: error #45: expression must have pointer type
+"../main7.c", line 237: error #45: expression must have pointer type
+"../main7.c", line 238: error #45: expression must have pointer type
+"../main7.c", line 242: error #20: identifier "outputLine" is undefined
+"../main7.c", line 242: error #20: identifier "obsCount" is undefined
+7 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 189: error #20: identifier "outputLine" is undefined
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 204: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 237: error #45: expression must have pointer type
+"../main7.c", line 238: error #45: expression must have pointer type
+"../main7.c", line 239: error #45: expression must have pointer type
+"../main7.c", line 243: error #20: identifier "obsCount" is undefined
+5 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 189: error #20: identifier "outputLine" is undefined
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 204: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 243: error #20: identifier "obsCount" is undefined
+2 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 205: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 244: error #20: identifier "obsCount" is undefined
+1 error detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 205: warning #179-D: variable "outputLine" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 58: error #18: expected a ")"
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 182: warning #225-D: function "displayObstacles" declared implicitly
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 208: error #18: expected a ")"
+"../main7.c", line 208: error #142-D: unnamed prototyped parameters not allowed when body is present
+"../main7.c", line 221: error #20: identifier "obsList" is undefined
+"../main7.c", line 232: warning #161-D: declaration is incompatible with previous "displayObstacles" (declared at line 182)
+4 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 58: error #18: expected a ")"
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 182: warning #225-D: function "displayObstacles" declared implicitly
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 208: error #18: expected a ")"
+"../main7.c", line 208: error #142-D: unnamed prototyped parameters not allowed when body is present
+"../main7.c", line 222: error #20: identifier "obsList" is undefined
+"../main7.c", line 233: warning #161-D: declaration is incompatible with previous "displayObstacles" (declared at line 182)
+4 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 58: error #18: expected a ")"
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 208: error #18: expected a ")"
+"../main7.c", line 208: error #142-D: unnamed prototyped parameters not allowed when body is present
+"../main7.c", line 222: error #20: identifier "obsList" is undefined
+4 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 58: error #18: expected a ")"
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 208: error #18: expected a ")"
+"../main7.c", line 208: error #142-D: unnamed prototyped parameters not allowed when body is present
+"../main7.c", line 222: error #20: identifier "obsList" is undefined
+4 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 208: error #18: expected a ")"
+"../main7.c", line 222: error #20: identifier "obsList" is undefined
+2 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 208: error #18: expected a ")"
+"../main7.c", line 208: error #148: declaration is incompatible with "int getObstacles(int, int, int, struct obstacle *)" (declared at line 58)
+"../main7.c", line 222: error #20: identifier "obsList" is undefined
+3 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 181: warning #169-D: argument of type "struct obstacle *" is incompatible with parameter of type "struct obstacle **"
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 208: error #18: expected a ")"
+"../main7.c", line 222: error #20: identifier "obsList" is undefined
+2 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 181: warning #169-D: argument of type "struct obstacle *" is incompatible with parameter of type "struct obstacle **"
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 208: error #148: declaration is incompatible with "int getObstacles(int, int, int, struct obstacle **)" (declared at line 58)
+"../main7.c", line 222: error #169: argument of type "struct obstacle" is incompatible with parameter of type "struct obstacle *"
+2 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 182: error #169: argument of type "struct obstacle *" is incompatible with parameter of type "struct obstacle"
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 222: error #169: argument of type "struct obstacle" is incompatible with parameter of type "struct obstacle *"
+"../main7.c", line 233: error #148: declaration is incompatible with "void displayObstacles(int, struct obstacle)" (declared at line 57)
+3 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 181: warning #169-D: argument of type "struct obstacle (*)[maxObs]" is incompatible with parameter of type "struct obstacle *"
+"../main7.c", line 182: error #169: argument of type "struct obstacle (*)[maxObs]" is incompatible with parameter of type "struct obstacle"
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 222: error #169: argument of type "struct obstacle" is incompatible with parameter of type "struct obstacle *"
+"../main7.c", line 233: error #148: declaration is incompatible with "void displayObstacles(int, struct obstacle)" (declared at line 57)
+3 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 182: error #169: argument of type "struct obstacle *" is incompatible with parameter of type "struct obstacle"
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 222: error #169: argument of type "struct obstacle" is incompatible with parameter of type "struct obstacle *"
+"../main7.c", line 233: error #148: declaration is incompatible with "void displayObstacles(int, struct obstacle)" (declared at line 57)
+3 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 182: error #169: argument of type "struct obstacle *" is incompatible with parameter of type "struct obstacle"
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 222: error #169: argument of type "struct obstacle" is incompatible with parameter of type "struct obstacle *"
+"../main7.c", line 233: error #148: declaration is incompatible with "void displayObstacles(int, struct obstacle)" (declared at line 57)
+3 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 182: error #169: argument of type "struct obstacle *" is incompatible with parameter of type "struct obstacle"
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 222: error #169: argument of type "struct obstacle" is incompatible with parameter of type "struct obstacle *"
+"../main7.c", line 233: error #148: declaration is incompatible with "void displayObstacles(int, struct obstacle)" (declared at line 57)
+3 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 181: warning #169-D: argument of type "struct obstacle (*)[maxObs]" is incompatible with parameter of type "struct obstacle *"
+"../main7.c", line 182: error #169: argument of type "struct obstacle (*)[maxObs]" is incompatible with parameter of type "struct obstacle"
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 222: error #169: argument of type "struct obstacle" is incompatible with parameter of type "struct obstacle *"
+"../main7.c", line 233: error #148: declaration is incompatible with "void displayObstacles(int, struct obstacle)" (declared at line 57)
+3 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 182: error #169: argument of type "struct obstacle *" is incompatible with parameter of type "struct obstacle"
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 222: error #169: argument of type "struct obstacle" is incompatible with parameter of type "struct obstacle *"
+"../main7.c", line 233: error #148: declaration is incompatible with "void displayObstacles(int, struct obstacle)" (declared at line 57)
+3 errors detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 222: error #169: argument of type "struct obstacle" is incompatible with parameter of type "struct obstacle *"
+1 error detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab7.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 95: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 97: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 170: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab7.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 96: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 96: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab7.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 96: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 96: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 195: error #156: expression must have struct or union type
+"../main7.c", line 171: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "nextObs" was declared but never referenced
+1 error detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 96: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab7.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 96: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 184: error #20: identifier "minObstacle" is undefined
+"../main7.c", line 171: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "nextObs" was declared but never referenced
+1 error detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 96: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab7.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 96: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 96: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 98: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 171: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 97: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 174: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 97: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 174: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 97: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 174: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 97: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 174: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 97: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 99: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 101: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 172: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 174: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main7.obj' failed
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 225: error #66: expected a ";"
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+1 error detected in the compilation of "../main7.c".
+gmake: *** [main7.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 221: warning #183-D: argument is incompatible with corresponding format string conversion
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 186: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 218: warning #183-D: argument is incompatible with corresponding format string conversion
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 186: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 186: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab3 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../movement.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab3" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+Finished building: "../movement.c"
+ 
+Building file: "../main3.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab3" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main3.d_raw"  "../main3.c"
+"../main3.c", line 113: warning #552-D: variable "angWidth" was set but never used
+"../main3.c", line 306: warning #179-D: variable "j" was declared but never referenced
+"../main3.c", line 307: warning #179-D: variable "scan" was declared but never referenced
+"../main3.c", line 308: warning #552-D: variable "scanSum" was set but never used
+Finished building: "../main3.c"
+ 
+Building target: "Lab3.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab3.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab3_linkInfo.xml" --rom_model -o "Lab3.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./main3.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab3.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../movement_functions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement_functions.d_raw"  "../movement_functions.c"
+Finished building: "../movement_functions.c"
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 186: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+ 
+ undefined           first referenced
+  symbol                 in file     
+ 
+ ---------           ----------------
+>> Compilation failure
+makefile:147: recipe for target 'Lab7.out' failed
+ forward_mm_redirect ./main7.obj     
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Lab7.out" not built
+gmake[1]: *** [Lab7.out] Error 1
+gmake: *** [all] Error 2
+makefile:143: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../movement.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+Finished building: "../movement.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab7.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 186: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 186: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../movement.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+Finished building: "../movement.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 186: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 186: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 186: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 186: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab7.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab7.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 186: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab7" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 98: warning #179-D: variable "outputLine" was declared but never referenced
+"../main7.c", line 100: warning #179-D: variable "maxObs" was declared but never referenced
+"../main7.c", line 102: warning #179-D: variable "obstacleList" was declared but never referenced
+"../main7.c", line 103: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 104: warning #179-D: variable "obsCount" was declared but never referenced
+"../main7.c", line 105: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 173: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 175: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 186: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab7.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab7_linkInfo.xml" --rom_model -o "Lab7.out" "./Timer.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab7.out' is up to date.
+
+**** Build Finished ****
