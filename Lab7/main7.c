@@ -20,19 +20,21 @@
 #include<stdlib.h>
 #include <math.h>
 //Calibration Values:
+//1318-2: Right: 269500   Left: 1177750
 //1318-3: Right: 243250   Left: 1177750
+//1318-4: Right: 301000   Left: 1246000
 //1318-6  Right: 348250   Left: 1356250
 //1318-5: Right: 332500   Left: 1309000
 //2041-07 Right: 295750   Left: 1230250
 //2041-12 Right: 243250   Left: 1188250
 //2041-15 Right: 327250   Left: 1303750
 
-#define RIGHT_CALIB 243250
-#define LEFT_CALIB 1188250
+#define RIGHT_CALIB 269500
+#define LEFT_CALIB 1177750
 
 #define IR_MINIMUM 400
 #define IR_RESCAN_THRESH 100
-#define OBJ_THRESH 150
+#define OBJ_THRESH 90
 
 #define MAX_OBSTACLES 15
 
@@ -71,6 +73,7 @@ float getLinWidth(int degWidth, float dist);
 
 
 void calibrateServos(void);
+void calibrateMovement(void);
 
 int bufferAvg(int buffer[], int bufferSize);
 
@@ -81,6 +84,7 @@ int main(void) {
     //nextObjTest();
     moveToSmallest();
     //manAndAuto();
+    //calibrateMovement();
 
 }
 
@@ -213,16 +217,35 @@ void moveToSmallest(){
        turnAng = obstacleList[minObstacle].midDeg - 90.0;
        sprintf(outputLine, "Turning %.1f degrees\n\r", turnAng);
        uart_sendStr(outputLine);
-       turn_right(sensor_data, obstacleList[minObstacle].midDeg - 90);
 
-       smallestDistMM = obstacleList[minObstacle].midDist * 5;
+
+       if(obstacleList[minObstacle].midDist > 50){
+           smallestDistMM = obstacleList[minObstacle].midDist * 9;
+       }
+       else{
+           smallestDistMM = obstacleList[minObstacle].midDist * 5;
+       }
+
        sprintf(outputLine, "Moving forward %d mm", smallestDistMM);
        uart_sendStr(outputLine);
-       forward_mm_redirect(sensor_data, smallestDistMM);
+
+       lcd_printf("Turning %.1f degrees\nAdvancing %d mm", turnAng, smallestDistMM);
+
+       if(turnAng > 0){
+           turn_left(sensor_data, turnAng);
+       }
+       else{
+
+           turn_right(sensor_data, -turnAng);
+       }
+       if(smallestDistMM > 100){
+           forward_mm_detours(sensor_data, smallestDistMM);
+       }
+
    }
 
 
-
+   lcd_printf("Complete");
    oi_free(sensor_data);
 }
 
@@ -235,7 +258,7 @@ int getObstacles(int minAngle, int maxAngle, int interval, struct obstacle obsLi
     int max = maxAngle - interval;
     int obsCount = 0;
     int nextObs;
-    int numScans = 2;
+    int numScans = 1;
 
 
 
@@ -320,6 +343,12 @@ int nextObjEdges(int* angle, int endAng, int interval, int numScans, struct obst
             nextObs->firstDeg = *angle;
         }
 
+        //If the value increases substantially and an object is currently found, mark the end of the current object and prepare to scan a new one.
+        /*if(distChange > OBJ_THRESH){
+            nextObs->lastDeg = *angle;
+            return 1;
+        }*/
+
 
         //TEMP: Send the Data to Putty
         //sprintf(outputLine, "%d, %d, %d, %d\n\r", *angle, currObj, avgDist, buffAvg);
@@ -331,7 +360,7 @@ int nextObjEdges(int* angle, int endAng, int interval, int numScans, struct obst
             int angleWidth = ((nextObs->lastDeg) - (nextObs -> firstDeg));
 
             //If the object is smaller than two interval movements, assume it was a false reading
-            if(angleWidth < (2 * interval) + 1){
+            if(angleWidth < (3 * interval) + 1){
                 currObj = 0;
                 //*angle = startVal;
             }
@@ -347,13 +376,19 @@ int nextObjEdges(int* angle, int endAng, int interval, int numScans, struct obst
 
     }
 
+    if(currObj == 1){
+        nextObs->lastDeg = *angle;
+        int angleWidth = ((nextObs->lastDeg) - (nextObs -> firstDeg));
+        nextObs -> midDeg = ((angleWidth/2)  + (nextObs -> firstDeg));
+    }
+
     return currObj;
 }
 
 
 void pingObstacle(struct obstacle* currObs, int numPings){
     int midPoint = currObs->midDeg;
-    int degWidth = currObs->lastDeg - currObs->firstDeg;
+    int degWidth = (currObs->lastDeg - currObs->midDeg) * 2;
 
     float dist = multiScanPing(midPoint, numPings);
     currObs -> midDist = dist;
@@ -450,7 +485,7 @@ int bufferAvg(int buffer[], int bufferSize){
 
 float getLinWidth(int degWidth, float dist){
 
-    float radAng = (180 / 3.14);
+    float radAng = degWidth * (3.14 / 180);
     float linWidth = 2* dist * tan(radAng / 2);
     return linWidth;
 }
@@ -675,6 +710,23 @@ void sensorTest(){
        uart_sendStr(outputLine);
        timer_waitMillis(250);
    }
+
+   oi_free(sensor_data);
+}
+
+void calibrateMovement(void){
+   timer_init();
+   lcd_init();
+   uart_interrupt_init();
+   cyBOT_init_Scan(0b0111);
+   right_calibration_value = RIGHT_CALIB;
+   left_calibration_value = LEFT_CALIB;
+
+   oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+   oi_init(sensor_data); // do this only once at start of main()
+
+   lcd_printf("Turning 90 degrees");
+   turn_right(sensor_data, 90);
 
    oi_free(sensor_data);
 }
