@@ -181,6 +181,7 @@ void moveToSmallest(){
 
 
    lcd_printf("Complete");
+
    oi_free(sensor_data);
 }
 
@@ -208,6 +209,7 @@ int getObstacles(int minAngle, int maxAngle, int interval, struct obstacle obsLi
             obsCount++;
         }
     }
+    multiScanPing(90, 0);
 
     return obsCount;
 }

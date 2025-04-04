@@ -139,6 +139,8 @@ void forward_mm_detours(oi_t *sensor_data, int distance_mm){
     double forwardMotion = 0.0;
     double distanceMoved = 0.0;
 
+    int turnChange = 0;
+
 
     //While the robot has not travelled the full distance
     while (forwardMotion < distance_mm){
@@ -150,10 +152,11 @@ void forward_mm_detours(oi_t *sensor_data, int distance_mm){
         if(forwardMotion < distance_mm){
             //Check if the left bumper is triggered
             if(sensor_data -> bumpLeft){
-                        forwardMotion += move_backward(sensor_data, 150);
-                        turn_right(sensor_data, 90);
-                        move_forward(sensor_data, 250);
-                        turn_left(sensor_data, 90);
+                forwardMotion += move_backward(sensor_data, 150);
+                turn_right(sensor_data, 90);
+                move_forward(sensor_data, 250);
+                turn_left(sensor_data, 90);
+                turnChange += 90;
             }
             //Otherwise, assume the right sensor was triggered
             else{
@@ -161,7 +164,18 @@ void forward_mm_detours(oi_t *sensor_data, int distance_mm){
                         turn_left(sensor_data, 90);
                         move_forward(sensor_data, 250);
                         turn_right(sensor_data, 90);
+                        turnChange -= 90;
             }
         }
+    }
+
+
+    //Expirimental: remove if this doesn't work.
+    if(turnChange > 0){
+        turn_right(sensor_data, turnChange);
+    }
+
+    if(turnChange < 0){
+        turn_left(sensor_data, -turnChange);
     }
 }
