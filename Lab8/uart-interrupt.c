@@ -14,6 +14,7 @@
 #include <inc/tm4c123gh6pm.h>
 #include <stdint.h>
 #include "uart-interrupt.h"
+//#include "string.h"
 
 // These variables are declared as examples for your use in the interrupt handler.
 volatile char command_byte0 = -1; // byte value for special character used as a command
@@ -123,8 +124,12 @@ char uart_recieve_nonblocking(void){
 void uart_sendStr(const char *data){
     int length = strlen(data);
     int i = 0;
-    for(i = 0; i < length; i++){
+    while(data[i] != '\0'){
         uart_sendChar(data[i]);
+        if(data[i] == '\n'){
+            uart_sendChar('\r');
+        }
+        i++;
     }
 }
 
@@ -142,6 +147,8 @@ void UART1_Handler(void)
         //read the byte received from UART1_DR_R and echo it back to PuTTY
         //ignore the error bits in UART1_DR_R
         byte_received = (char)(UART1_DR_R & 0xFF);
+
+        //echo the character received
         uart_sendChar(byte_received);
 
         //if byte received is a carriage return
@@ -150,20 +157,14 @@ void UART1_Handler(void)
             //send a newline character back to PuTTY
             uart_sendChar('\n');
         }
-        else
-        {
-            //AS NEEDED
-            //code to handle any other special characters
-            //code to update global shared variables
-            //DO NOT PUT TIME-CONSUMING CODE IN AN ISR
 
-            if(byte_received == command_byte0){
-                command_flag0 = 1;
-            }
-            if(byte_received == command_byte1){
-                command_flag1 = 1;
-            }
 
+        //If it's a command byte, activate the relevant flag
+        if(byte_received == command_byte0){
+            command_flag0 = 1;
+        }
+        if(byte_received == command_byte0){
+            command_flag1 = 1;
         }
     }
 }

@@ -23534,3 +23534,1643 @@ Finished building target: "Lab8.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main8.obj' failed
+"../main8.c", line 41: error #137: struct "<unnamed>" has no field "sound_distance"
+"../main8.c", line 44: error #20: identifier "reading" is undefined
+"../main8.c", line 37: warning #552-D: variable "irVal" was set but never used
+"../main8.c", line 38: warning #552-D: variable "pingDist" was set but never used
+2 errors detected in the compilation of "../main8.c".
+gmake: *** [main8.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main8.obj' failed
+"../main8.c", line 41: error #110: expression preceding parentheses of apparent call must have (pointer-to-) function type
+"../main8.c", line 38: warning #552-D: variable "pingDist" was set but never used
+1 error detected in the compilation of "../main8.c".
+gmake: *** [main8.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main8.obj' failed
+"../main8.c", line 42: error #110: expression preceding parentheses of apparent call must have (pointer-to-) function type
+1 error detected in the compilation of "../main8.c".
+gmake: *** [main8.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main8.obj' failed
+"../main8.c", line 42: error #110: expression preceding parentheses of apparent call must have (pointer-to-) function type
+1 error detected in the compilation of "../main8.c".
+gmake: *** [main8.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main8.obj' failed
+"../main8.c", line 53: error #66: expected a ";"
+1 error detected in the compilation of "../main8.c".
+gmake: *** [main8.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../uart-interrupt.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart-interrupt.d_raw"  "../uart-interrupt.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'uart-interrupt.obj' failed
+"../uart-interrupt.c", line 19: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 22: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 124: warning #225-D: function "strlen" declared implicitly
+"../uart-interrupt.c", line 129: error #18: expected a ")"
+"../uart-interrupt.c", line 129: error #29: expected an expression
+"../uart-interrupt.c", line 130: error #66: expected a ";"
+3 errors detected in the compilation of "../uart-interrupt.c".
+gmake: *** [uart-interrupt.obj] Error 1
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../uart-interrupt.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart-interrupt.d_raw"  "../uart-interrupt.c"
+"../uart-interrupt.c", line 19: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 22: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 124: warning #225-D: function "strlen" declared implicitly
+Finished building: "../uart-interrupt.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../uart-interrupt.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart-interrupt.d_raw"  "../uart-interrupt.c"
+"../uart-interrupt.c", line 20: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 23: warning #69-D: integer conversion resulted in a change of sign
+Finished building: "../uart-interrupt.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../uart-interrupt.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart-interrupt.d_raw"  "../uart-interrupt.c"
+"../uart-interrupt.c", line 20: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 23: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 125: warning #225-D: function "strlen" declared implicitly
+Finished building: "../uart-interrupt.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+"../main8.c", line 43: warning #552-D: variable "irVal" was set but never used
+"../main8.c", line 44: warning #552-D: variable "pingDist" was set but never used
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+"../main8.c", line 44: warning #552-D: variable "irVal" was set but never used
+"../main8.c", line 45: warning #552-D: variable "pingDist" was set but never used
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main8.obj' failed
+"../main8.c", line 63: error #138: expression must be a modifiable lvalue
+1 error detected in the compilation of "../main8.c".
+gmake: *** [main8.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../uart-interrupt.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart-interrupt.d_raw"  "../uart-interrupt.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'uart-interrupt.obj' failed
+"../uart-interrupt.c", line 20: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 23: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 125: warning #225-D: function "strlen" declared implicitly
+"../uart-interrupt.c", line 163: error #20: identifier "byte_recieved" is undefined
+1 error detected in the compilation of "../uart-interrupt.c".
+gmake: *** [uart-interrupt.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab7 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab7.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../uart-interrupt.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart-interrupt.d_raw"  "../uart-interrupt.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'uart-interrupt.obj' failed
+"../uart-interrupt.c", line 20: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 23: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 125: warning #225-D: function "strlen" declared implicitly
+"../uart-interrupt.c", line 168: error #20: identifier "byte_recieved" is undefined
+1 error detected in the compilation of "../uart-interrupt.c".
+gmake: *** [uart-interrupt.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../uart-interrupt.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart-interrupt.d_raw"  "../uart-interrupt.c"
+"../uart-interrupt.c", line 20: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 23: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 125: warning #225-D: function "strlen" declared implicitly
+Finished building: "../uart-interrupt.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../uart-interrupt.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart-interrupt.d_raw"  "../uart-interrupt.c"
+"../uart-interrupt.c", line 20: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 23: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 125: warning #225-D: function "strlen" declared implicitly
+Finished building: "../uart-interrupt.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../uart-interrupt.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart-interrupt.d_raw"  "../uart-interrupt.c"
+"../uart-interrupt.c", line 20: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 23: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 125: warning #225-D: function "strlen" declared implicitly
+Finished building: "../uart-interrupt.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../adc.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+Finished building: "../adc.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../adc.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+Finished building: "../adc.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../adc.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+Finished building: "../adc.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+"../main8.c", line 49: warning #225-D: function "uart_recieve" declared implicitly
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+ 
+ undefined    first referenced
+  symbol          in file     
+ 
+ ---------    ----------------
+>> Compilation failure
+makefile:148: recipe for target 'Lab8.out' failed
+ uart_recieve ./main8.obj     
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Lab8.out" not built
+gmake[1]: *** [Lab8.out] Error 1
+gmake: *** [all] Error 2
+makefile:144: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main8.obj' failed
+"../main8.c", line 16: fatal error #1966: cannot open source file ""math.h"": Invalid argument
+1 catastrophic error detected in the compilation of "../main8.c".
+Compilation terminated.
+gmake: *** [main8.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+"../main8.c", line 79: warning #227-D: the format string ends before this argument
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+"../main8.c", line 46: warning #225-D: function "IR_conversion" declared implicitly
+"../main8.c", line 49: warning #161-D: declaration is incompatible with previous "IR_conversion" (declared at line 46)
+"../main8.c", line 80: warning #227-D: the format string ends before this argument
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+"../main8.c", line 46: warning #225-D: function "IR_conversion" declared implicitly
+"../main8.c", line 49: warning #161-D: declaration is incompatible with previous "IR_conversion" (declared at line 46)
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+"../main8.c", line 46: warning #225-D: function "IR_conversion" declared implicitly
+"../main8.c", line 49: warning #161-D: declaration is incompatible with previous "IR_conversion" (declared at line 46)
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+"../main8.c", line 46: warning #225-D: function "IR_conversion" declared implicitly
+"../main8.c", line 49: warning #161-D: declaration is incompatible with previous "IR_conversion" (declared at line 46)
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+"../main8.c", line 46: warning #225-D: function "IR_conversion" declared implicitly
+"../main8.c", line 49: warning #161-D: declaration is incompatible with previous "IR_conversion" (declared at line 46)
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+"../main8.c", line 46: warning #225-D: function "IR_conversion" declared implicitly
+"../main8.c", line 49: warning #161-D: declaration is incompatible with previous "IR_conversion" (declared at line 46)
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+"../main8.c", line 46: warning #225-D: function "IR_conversion" declared implicitly
+"../main8.c", line 49: warning #161-D: declaration is incompatible with previous "IR_conversion" (declared at line 46)
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main8.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main8.d_raw"  "../main8.c"
+"../main8.c", line 46: warning #225-D: function "IR_conversion" declared implicitly
+"../main8.c", line 49: warning #161-D: declaration is incompatible with previous "IR_conversion" (declared at line 46)
+Finished building: "../main8.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main8.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 clean -O 
+ 
+DEL /F  "Lab8.out" 
+DEL /F "Timer.obj" "adc.obj" "button.obj" "helloworld.obj" "lcd.obj" "main8.obj" "movement.obj" "movement_functions.obj" "open_interface.obj" "tm4c123gh6pm_startup_ccs.obj" "uart-interrupt.obj" 
+DEL /F "Timer.d" "adc.d" "button.d" "helloworld.d" "lcd.d" "main8.d" "movement.d" "movement_functions.d" "open_interface.d" "tm4c123gh6pm_startup_ccs.d" "uart-interrupt.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../adc.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+Finished building: "../adc.c"
+ 
+Building file: "../Timer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Timer.d_raw"  "../Timer.c"
+Finished building: "../Timer.c"
+ 
+Building file: "../button.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="button.d_raw"  "../button.c"
+Finished building: "../button.c"
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building file: "../lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lcd.d_raw"  "../lcd.c"
+Finished building: "../lcd.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../movement.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+Finished building: "../movement.c"
+ 
+Building file: "../movement_functions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement_functions.d_raw"  "../movement_functions.c"
+Finished building: "../movement_functions.c"
+ 
+Building file: "../uart-interrupt.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart-interrupt.d_raw"  "../uart-interrupt.c"
+"../uart-interrupt.c", line 20: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 23: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 125: warning #225-D: function "strlen" declared implicitly
+Finished building: "../uart-interrupt.c"
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 85: warning #994-D: missing return statement at end of non-void function "main7"
+"../main7.c", line 94: warning #225-D: function "adc_init" declared implicitly
+"../main7.c", line 107: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 109: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 120: warning #179-D: variable "moveDist" was declared but never referenced
+"../main7.c", line 311: warning #225-D: function "adc_read" declared implicitly
+Finished building: "../main7.c"
+ 
+Building file: "../open_interface.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="open_interface.d_raw"  "../open_interface.c"
+"../open_interface.c", line 356: warning #179-D: variable "charging_state" was declared but never referenced
+Finished building: "../open_interface.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+ 
+ undefined first referenced                                                                                             
+  symbol       in file                                                                                                  
+ --------- ----------------                                                                                             
+ main      C:\ti\ccs1271\ccs\tools\compiler\ti-cgt-arm_20.2.7.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib<boot_cortex_m.c.obj>
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Lab8.out" not built
+ 
+gmake[1]: *** [Lab8.out] Error 1
+>> Compilation failure
+makefile:148: recipe for target 'Lab8.out' failed
+gmake: *** [all] Error 2
+makefile:144: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 86: warning #994-D: missing return statement at end of non-void function "main7"
+"../main7.c", line 108: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 110: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 121: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+ 
+ undefined first referenced                                                                                             
+  symbol       in file                                                                                                  
+ --------- ----------------                                                                                             
+ main      C:\ti\ccs1271\ccs\tools\compiler\ti-cgt-arm_20.2.7.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib<boot_cortex_m.c.obj>
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Lab8.out" not built
+ 
+gmake[1]: *** [Lab8.out] Error 1
+>> Compilation failure
+makefile:148: recipe for target 'Lab8.out' failed
+gmake: *** [all] Error 2
+makefile:144: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 108: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 110: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 121: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 109: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 111: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 122: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 109: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 111: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 122: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 109: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 111: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 122: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 109: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 111: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 122: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 109: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 111: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 122: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 109: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 111: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 122: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 109: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 111: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 122: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../adc.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+Finished building: "../adc.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../adc.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+Finished building: "../adc.c"
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 109: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 111: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 122: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 109: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 111: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 122: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 109: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 111: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 122: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 112: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 114: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 125: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 112: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 114: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 125: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 clean -O 
+ 
+DEL /F  "Lab8.out" 
+DEL /F "Timer.obj" "adc.obj" "button.obj" "helloworld.obj" "lcd.obj" "main7.obj" "movement.obj" "movement_functions.obj" "open_interface.obj" "tm4c123gh6pm_startup_ccs.obj" "uart-interrupt.obj" 
+DEL /F "Timer.d" "adc.d" "button.d" "helloworld.d" "lcd.d" "main7.d" "movement.d" "movement_functions.d" "open_interface.d" "tm4c123gh6pm_startup_ccs.d" "uart-interrupt.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab8 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../adc.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+Finished building: "../adc.c"
+ 
+Building file: "../Timer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Timer.d_raw"  "../Timer.c"
+Finished building: "../Timer.c"
+ 
+Building file: "../button.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="button.d_raw"  "../button.c"
+Finished building: "../button.c"
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building file: "../lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lcd.d_raw"  "../lcd.c"
+Finished building: "../lcd.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../movement_functions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement_functions.d_raw"  "../movement_functions.c"
+Finished building: "../movement_functions.c"
+ 
+Building file: "../uart-interrupt.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart-interrupt.d_raw"  "../uart-interrupt.c"
+"../uart-interrupt.c", line 20: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 23: warning #69-D: integer conversion resulted in a change of sign
+"../uart-interrupt.c", line 125: warning #225-D: function "strlen" declared implicitly
+Finished building: "../uart-interrupt.c"
+ 
+Building file: "../main7.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main7.d_raw"  "../main7.c"
+"../main7.c", line 112: warning #179-D: variable "angle" was declared but never referenced
+"../main7.c", line 114: warning #179-D: variable "nextObs" was declared but never referenced
+"../main7.c", line 125: warning #179-D: variable "moveDist" was declared but never referenced
+Finished building: "../main7.c"
+ 
+Building file: "../movement.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+Finished building: "../movement.c"
+ 
+Building file: "../open_interface.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab8" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="open_interface.d_raw"  "../open_interface.c"
+"../open_interface.c", line 356: warning #179-D: variable "charging_state" was declared but never referenced
+Finished building: "../open_interface.c"
+ 
+Building target: "Lab8.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab8.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab8_linkInfo.xml" --rom_model -o "Lab8.out" "./Timer.obj" "./adc.obj" "./button.obj" "./helloworld.obj" "./lcd.obj" "./main7.obj" "./movement.obj" "./movement_functions.obj" "./open_interface.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab8.out"
+ 
+
+**** Build Finished ****

@@ -12,6 +12,7 @@
 #include "cyBot_Scan.h"  // For scan sensors
 #include "uart-interrupt.h"
 #include "movement.h"
+#include "adc.h"
 
 // Uncomment or add any include directives that are needed
 #include "open_interface.h"
@@ -24,13 +25,13 @@
 //1318-3: Right: 243250   Left: 1177750
 //1318-4: Right: 301000   Left: 1246000
 //1318-6  Right: 348250   Left: 1356250
-//1318-5: Right: 332500   Left: 1309000
+//1318-5: Right: 316750   Left: 1272250
 //2041-07 Right: 295750   Left: 1230250
 //2041-12 Right: 243250   Left: 1188250
 //2041-15 Right: 327250   Left: 1303750
 
-#define RIGHT_CALIB 269500
-#define LEFT_CALIB 1177750
+#define RIGHT_CALIB 316750
+#define LEFT_CALIB 1272250
 
 #define IR_MINIMUM 400
 #define IR_RESCAN_THRESH 100
@@ -88,74 +89,7 @@ int main(void) {
 
 }
 
-void manAndAuto(){
-    timer_init();
-   lcd_init();
-   uart_interrupt_init();
-   cyBOT_init_Scan(0b0111);
-   right_calibration_value = RIGHT_CALIB;
-   left_calibration_value = LEFT_CALIB;
 
-   oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
-   oi_init(sensor_data); // do this only once at start of main()
-
-   char outputLine[100];
-
-   int maxObs = 10;
-
-  struct obstacle obstacleList[MAX_OBSTACLES];
-  int angle = 5;
-  int obsCount = 0;
-  int nextObs;
-
-  command_byte0 = 'q';
-  command_byte1 = 't';
-
-  uart_sendStr("\n\rStarting\n\r");
-
-  int manual = 0;
-  int exit = 0;
-
-  while(exit == 0){
-      uart_sendStr("\rAutoMode\n\r");
-
-      while(manual == 0){
-          if(command_flag0){
-                command_flag0 = 0;
-                exit = 1;
-                break;
-            }
-
-          if(command_flag1){
-              command_flag1 = 0;
-              manual = 1;
-              break;
-          }
-
-
-      }
-
-      uart_sendStr("\rManual\n\r");
-
-      while (manual == 1){
-
-          if(command_flag0){
-              command_flag0 = 0;
-              exit = 1;
-              break;
-          }
-          if(command_flag1){
-                command_flag1 = 0;
-                manual = 0;
-                break;
-            }
-
-
-      }
-  }
-
-  uart_sendStr("\n\rExiting");
-}
 
 void moveToSmallest(){
    timer_init();
@@ -164,6 +98,7 @@ void moveToSmallest(){
    cyBOT_init_Scan(0b0111);
    right_calibration_value = RIGHT_CALIB;
    left_calibration_value = LEFT_CALIB;
+   adc_init();
 
    oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
    oi_init(sensor_data); // do this only once at start of main()
@@ -408,22 +343,18 @@ int multiScanIR(int angle, int numScans){
     int failMax = 5;
 
     cyBOT_Scan_t scan;
-
     while(i < numScans){
+
         cyBOT_Scan(angle, &scan);
-        scanVal = scan.IR_raw_val;
+        scanVal = adc_read();
 
         if(scanVal < IR_MINIMUM){
             scanVal = IR_MINIMUM;
         }
 
         scanSum += scanVal;
-
-
-
-
         currAvg = scanSum / (i+1);
-        change = abs(currAvg - scan.IR_raw_val);
+        change = abs(currAvg - scanVal);
 
         if(change > IR_RESCAN_THRESH && failCount < failMax){
             i = 0;
@@ -730,3 +661,71 @@ void calibrateMovement(void){
 
    oi_free(sensor_data);
 }
+/*void manAndAuto(){
+    timer_init();
+   lcd_init();
+   uart_interrupt_init();
+   cyBOT_init_Scan(0b0111);
+   right_calibration_value = RIGHT_CALIB;
+   left_calibration_value = LEFT_CALIB;
+
+   oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+   oi_init(sensor_data); // do this only once at start of main()
+
+   char outputLine[100];
+
+   int maxObs = 10;
+
+  struct obstacle obstacleList[MAX_OBSTACLES];
+  int angle = 5;
+  int obsCount = 0;
+  int nextObs;
+
+  command_byte0 = 'q';
+  command_byte1 = 't';
+
+  uart_sendStr("\n\rStarting\n\r");
+
+  int manual = 0;
+  int exit = 0;
+
+  while(exit == 0){
+      uart_sendStr("\rAutoMode\n\r");
+
+      while(manual == 0){
+          if(command_flag0){
+                command_flag0 = 0;
+                exit = 1;
+                break;
+            }
+
+          if(command_flag1){
+              command_flag1 = 0;
+              manual = 1;
+              break;
+          }
+
+
+      }
+
+      uart_sendStr("\rManual\n\r");
+
+      while (manual == 1){
+
+          if(command_flag0){
+              command_flag0 = 0;
+              exit = 1;
+              break;
+          }
+          if(command_flag1){
+                command_flag1 = 0;
+                manual = 0;
+                break;
+            }
+
+
+      }
+  }
+
+  uart_sendStr("\n\rExiting");
+}*/
