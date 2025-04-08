@@ -10,8 +10,8 @@
 
 // Uncomment or add any include directives that are needed
 
-#warning "Possible unimplemented functions"
-#define REPLACEME 0
+//#warning "Possible unimplemented functions"
+//#define REPLACEME 0
 
 int main(void) {
 	timer_init(); // Must be called before lcd_init(), which uses timer functions
@@ -19,12 +19,14 @@ int main(void) {
 	ping_init();
 
 	// YOUR CODE HERE
+	lcd_printf("Init completed");
 
 	while(1)
 	{
-
-      // YOUR CODE HERE
-
+	    ping_trigger();
+	    timer_waitMillis(500);
+	    lcd_printf("%d - %d", ping_getStartTime(), ping_getEndTime());
+	    timer_waitMillis(500);
 
 	}
 
