@@ -10,12 +10,14 @@
 #include "lcd.h"
 #include "adc.h"
 
-#include <stdlib.h>
+#include<stdlib.h>
 #include "cyBot_Scan.h"
 #include "uart-interrupt.h"
 #include <math.h>
 
-
+//#include "cyBot_Scan.h"  // For scan sensors
+//#include "uart-interrupt.h"
+//#include "movement.h"
 
 // Uncomment or add any include directives that are needed
 //#include "open_interface.h"
@@ -35,8 +37,6 @@ void calibrateServos(void);
 
 void checkpoint1(void);
 void checkpoint2(void);
-
-void IR_conversion(void);
 
 double ir_to_dist(int ir);
 

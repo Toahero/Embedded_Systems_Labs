@@ -171,11 +171,11 @@ void forward_mm_detours(oi_t *sensor_data, int distance_mm){
 
 
     //Expirimental: remove if this doesn't work.
-    /*if(turnChange > 0){
+    if(turnChange > 0){
         turn_right(sensor_data, turnChange);
     }
 
     if(turnChange < 0){
         turn_left(sensor_data, -turnChange);
-    }*/
+    }
 }
