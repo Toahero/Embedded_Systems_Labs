@@ -27,7 +27,7 @@ void ping_init (void){
 
     GPIO_PORTB_AFSEL_R |= 0b00001000; //Enable alternate functionality on pin B3
 
-    GPIO_PORTB_PCTL_R = 0x7; //Configure B3 to respond to timer 3
+    GPIO_PORTB_PCTL_R |= 0x7000; //Configure B3 to respond to timer 3
 
     //Timer Initialization
 
@@ -62,6 +62,7 @@ void ping_init (void){
 
     TIMER3_IMR_R |= 0x400; //Enable Event Capture Interrupt
 
+
     //Set up NVIC
 
     NVIC_PRI9_R = (NVIC_PRI9_R & 0xFFFFFF0F) | 0x20; //Sets priority to timer 3b, masking other values
@@ -86,7 +87,7 @@ void ping_trigger (void){
     // YOUR CODE HERE FOR PING TRIGGER/START PULSE
     GPIO_PORTB_DIR_R |= 0b00001000; //Set pin 3 as output
     GPIO_PORTB_DATA_R &= 0xF7;//Set pin 3 Low
-    GPIO_PORTB_DATA_R &= 0x8;//Set pin3 High
+    GPIO_PORTB_DATA_R |= 0x8;//Set pin3 High
     timer_waitMicros(5); //Wait 5 microseconds
     GPIO_PORTB_DATA_R &= 0xF7;//Set pin 3 Low
 
@@ -111,19 +112,27 @@ void TIMER3B_Handler(void){
   // Clearing the interrupt: set the ICR bit (so that same event doesn't trigger another interrupt)
   // The rest of the code in the ISR depends on actions needed when the event happens.
 
+    /*if(TIMER3_RIS_R & 0x100 == 0x100){
+        g_start_time = 0;
+        g_end_time = 0;
+        g_state = DONE;
+    }*/
+
+    TIMER3_ICR_R  |= 0x400;//Clear capture interrupt flag
+    TIMER3_ICR_R  |= 0x100;//Clear time out interrupt flag
+
+
+
     if(g_state == DONE){
-        TIMER3_ICR_R  |= 0x400;
         return;
     }
 
     if(g_state == LOW){
         g_start_time =  TIMER3_TBR_R;
         g_state = HIGH;
-        TIMER3_ICR_R  |= 0x400;
     }
     else{
         g_end_time = TIMER3_TBR_R;
-        TIMER3_ICR_R  |= 0x400;
         g_state = DONE;
     }
 
@@ -135,10 +144,13 @@ float ping_getDistance (void){
 
 }
 
-int ping_getStartTime(void){
-    return g_start_time;
-}
+int ping_getDelay(void){
+    ping_trigger();
+    timer_waitMillis(100);
 
-int ping_getEndTime(void){
-    return g_end_time;
+    if(g_start_time < g_end_time){
+        return -1;
+    }
+
+    return g_start_time - g_end_time;
 }

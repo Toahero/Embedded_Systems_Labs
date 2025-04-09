@@ -45,7 +45,8 @@ void uart_interrupt_init(void){
   GPIO_PORTB_AFSEL_R |= 0b00000011;
 
   //enable UART1 Rx and Tx on port B pins
-  GPIO_PORTB_PCTL_R = 0x00000011;
+  GPIO_PORTB_PCTL_R &= 0xFFFFFF00;
+  GPIO_PORTB_PCTL_R |= 0x00000011;
 
   //calculate baud rate
   uint16_t iBRD = 0x8; //use equations

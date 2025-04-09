@@ -78,3 +78,18 @@ uint16_t adc_read (void){
 
     return result;
 }
+
+double adc_dist(void){
+
+    ADC0_PSSI_R = 0x0001;
+
+    while((ADC0_RIS_R & 0x01) == 0){};
+
+    ADC0_ISC_R |= 0x0001;
+
+    uint16_t reading = ADC0_SSFIFO0_R;
+
+    double dist = 124725 * pow(reading, -1.182);
+
+    return dist;
+}
