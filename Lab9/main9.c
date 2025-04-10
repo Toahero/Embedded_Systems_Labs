@@ -25,15 +25,54 @@ void dualScan();
 
 int main(void) {
 	//checkpoint2();
+    checkpoint3();
+
     //calibratePing();
-    dualScan();
+
+    //dualScan();
 }
 
 void checkpoint3(void){
     timer_init(); // Must be called before lcd_init(), which uses timer functions
     lcd_init();
     ping_init();
+    uart_interrupt_init();
 
+    command_byte0 = 'q';
+    //uart_receive();
+
+    char output[100];
+
+    int delay;
+    double delayMS;
+    float dist;
+    int numOverflows = 0;
+
+    //Based on the given processor speed of 80 MHz
+    int commands_per_ms = 80000;
+
+    while(1){
+        if(command_flag0){
+        command_flag0 = 0;
+        break;
+        }
+
+        delay = ping_getDelay();
+
+        if(delay < 1){
+            numOverflows++;
+        }
+        else{
+            delayMS = (double) delay / commands_per_ms;
+            dist = 0.001 * delay + 0.4275;
+            sprintf(output, "Step Delay: %d\nTime Delay: %.2f ms\nDistance: %.2f cm \nTotal Overflows: %d", delay, delayMS, dist, numOverflows);
+            lcd_printf("%s", output);
+            uart_sendStr(output);
+        }
+
+
+
+    }
 }
 
 void checkpoint2(void){
@@ -127,7 +166,14 @@ void dualScan(){
     double distance;
     int interval;
 
+    command_byte0 = 'q';
+    uart_receive();
     while(1){
+        if(command_flag0){
+        command_flag0 = 0;
+        break;
+        }
+
         distance = adc_dist();
         interval = ping_getDelay();
 
@@ -135,3 +181,4 @@ void dualScan(){
         uart_sendStr(output);
     }
 }
+

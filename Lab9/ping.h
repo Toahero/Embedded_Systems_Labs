@@ -35,4 +35,6 @@ float ping_getDistance (void);
 
 int ping_getDelay(void);
 
+float intervalToDist(int interval);
+
 #endif /* PING_H_ */

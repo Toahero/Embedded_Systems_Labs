@@ -141,7 +141,14 @@ void TIMER3B_Handler(void){
 float ping_getDistance (void){
 
     // YOUR CODE HERE
+    int delay = 0;
 
+    while(delay < 1){
+        delay = ping_getDelay();
+    }
+
+    float dist = intervalToDist(delay);
+    return dist;
 }
 
 int ping_getDelay(void){
@@ -153,4 +160,9 @@ int ping_getDelay(void){
     }
 
     return g_start_time - g_end_time;
+}
+
+float intervalToDist(int interval){
+    float result = 0.001 * interval + 0.4275;
+    return result;
 }
