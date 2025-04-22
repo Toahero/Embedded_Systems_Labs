@@ -35,7 +35,7 @@ extern volatile char command_byte1; // byte value for special character used as 
 extern volatile int command_flag1; // flag to tell the main program a special command was received
 
 // UART1 device initialization for CyBot to PuTTY
-void uart_interrupt_init(void);
+void uart_init(void);
 
 // Send a byte over UART1 from CyBot to PuTTY
 void uart_sendChar(char data);
@@ -43,10 +43,10 @@ void uart_sendChar(char data);
 // CyBot waits (i.e. blocks) to receive a byte from PuTTY
 // returns byte that was received by UART1
 // Not used with interrupts; see UART1_Handler
-char uart_receive(void);
+char uart_get(void);
 
 
-char uart_recieve_nonblocking(void);
+char uart_get_nonblocking(void);
 
 // Send a string over UART1
 // Sends each char in the string one at a time

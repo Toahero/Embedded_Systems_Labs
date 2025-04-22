@@ -11,22 +11,22 @@
 #define CYCLES_IN_20MS 320000
 
 //Default calibration value in cycles
-static unsigned int deg_0 = CYCLES_IN_20MS - 1000 * 16;
-static unsigned int deg_180 = CYCLES_IN_20MS - 2000 * 16;;
+static unsigned int deg_0;
+static unsigned int deg_180;
 
 static void set_angle(unsigned int angle_deg){
     unsigned int matchVal = deg_0 - (angle_deg * (deg_0 - deg_180)) / 180;
 
-    set_match(matchVal);
+    servo_setMatch(matchVal);
 }
 
-static void set_match(unsigned int match){
+void servo_setMatch(unsigned int match){
     //Split the values across the match and prescaler registers
     TIMER1_TBMATCHR_R = (match & 0x00FFFF);
     TIMER1_TBPMR_R = (match & 0xFF0000) >> 16;
 }
 
-int get_match(void){
+int servo_getMatch(void){
     //Recombine the values using bitwise operations
     return((TIMER1_TBPMR_R & 0xFF) << 16) | (TIMER1_TBMATCHR_R & 0xFFFF);
 }
@@ -36,6 +36,9 @@ void servo_init(void){
     //The timer must be configured as a 24 bit count-down counter, using a prescaler
 
     //Initialize GPIO pin B3
+
+    deg_0 = CYCLES_IN_20MS - 1000 * 16;
+    deg_180 = CYCLES_IN_20MS - 2000 * 16;;
 
     SYSCTL_RCGCGPIO_R |= 0b00000010; //enable clock to GPIO port B
     while ((SYSCTL_PRGPIO_R & 0b00000010) == 0) {}; //Wait for GPIOB to be ready
@@ -79,6 +82,14 @@ void servo_setEdges(unsigned int deg0, unsigned int deg180){
     deg_180 = deg180;
 }
 
+void servo_setLeft(unsigned int leftCoord){
+    deg_0 = leftCoord;
+}
+
+void servo_setRight(unsigned int rightCoord){
+    deg_180 = rightCoord;
+}
+
 void servo_move(uint16_t angle_deg)
 {
     int turnAng;
@@ -95,78 +106,75 @@ void servo_move(uint16_t angle_deg)
 }
 
 void servo_calibrate(void){
+    int keepGoing = 1;
+    int button;
+    int prevButton;
+    int speed = 20;
+    unsigned int minVal;
+    unsigned int maxVal;
+    unsigned int match = 320000 - 1500 * 16;
 
-    //Reset values to defaults
-    int keepLooking = 1;
-    int button = 0;
-
-    deg_0 = CYCLES_IN_20MS - 1000 * 16;
-    deg_180 = CYCLES_IN_20MS - 2000 * 16;
-
-    //Set a starting match value
-    unsigned int match = CYCLES_IN_20MS - 1500 * 16;
-
-    //lcd_printf("Button: %d", button);
-
-
-
-
-    while(keepLooking == 1){
-
+    button = button_getButton();
+    while (keepGoing){
+        prevButton = button;
         button = button_getButton();
 
-
-        switch(button){
-        case 1:
-            match = match + (5 * 16);
-            break;
-
-        case 2:
-            match = match - (5 * 16);
-            break;
-
-        case 4:
-            deg_0 = match;
-            keepLooking = 0;
-            break;
-
-        default:
-            timer_waitMillis(20);
-            break;
-        }
-
-        lcd_printf("Set rightmost(0)\nMatch: %d\nButton: %d", match, button);
-        set_match(match);
-
-    }
-
-    keepLooking = 1;
-
-    while(keepLooking == 1){
-
-        button = button_getButton();
-        lcd_printf("Set leftmost(180)\nMatch: %d\nButton: %d", match, button);
-        timer_waitMillis(1000);
-
+        if(button == prevButton){
             switch(button){
             case 1:
-                match = match + (5 * 16);
+                match -= (speed * 16);
                 break;
 
             case 2:
-                match = match - (5 * 16);
+                match += (speed * 16);
                 break;
 
             case 4:
-                deg_180 = match;
-                keepLooking = 0;
+                maxVal = match;
+                keepGoing = 0;
                 break;
 
             default:
-
                 break;
             }
-            set_match(match);
+        }
+
+        lcd_printf("Match Val: %d\nSet to the rightmost value (180)", match);
+        servo_setMatch(match);
+        timer_waitMillis(50);
+    }
+    lcd_printf("Right Value Set");
+    timer_waitMillis(1000);
+
+    keepGoing = 1;
+    while (keepGoing){
+            prevButton = button;
+            button = button_getButton();
+
+            if(button == prevButton){
+                switch(button){
+                case 1:
+                    match -= (speed * 16);
+                    break;
+
+                case 2:
+                    match += (speed * 16);
+                    break;
+
+                case 4:
+                    minVal = match;
+                    keepGoing = 0;
+                    break;
+
+                default:
+                    break;
+                }
+            }
+
+            lcd_printf("Match Val: %d\nSet to the leftmost value (0)", match);
+            servo_setMatch(match);
             timer_waitMillis(50);
         }
+
+    lcd_printf("Left(0):%d\nRight(180): %d", minVal, maxVal);
 }

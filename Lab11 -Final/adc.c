@@ -59,7 +59,7 @@ void adc_init (void){
     ADC0_IM_R |= 0x01;
 
     //Activate averaging
-    ADC0_SAC_R = 0x02;
+    ADC0_SAC_R = (0b111 & 0x2);
 
     //Reenable sammple sequencer
     ADC0_ACTSS_R |= 0b0001;

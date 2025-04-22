@@ -13,20 +13,36 @@
 
 #include <stdlib.h>
 
+//1318: Right: 284480 Left: 312000
+#define RIGHT_CALIB 284480
+#define LEFT_CALIB 312000
 
 void checkpoint1(void);
 
 void checkpoint2(void);
 
+void calibrationTest(void);
+
+void testCalibrate(void);
+
 int main(void) {
 
-    //test();
+    //testCalibrate();
 
     checkpoint1();
     //checkpoint2();
 
-
 }
+
+void testCalibrate(){
+    timer_init(); // Must be called before lcd_init(), which uses timer functions
+    lcd_init();
+    servo_init();
+    button_init();
+
+    servo_calibrate();
+}
+
 
 
 void checkpoint2(void){
@@ -35,55 +51,6 @@ void checkpoint2(void){
     servo_init();
     button_init();
 
-    int currAng = 90;
-    int currMatch;
-    int rightButton;
-    int currDir = 1;
-
-
-
-    servo_move(90);
-
-    while(1){
-        rightButton = button_getButton();
-        switch(rightButton){
-        case 1:
-            currAng += 1 * currDir;
-            break;
-
-        case 2:
-            currAng += 5* currDir;
-            break;
-
-        case 3:
-            currDir *= -1;
-            break;
-
-        case 4:
-            if(currDir == 1){
-                currAng = 5;
-            }
-            else{
-                currAng = 175;
-            }
-            break;
-
-        default:
-            break;
-        }
-
-        if(currAng > 180){
-            currAng = 180;
-        }
-        if(currAng < 0){
-            currAng = 0;
-        }
-
-
-        servo_move(currAng);
-        currMatch = get_match();
-        lcd_printf("Angle: %d\nMatch: %d\n Direction: %d", currAng, currMatch, currDir);
-    }
 }
 
 void checkpoint1(){
@@ -92,7 +59,8 @@ void checkpoint1(){
     servo_init();
 
 
-    servo_calibrate();
+    servo_setLeft(LEFT_CALIB);
+    servo_setRight(RIGHT_CALIB);
 
     servo_move(90);
     lcd_printf("90 degrees");

@@ -14,7 +14,10 @@
 #include "button.h"
 #include "lcd.h"
 
-static void set_match(unsigned int match);
+void servo_setMatch(unsigned int match);
+
+void servo_setLeft(unsigned int leftCoord);
+void servo_setRight(unsigned int rightCoord);
 
 int get_match(void);
 

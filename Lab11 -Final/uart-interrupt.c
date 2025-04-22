@@ -26,7 +26,7 @@ volatile int command_flag1 = 0; // flag to tell the main program a special comma
 
 
 
-void uart_interrupt_init(void){
+void uart_init(void){
 	//TODO
   //enable clock to GPIO port B
   SYSCTL_RCGCGPIO_R |= 0b00000010;
@@ -97,7 +97,7 @@ void uart_interrupt_init(void){
   //Good to be explicit in your code
   //Be careful to not clear RX and TX enable bits
   //(either preserve if already set or set them)
-  UART1_CTL_R = 0b1100000001;
+  UART1_CTL_R |= 0b1100000001;
 
 }
 
@@ -106,7 +106,7 @@ void uart_sendChar(char data){
         UART1_DR_R = data;
 }
 
-char uart_receive(void){
+char uart_get(void){
 	//DO NOT USE this busy-wait function if using RX interrupt
     char data = 0;
     while(UART1_FR_R & 0x10){}
@@ -114,7 +114,7 @@ char uart_receive(void){
     return data;
 }
 
-char uart_recieve_nonblocking(void){
+char uart_get_nonblocking(void){
     char data = 0;
     if(!(UART1_FR_R & 0x10)){
         data = (char)(UART1_DR_R & 0xFF);
