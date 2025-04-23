@@ -14,6 +14,9 @@
 #include "adc.h"
 #include "uart-interrupt.h"
 #include <stdlib.h>
+#include <open_interface.h>
+
+#include "dataCollection.h"
 
 //1318-09: Right: 284480 Left: 312000
 //1318-01: Right: 286720 Left 312640
@@ -43,12 +46,129 @@ float pingAt(int angle);
 
 int multiScanIR(int angle, int numScans);
 
+//void oI_test(void);
+
+void moveTest(void);
+void getData(void);
+
 int main(void) {
 
-    sensorTests();
-
+    //sensorTests();
+    //oI_test();
+    moveTest();
 
 }
+
+void getData(void){
+    timer_init();
+    lcd_init();
+    uart_init();
+    adc_init();
+    ping_init();
+    button_init();
+    servo_init();
+
+    oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+    oi_init(sensor_data); // do this only once at start of main()
+
+    collect_cliffSignals(sensor_data, 500);
+
+    oi_free(sensor_data); // do this once at end of main()
+}
+
+void moveTest(void){
+    timer_init();
+    lcd_init();
+    uart_init();
+    adc_init();
+    ping_init();
+    button_init();
+    servo_init();
+
+    oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+    oi_init(sensor_data); // do this only once at start of main()
+
+    double dist = 10000.0;
+
+    int result;
+
+    result = forward_mm_nav(sensor_data, &dist);
+
+    switch(result){
+    case 0:
+        lcd_printf("Movement completed.");
+        break;
+
+    case 1:
+        lcd_printf("Left Sensor Bumped");
+        break;
+
+    case 2:
+        lcd_printf("Right Sensor Bumped");
+        break;
+
+    case 3:
+        lcd_printf("Front Left Cliff");
+        break;
+
+    case 4:
+        lcd_printf("Front Right Cliff");
+        break;
+    }
+
+    turn_right(sensor_data, 90.0);
+    dist = 50.0;
+    forward_mm_nav(sensor_data, dist);
+    turn_right(sensor_data, 90.0);
+    dist = 10000.0;
+    forward_mm_nav(sensor_data, dist);
+
+    oi_free(sensor_data); // do this once at end of main()
+}
+
+/*void oI_test(void){
+    timer_init();
+    lcd_init();
+    uart_init();
+    adc_init();
+    ping_init();
+    button_init();
+    servo_init();
+
+    oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+    oi_init(sensor_data); // do this only once at start of main()
+
+    char output[50];
+    command_byte0 = 'q';
+
+
+    lcd_printf("Press any key to start");
+    uart_get();
+
+    int leftCliff;
+    int rightCliff;
+    while(1){
+        oi_update(sensor_data);
+
+        leftCliff = sensor_data->cliffFrontLeftSignal;
+        rightCliff = sensor_data->cliffFrontRightSignal;
+
+        sprintf(output, "%d, %d\n", leftCliff, rightCliff);
+        uart_sendStr(output);
+
+        lcd_printf(output);
+        timer_waitMillis(100);
+
+
+        if(command_flag0){
+            command_flag0 = 0;
+            break;
+        }
+    }
+
+    lcd_printf("Testing concluded");
+    oi_free(sensor_data); // do this once at end of main()
+}*/
 
 void sensorTests(){
     timer_init();

@@ -7,6 +7,8 @@
 
 #include <open_interface.h>
 #include <lcd.h>
+#include "Timer.h"
+#include "uart-interrupt.h"
 
 #define MOVE_SPEED 100
 #define FORWARD_ADJUST 1.01
@@ -71,19 +73,19 @@ double move_forward_bumpInt(oi_t *sensor_data, double distance_mm){
 
 double turn_right (oi_t *sensor_data, double degrees){
     double currAng = 0.0;
-        //lcd_init();
+    //lcd_init();
 
-        oi_setWheels(-MOVE_SPEED, MOVE_SPEED);
+    oi_setWheels(-MOVE_SPEED, MOVE_SPEED);
 
 
-        //Move until distance reaches assigned distance
-        while (currAng > -degrees * RIGHT_ADJUST){
-            oi_update(sensor_data);
-            currAng += sensor_data -> angle;
-            //lcd_printf("Angle: %lf", currAng);
-        }
-        oi_setWheels(0,0);
-        return currAng;
+    //Move until distance reaches assigned distance
+    while (currAng > -degrees * RIGHT_ADJUST){
+        oi_update(sensor_data);
+        currAng += sensor_data -> angle;
+        lcd_printf("Angle: %.2f\n Thresh: %.2f", currAng, -degrees * RIGHT_ADJUST);
+    }
+    oi_setWheels(0,0);
+    return currAng;
 }
 
 double turn_left (oi_t *sensor_data, double degrees){
@@ -178,4 +180,32 @@ void forward_mm_detours(oi_t *sensor_data, int distance_mm){
     if(turnChange < 0){
         turn_left(sensor_data, -turnChange);
     }
+}
+
+int forward_mm_nav(oi_t *sensor_data, double* distance_mm){
+    double currDist = 0;
+    oi_setWheels(MOVE_SPEED, MOVE_SPEED);
+
+    while(*distance_mm > 0){
+        oi_update(sensor_data);
+        *distance_mm -= sensor_data -> distance * FORWARD_ADJUST;
+        lcd_printf("%.2f", *distance_mm);
+
+        if(sensor_data -> bumpLeft){
+            return 1;
+        }
+        if(sensor_data->bumpRight){
+            return 2;
+        }
+
+        if(sensor_data->cliffFrontLeftSignal > 2500){
+            return 3;
+        }
+
+        if(sensor_data->cliffFrontRightSignal > 2500){
+            return 4;
+        }
+    }
+    oi_setWheels(0, 0);
+    return 0;
 }

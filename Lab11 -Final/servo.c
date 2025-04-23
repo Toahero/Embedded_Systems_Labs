@@ -83,11 +83,11 @@ void servo_setEdges(unsigned int deg0, unsigned int deg180){
 }
 
 void servo_setLeft(unsigned int leftCoord){
-    deg_0 = leftCoord;
+    deg_180 = leftCoord;
 }
 
 void servo_setRight(unsigned int rightCoord){
-    deg_180 = rightCoord;
+    deg_0 = rightCoord;
 }
 
 void servo_move(uint16_t angle_deg)
@@ -139,7 +139,7 @@ void servo_calibrate(void){
             }
         }
 
-        lcd_printf("Match Val: %d\nSet to the rightmost value (180)", match);
+        lcd_printf("Match Val: %d\nSet to the rightmost value (0)", match);
         servo_setMatch(match);
         timer_waitMillis(50);
     }
@@ -171,7 +171,7 @@ void servo_calibrate(void){
                 }
             }
 
-            lcd_printf("Match Val: %d\nSet to the leftmost value (0)", match);
+            lcd_printf("Match Val: %d\nSet to the leftmost value (180)", match);
             servo_setMatch(match);
             timer_waitMillis(50);
         }

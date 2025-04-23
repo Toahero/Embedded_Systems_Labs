@@ -25,4 +25,6 @@ void forward_mm_redirect(oi_t *sensor_data, int distance_mm);
 
 void forward_mm_detours(oi_t *sensor_data, int distance_mm);
 
+int forward_mm_nav(oi_t *sensor_data, int* distance_mm);
+
 #endif /* MOVEMENT_H_ */

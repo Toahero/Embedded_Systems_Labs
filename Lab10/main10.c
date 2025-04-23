@@ -14,8 +14,8 @@
 #include <stdlib.h>
 
 //1318: Right: 284480 Left: 312000
-#define RIGHT_CALIB 284480
-#define LEFT_CALIB 312000
+#define RIGHT_CALIB 311360
+#define LEFT_CALIB  286400
 
 void checkpoint1(void);
 
@@ -77,4 +77,11 @@ void checkpoint1(){
     servo_move(90);
     lcd_printf("90 degrees");
     timer_waitMillis(1000);
+
+    int i;
+    for(i = 0; i < 180; i+=5){
+        servo_move(i);
+            lcd_printf("%d degrees", i);
+            timer_waitMillis(100);
+    }
 }
