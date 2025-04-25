@@ -13,10 +13,13 @@
 #include "ping.h"
 #include "adc.h"
 #include "uart-interrupt.h"
+
 #include <stdlib.h>
 #include <open_interface.h>
 
 #include "dataCollection.h"
+#include "moveAndScan.h"
+#include "movementCalib.h"
 
 //1318-09: Right: 284480 Left: 312000
 //1318-01: Right: 286720 Left 312640
@@ -28,7 +31,7 @@
 #define IR_RESCAN_THRESH 100
 #define OBJ_THRESH 90
 
-struct cell{
+struct Cell{
     int mapped;
     int hole;
     int occupied;
@@ -38,26 +41,105 @@ struct cell{
     //float objCoords[][]; ;
 };
 
+void generateMap(void);
 
 void sensorTests(void);
+
+void moveAndScanTests(void);
 
 void ir_scanRange(int scanVals[], int startDeg, int endDeg);
 float pingAt(int angle);
 
 int multiScanIR(int angle, int numScans);
 
-//void oI_test(void);
+oi_t* initSensors(void);
 
 void moveTest(void);
 void getData(void);
 
+void calibrateTest();
+
 int main(void) {
 
-    //sensorTests();
-    //oI_test();
-    moveTest();
-
+    //sensorTests();;
+    //moveTest();
+    //moveAndScanTests();
+    //generateMap();
+    calibrateTest();
 }
+
+void calibrateTest(){
+    oi_t *sensor_data = initSensors();
+
+    double calDistance = getBackwardAdjust(sensor_data);
+
+    timer_waitMillis(1000);
+    lcd_printf("Modifier:\n%.3f", calDistance);
+    oi_free(sensor_data); // do this once at end of main()
+}
+
+void moveAndScanTests(void){
+    oi_t *sensor_data = initSensors();
+
+
+
+    int distance = 1000;
+    int result;
+    result = move_forward_detect(sensor_data, &distance);
+
+    lcd_printf("distance left: %d\nMovement stop value: %d", distance, result);
+
+    oi_free(sensor_data); // do this once at end of main()
+}
+
+void generateMap(void){
+
+    oi_t *sensor_data = initSensors();
+
+    int cellsLong = 5;
+    int cellsWide = 3;
+
+    struct Cell cellArray[cellsLong][cellsWide];
+
+    int cellLength = 1000;
+    int cellWidth = 50;
+
+    int currLength;
+    int currWidth;
+
+    int moveResult;
+    int scanVals[181];
+
+    int i, j;
+    for(i = 0; i < cellsLong; i++){
+        currWidth = cellWidth;
+        for(j = 0; j < cellsWide; j++){
+            currLength = cellLength;
+
+
+            moveResult = forward_mm_nav(sensor_data, &currLength);
+
+            if(moveResult == 0){
+                lcd_printf("Cell is clear");
+            }
+            else{
+                lcd_printf("Stopped with error %d", moveResult);
+            }
+
+            ir_scanRange(scanVals, 0, 135);
+        }
+
+        turn_right(sensor_data, 90.0);
+        forward_mm_nav(sensor_data, &currWidth);
+        turn_right(sensor_data, 90);
+    }
+
+
+
+
+    oi_free(sensor_data); // do this once at end of main()
+}
+
 
 void getData(void){
     timer_init();
@@ -125,50 +207,6 @@ void moveTest(void){
 
     oi_free(sensor_data); // do this once at end of main()
 }
-
-/*void oI_test(void){
-    timer_init();
-    lcd_init();
-    uart_init();
-    adc_init();
-    ping_init();
-    button_init();
-    servo_init();
-
-    oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
-    oi_init(sensor_data); // do this only once at start of main()
-
-    char output[50];
-    command_byte0 = 'q';
-
-
-    lcd_printf("Press any key to start");
-    uart_get();
-
-    int leftCliff;
-    int rightCliff;
-    while(1){
-        oi_update(sensor_data);
-
-        leftCliff = sensor_data->cliffFrontLeftSignal;
-        rightCliff = sensor_data->cliffFrontRightSignal;
-
-        sprintf(output, "%d, %d\n", leftCliff, rightCliff);
-        uart_sendStr(output);
-
-        lcd_printf(output);
-        timer_waitMillis(100);
-
-
-        if(command_flag0){
-            command_flag0 = 0;
-            break;
-        }
-    }
-
-    lcd_printf("Testing concluded");
-    oi_free(sensor_data); // do this once at end of main()
-}*/
 
 void sensorTests(){
     timer_init();
@@ -259,4 +297,19 @@ int multiScanIR(int angle, int numScans){
 float pingAt(int angle){
     servo_move(angle);
     return ping_getDistance();
+}
+
+oi_t* initSensors(void){
+    timer_init();
+    lcd_init();
+    uart_init();
+    adc_init();
+    ping_init();
+    button_init();
+    servo_init();
+
+    oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
+    oi_init(sensor_data); // do this only once at start of main()
+
+    return sensor_data;
 }

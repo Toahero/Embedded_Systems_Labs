@@ -1,0 +1,18 @@
+Scan Options:
+
+1. Scan through multiple times, filter/average the data, then look for objects.
+
+2. Scan through, anytime an object may be detected, go back and scan that area.
+
+
+Object detection options:
+1. Base threshold: anytime a measurement is lower than that amount, assume an object is there.
+2. Slope: if the distance between values changes too sharply, assume an object is there.
+
+Radial Width:
+Determine angle where object starts.
+Determine angle where object ends.
+Subtract start from end.
+
+Linear width:
+

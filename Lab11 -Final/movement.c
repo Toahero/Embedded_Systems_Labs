@@ -182,29 +182,31 @@ void forward_mm_detours(oi_t *sensor_data, int distance_mm){
     }
 }
 
-int forward_mm_nav(oi_t *sensor_data, double* distance_mm){
+int forward_mm_nav(oi_t *sensor_data, int* distance_mm){
     double currDist = 0;
     oi_setWheels(MOVE_SPEED, MOVE_SPEED);
 
     while(*distance_mm > 0){
         oi_update(sensor_data);
         *distance_mm -= sensor_data -> distance * FORWARD_ADJUST;
-        lcd_printf("%.2f", *distance_mm);
+        lcd_printf("Distance: %d", *distance_mm);
 
         if(sensor_data -> bumpLeft){
+            oi_setWheels(0, 0);
             return 1;
         }
         if(sensor_data->bumpRight){
+            oi_setWheels(0, 0);
             return 2;
         }
 
-        if(sensor_data->cliffFrontLeftSignal > 2500){
+        /*if(sensor_data->cliffFrontLeftSignal > 2500){
             return 3;
         }
 
         if(sensor_data->cliffFrontRightSignal > 2500){
             return 4;
-        }
+        }*/
     }
     oi_setWheels(0, 0);
     return 0;
