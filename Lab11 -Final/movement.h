@@ -27,4 +27,8 @@ void forward_mm_detours(oi_t *sensor_data, int distance_mm);
 
 int forward_mm_nav(oi_t *sensor_data, int* distance_mm);
 
+int move_aroundObject(oi_t *sensor_data, int turnDirection, int sidewaysMove, int forwardsMove);
+
+int cutCorner(oi_t *sensor_data, int turnDirection, int sidewaysMove);
+
 #endif /* MOVEMENT_H_ */

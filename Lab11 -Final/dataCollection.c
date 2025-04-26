@@ -10,6 +10,32 @@
 #include "uart-interrupt.h"
 
 
+void collect_lineEdge(oi_t *sensor_data){
+    //lcd_init();
+    char output[100];
+    command_byte0 = ' ';
+
+    int cliffL, cliffLF, cliffRF, cliffR;
+
+    while(1){
+           if(command_flag0){
+               command_flag0 = 0;
+               break;
+           }
+
+           cliffL = sensor_data->cliffLeftSignal;
+           cliffLF = sensor_data->cliffFrontLeftSignal;
+           cliffRF = sensor_data->cliffFrontRightSignal;
+           cliffR = sensor_data->cliffRightSignal;
+
+           oi_update(sensor_data);
+           sprintf(output, "Left: %d\n FLeft: %d\n FRight: %d\n Right:%d\n", cliffL, cliffLF, cliffRF, cliffR);
+           uart_sendStr(output);
+           lcd_printf("%s", output);
+           timer_waitMillis(100);
+    }
+}
+
 void collect_cliffSignals(oi_t *sensor_data, int distance_mm){
     double currDist = 0.0;
 

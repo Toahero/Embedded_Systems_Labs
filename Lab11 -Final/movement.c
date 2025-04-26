@@ -200,14 +200,87 @@ int forward_mm_nav(oi_t *sensor_data, int* distance_mm){
             return 2;
         }
 
-        /*if(sensor_data->cliffFrontLeftSignal > 2500){
+        if(sensor_data->cliffFrontLeftSignal > 2500){
             return 3;
         }
 
         if(sensor_data->cliffFrontRightSignal > 2500){
             return 4;
-        }*/
+        }
     }
     oi_setWheels(0, 0);
+    return 0;
+}
+
+int move_aroundObject(oi_t *sensor_data, int turnDirection, int sidewaysMove, int forwardsMove){
+
+    move_backward(sensor_data, 50);
+    //Turn away from the previous travel line
+    if(turnDirection == 0){
+        turn_left(sensor_data, 90);
+    }
+    else{
+        turn_right(sensor_data, 90);
+    }
+
+    //move forwards to get around the object
+    move_forward(sensor_data, sidewaysMove);
+
+    //Turn back (should now be parallel with the original travel
+    if(turnDirection == 0){
+        turn_right(sensor_data, 90);
+    }
+    else{
+        turn_left(sensor_data, 90);
+    }
+
+    move_forward(sensor_data, forwardsMove);
+
+    //Turn back, pointing towards the original travel line
+    if(turnDirection == 0){
+        turn_right(sensor_data, 90);
+    }
+    else{
+        turn_left(sensor_data, 90);
+    }
+
+    //Move back to the line
+    move_forward(sensor_data, sidewaysMove);
+
+    //turn back onto the original route
+    if(turnDirection == 0){
+        turn_left(sensor_data, 90);
+    }
+    else{
+        turn_right(sensor_data, 90);
+    }
+
+    return 0;
+}
+
+int cutCorner(oi_t *sensor_data, int turnDirection, int sidewaysMove){
+    move_backward(sensor_data, 50);
+    //Turn away from the previous travel line
+    if(turnDirection == 0){
+        turn_left(sensor_data, 90);
+    }
+    else{
+        turn_right(sensor_data, 90);
+    }
+
+    //move forwards to get around the object
+    move_forward(sensor_data, sidewaysMove);
+
+    //Turn back (should now be parallel with the original travel
+    if(turnDirection == 0){
+        turn_right(sensor_data, 90);
+    }
+    else{
+        turn_left(sensor_data, 90);
+    }
+
+    int navDistance = 1000;
+    forward_mm_nav(sensor_data, &navDistance);
+
     return 0;
 }

@@ -15,4 +15,6 @@
 
 void collect_cliffSignals(oi_t *sensor_data, int distance_mm);
 
+void collect_lineEdge(oi_t *sensor_data);
+
 #endif /* DATACOLLECTION_H_ */
