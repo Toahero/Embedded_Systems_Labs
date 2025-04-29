@@ -24,7 +24,9 @@ void scanPerimeter(oi_t *sensor_data){
     int roombaOffset = 300;
 
     //temporary array for storing IR values;
-    //int irArray[180];
+    int irArray[180];
+    int arraySize;
+    int numObjects;
 
     //Length of the area in mm
     int expectedLength = 4270 - roombaOffset;
@@ -42,7 +44,9 @@ void scanPerimeter(oi_t *sensor_data){
     followResult = 0;
 
 
-    int intervalSize = 200;
+    int intervalSize = 500;
+
+
 
     while(followResult == 0){
         travelDist = intervalSize;
@@ -54,7 +58,12 @@ void scanPerimeter(oi_t *sensor_data){
 
         totalDist += intervalSize - travelDist;
 
-        //ir_scanRange(irArray, 0, 180);
+        arraySize = ir_scanRange(irArray, 0, 90, 2);
+        numObjects = scan_containsObject(irArray, arraySize, 200);
+        if(numObjects != 0){
+            lcd_printf("%d Objects detected", numObjects);
+            timer_waitMillis(5000);
+        }
 
         if(followResult == 2){
             if(totalDist + forwardsMove + 100> expectedLength){

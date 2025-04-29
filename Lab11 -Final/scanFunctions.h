@@ -17,13 +17,13 @@
 #include "uart-interrupt.h"
 
 
-void ir_scanRange(int scanVals[], int startDeg, int endDeg);
+int ir_scanRange(int scanVals[], int startDeg, int endDeg, int numScans);
 
 int multiScanIR(int angle, int numScans);
 
 
 float pingAt(int angle);
 
-
+int scan_containsObject(int dataArray[], int arraySize, int threshold);
 
 #endif /* SCANFUNCTIONS_H_ */

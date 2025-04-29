@@ -18,17 +18,28 @@
 #define CFR_UPPER_AVG 2800
 #define CFL_UPPER_AVG 2800
 
-volatile uint16_t cr_upper = 2759;
-volatile uint16_t cr_lower = 1239;
+/*2041-12
+ * L-  U:2811 L:2103
+ * FL- U:2863 L:2452
+ * FR- U:2841 L:2133
+ * R-  U:2866 L:2310
+ *
+ */
 
-volatile uint16_t cfr_upper = 2873;
-volatile uint16_t cfr_lower = 1948;
 
-volatile uint16_t cfl_upper = 2778;
-volatile uint16_t cfl_lower = 1327;
 
-volatile uint16_t cl_upper = 2758;
-volatile uint16_t cl_lower = 2214;
+
+volatile uint16_t cl_upper = 2811;
+volatile uint16_t cl_lower = 2103;
+
+volatile uint16_t cfl_upper = 2863;
+volatile uint16_t cfl_lower = 2452;
+
+volatile uint16_t cfr_upper = 2841;
+volatile uint16_t cfr_lower = 2133;
+
+volatile uint16_t cr_upper = 2866;
+volatile uint16_t cr_lower = 2310;
 
 #define MOVE_SPEED 100
 
@@ -88,6 +99,22 @@ int followLine(oi_t *sensor_data, int* distance_mm){
     int button;
     int cliffR, cliffFR, cliffFL;
 
+
+    float boundMod = 0.25;
+
+    //Set boundary values
+    int cr_UpperBound = cr_upper - ((cr_upper - cr_lower) * boundMod);
+    int cr_LowerBound = cr_lower + ((cr_upper -cr_lower) * boundMod);
+
+    int cfr_UpperBound = cfr_upper - ((cfr_upper - cfr_lower) * boundMod);
+    int cfr_LowerBound = cfr_lower + ((cfr_upper -cfr_lower) * boundMod);
+
+    int cfl_UpperBound = cfl_upper - ((cfl_upper - cfl_lower) * boundMod);
+    int cfl_LowerBound = cfl_lower + ((cfl_upper -cfl_lower) * boundMod);
+
+    int cl_UpperBound = cl_upper - ((cl_upper - cl_lower) * boundMod);
+    int cl_LowerBound = cl_lower + ((cl_upper -cl_lower) * boundMod);
+
     int leftSpeed, rightSpeed;
     while(1){
         button = button_getButton();
@@ -106,32 +133,35 @@ int followLine(oi_t *sensor_data, int* distance_mm){
         cliffFL = sensor_data->cliffFrontLeftSignal;
 
         if(button != 0){
+            oi_setWheels(0, 0);
             return -1;
         }
 
 
 
         if(*distance_mm < 0){
+            oi_setWheels(0, 0);
             return 0;
         }
 
-        if((cliffFR > cfr_upper - 400 && cliffFL > cfl_upper - 400)){
+        if(cliffFR > cfr_UpperBound && cliffFL > cfl_UpperBound){
             oi_setWheels(0, 0);
             return 1;
         }
         if(sensor_data->bumpLeft || sensor_data-> bumpRight){
+            oi_setWheels(0, 0);
             return 2;
         }
 
         //If sensor FR senses an edge and R does not, the cybot is likely approaching the edge at a high angle. Immediately turn away.
-        if(cliffFR > cfr_upper - 400 && !(cliffR > cr_upper - 400)){
+        if(cliffFR > cfr_UpperBound && !(cliffR > cr_UpperBound)){
             turn_left(sensor_data, 30);
         }
 
-        if(cliffR < cr_lower + 400){
+        if(cliffR < cr_LowerBound){
             adjust = 25;
         }
-        else if(cliffR > cr_upper - 400){
+        else if(cliffR > cr_UpperBound){
             adjust = -25;
         }
         else{
@@ -180,5 +210,9 @@ void calibrate_CliffValue(oi_t *sensor_data){
 void displayCliffVals(){
     lcd_printf("L- U:%d L:%d\nFL- U: %d L:%d\nFR- U:%d L:%d\nR- U:%d L:%d", cl_upper, cl_lower, cfl_upper, cfl_lower, cfr_upper, cfr_lower, cr_upper, cr_lower);
     //lcd_printf("R- U:%d L:%d", cr_upper, cr_lower);
-    timer_waitMillis(50);
+    timer_waitMillis(1000);
+    int button = 0;
+    while(button == 0){
+        button = button_getButton();
+    }
 }
