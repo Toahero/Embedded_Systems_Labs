@@ -36,16 +36,6 @@
 
 
 
-struct Cell{
-    int mapped;
-    int hole;
-    int occupied;
-
-    int objects[];
-
-    //float objCoords[][]; ;
-};
-
 void generateMap(void);
 
 void sensorTests(void);
@@ -65,13 +55,26 @@ void lineFollowTest();
 
 int main(void) {
 
-    sensorTests();
+    //sensorTests();
     //moveTest();
     //moveAndScanTests();
     //calibrateTest();
 
-    //generateMap();
+    generateMap();
     //lineFollowTest();
+
+    //getData();
+}
+
+void moveTest(void){
+    oi_t *sensor_data = initSensors();
+
+    double moveDist = 2000.0;
+
+    lcd_printf("Move forward %.2f", moveDist);
+    move_forward(sensor_data, moveDist);
+
+    oi_free(sensor_data);
 }
 
 void calibrateTest(){
@@ -166,7 +169,7 @@ void generateMap(void){
 void getData(void){
     oi_t *sensor_data = initSensors();
 
-    collect_cliffSignals(sensor_data, 500);
+    collect_lineEdge(sensor_data);
 
     oi_free(sensor_data); // do this once at end of main()
 }

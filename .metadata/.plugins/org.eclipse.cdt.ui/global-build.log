@@ -38893,3 +38893,1832 @@ Finished building target: "Lab11 -Final.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+"../line_following.c", line 62: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 49: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 49: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 178: warning #994-D: missing return statement at end of non-void function "followLine"
+Finished building: "../line_following.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 138: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+"../line_following.c", line 68: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 55: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 55: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 184: warning #994-D: missing return statement at end of non-void function "followLine"
+Finished building: "../line_following.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 140: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 140: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 140: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+"../line_following.c", line 68: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 55: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 55: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 189: warning #994-D: missing return statement at end of non-void function "followLine"
+Finished building: "../line_following.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+"../line_following.c", line 68: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 55: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 55: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 191: warning #994-D: missing return statement at end of non-void function "followLine"
+Finished building: "../line_following.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+"../line_following.c", line 68: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 55: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 55: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 191: warning #994-D: missing return statement at end of non-void function "followLine"
+Finished building: "../line_following.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+"../line_following.c", line 68: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 55: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 55: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 191: warning #994-D: missing return statement at end of non-void function "followLine"
+Finished building: "../line_following.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../movement.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'movement.obj' failed
+"../movement.c", line 29: error #20: identifier "RIGHT_MOTOR_AJD" is undefined
+"../movement.c", line 189: warning #179-D: variable "currDist" was declared but never referenced
+1 error detected in the compilation of "../movement.c".
+gmake: *** [movement.obj] Error 1
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 146: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../movement.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+"../movement.c", line 189: warning #179-D: variable "currDist" was declared but never referenced
+Finished building: "../movement.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 151: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 151: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 151: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../movement.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+"../movement.c", line 189: warning #179-D: variable "currDist" was declared but never referenced
+Finished building: "../movement.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../movement.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+"../movement.c", line 189: warning #179-D: variable "currDist" was declared but never referenced
+Finished building: "../movement.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../movement.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+"../movement.c", line 189: warning #179-D: variable "currDist" was declared but never referenced
+Finished building: "../movement.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../movement.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+"../movement.c", line 189: warning #179-D: variable "currDist" was declared but never referenced
+Finished building: "../movement.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../movement.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+"../movement.c", line 189: warning #179-D: variable "currDist" was declared but never referenced
+Finished building: "../movement.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../movement.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="movement.d_raw"  "../movement.c"
+"../movement.c", line 189: warning #179-D: variable "currDist" was declared but never referenced
+Finished building: "../movement.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 151: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'scanFunctions.obj' failed
+"../scanFunctions.c", line 79: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 82: warning #176-D: expression has no effect
+"../scanFunctions.c", line 84: warning #994-D: missing return statement at end of non-void function "getObjects"
+"../scanFunctions.c", line 102: warning #176-D: expression has no effect
+"../scanFunctions.c", line 102: error #66: expected a ";"
+"../scanFunctions.c", line 116: error #20: identifier "bufferAvg" is undefined
+"../scanFunctions.c", line 121: error #20: identifier "currentObj" is undefined
+"../scanFunctions.c", line 129: warning #994-D: missing return statement at end of non-void function "getObjectEdges"
+"../scanFunctions.c", line 89: warning #552-D: variable "buffAvg" was set but never used
+3 errors detected in the compilation of "../scanFunctions.c".
+gmake: *** [scanFunctions.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'scanFunctions.obj' failed
+"../scanFunctions.c", line 79: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 82: warning #176-D: expression has no effect
+"../scanFunctions.c", line 84: warning #994-D: missing return statement at end of non-void function "getObjects"
+"../scanFunctions.c", line 116: error #20: identifier "bufferAvg" is undefined
+"../scanFunctions.c", line 121: error #20: identifier "currentObj" is undefined
+"../scanFunctions.c", line 129: warning #994-D: missing return statement at end of non-void function "getObjectEdges"
+"../scanFunctions.c", line 89: warning #552-D: variable "buffAvg" was set but never used
+2 errors detected in the compilation of "../scanFunctions.c".
+gmake: *** [scanFunctions.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'scanFunctions.obj' failed
+"../scanFunctions.c", line 79: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 82: warning #176-D: expression has no effect
+"../scanFunctions.c", line 84: warning #994-D: missing return statement at end of non-void function "getObjects"
+"../scanFunctions.c", line 121: error #20: identifier "currentObj" is undefined
+"../scanFunctions.c", line 129: warning #994-D: missing return statement at end of non-void function "getObjectEdges"
+1 error detected in the compilation of "../scanFunctions.c".
+gmake: *** [scanFunctions.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+"../scanFunctions.c", line 79: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 82: warning #176-D: expression has no effect
+"../scanFunctions.c", line 84: warning #994-D: missing return statement at end of non-void function "getObjects"
+Finished building: "../scanFunctions.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'scanFunctions.obj' failed
+"../scanFunctions.c", line 79: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 84: error #169: argument of type "struct obstacle" is incompatible with parameter of type "int"
+"../scanFunctions.c", line 86: warning #994-D: missing return statement at end of non-void function "getObjects"
+1 error detected in the compilation of "../scanFunctions.c".
+gmake: *** [scanFunctions.obj] Error 1
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"..\scanFunctions.h", line 24: warning #233-D: declaration is not visible outside of function
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 24: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"..\scanFunctions.h", line 24: warning #233-D: declaration is not visible outside of function
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 24: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'scanFunctions.obj' failed
+"../scanFunctions.c", line 79: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 84: error #169: argument of type "struct obstacle" is incompatible with parameter of type "int"
+"../scanFunctions.c", line 86: warning #994-D: missing return statement at end of non-void function "getObjects"
+1 error detected in the compilation of "../scanFunctions.c".
+gmake: *** [scanFunctions.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"..\scanFunctions.h", line 24: warning #233-D: declaration is not visible outside of function
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 24: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+"../scanFunctions.c", line 79: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 86: warning #994-D: missing return statement at end of non-void function "getObjects"
+Finished building: "../scanFunctions.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"..\scanFunctions.h", line 24: warning #233-D: declaration is not visible outside of function
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 24: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+"../scanFunctions.c", line 79: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 86: warning #994-D: missing return statement at end of non-void function "locateObjects"
+Finished building: "../scanFunctions.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"..\scanFunctions.h", line 26: warning #377-D: declaration requires a typedef name
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 26: warning #377-D: declaration requires a typedef name
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'scanFunctions.obj' failed
+"../scanFunctions.c", line 22: warning #78-D: this declaration has no storage class or type specifier
+"../scanFunctions.c", line 22: error #66: expected a ";"
+"../scanFunctions.c", line 29: warning #12-D: parsing restarts here after previous syntax error
+"../scanFunctions.c", line 75: warning #233-D: declaration is not visible outside of function
+"../scanFunctions.c", line 79: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 82: error #906: expression must be a pointer to a complete object type
+"../scanFunctions.c", line 83: error #906: expression must be a pointer to a complete object type
+"../scanFunctions.c", line 83: error #906: expression must be a pointer to a complete object type
+"../scanFunctions.c", line 84: error #906: expression must be a pointer to a complete object type
+"../scanFunctions.c", line 84: error #906: expression must be a pointer to a complete object type
+"../scanFunctions.c", line 86: warning #994-D: missing return statement at end of non-void function "locateObjects"
+6 errors detected in the compilation of "../scanFunctions.c".
+gmake: *** [scanFunctions.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'scanFunctions.obj' failed
+"../scanFunctions.c", line 22: warning #78-D: this declaration has no storage class or type specifier
+"../scanFunctions.c", line 22: error #66: expected a ";"
+"../scanFunctions.c", line 29: warning #12-D: parsing restarts here after previous syntax error
+"../scanFunctions.c", line 75: error #20: identifier "obstacle" is undefined
+"../scanFunctions.c", line 79: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 86: warning #994-D: missing return statement at end of non-void function "locateObjects"
+2 errors detected in the compilation of "../scanFunctions.c".
+gmake: *** [scanFunctions.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'scanFunctions.obj' failed
+"../scanFunctions.c", line 24: warning #78-D: this declaration has no storage class or type specifier
+"../scanFunctions.c", line 24: error #66: expected a ";"
+"../scanFunctions.c", line 31: warning #12-D: parsing restarts here after previous syntax error
+"../scanFunctions.c", line 77: error #20: identifier "obstacle" is undefined
+"../scanFunctions.c", line 81: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 88: warning #994-D: missing return statement at end of non-void function "locateObjects"
+2 errors detected in the compilation of "../scanFunctions.c".
+gmake: *** [scanFunctions.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'scanFunctions.obj' failed
+"../scanFunctions.c", line 75: error #20: identifier "obstacle" is undefined
+"../scanFunctions.c", line 79: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 86: warning #994-D: missing return statement at end of non-void function "locateObjects"
+1 error detected in the compilation of "../scanFunctions.c".
+gmake: *** [scanFunctions.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'scanFunctions.obj' failed
+"../scanFunctions.c", line 75: error #20: identifier "obstacle" is undefined
+"../scanFunctions.c", line 79: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 86: warning #994-D: missing return statement at end of non-void function "locateObjects"
+1 error detected in the compilation of "../scanFunctions.c".
+gmake: *** [scanFunctions.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+"../scanFunctions.c", line 79: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 86: warning #994-D: missing return statement at end of non-void function "locateObjects"
+Finished building: "../scanFunctions.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 39: error #131: expected a "{"
+"../main.c", line 56: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 63: warning #225-D: function "generateMap" declared implicitly
+"../main.c", line 67: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../main.c", line 70: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 70: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 81: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 81: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 91: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 91: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 105: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 105: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 123: warning #161-D: declaration is incompatible with previous "generateMap" (declared at line 63)
+"../main.c", line 125: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 125: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+"../main.c", line 170: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 170: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 178: warning #225-D: function "initSensors" declared implicitly
+"../main.c", line 178: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "oi_t *"
+"../main.c", line 195: warning #161-D: declaration is incompatible with previous "initSensors" (declared at line 70)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"../mapScanning.c", line 19: error #131: expected a "{"
+"../mapScanning.c", line 58: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 63: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 82: warning #118-D: non-void function "getLinWidth" should return a value
+"../mapScanning.c", line 124: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 141: warning #994-D: missing return statement at end of non-void function "getLinWidth"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'scanFunctions.obj' failed
+"../scanFunctions.c", line 75: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 79: error #20: identifier "obsArray" is undefined
+"../scanFunctions.c", line 82: warning #225-D: function "getLinWidth" declared implicitly
+"../scanFunctions.c", line 85: warning #994-D: missing return statement at end of non-void function "locateObjects"
+"../scanFunctions.c", line 72: warning #552-D: variable "midAngle" was set but never used
+"../scanFunctions.c", line 187: warning #161-D: declaration is incompatible with previous "getLinWidth" (declared at line 82)
+"../scanFunctions.c", line 195: error #20: identifier "degWidth" is undefined
+"../scanFunctions.c", line 201: error #20: identifier "degWidth" is undefined
+3 errors detected in the compilation of "../scanFunctions.c".
+gmake: *** [scanFunctions.obj] Error 1
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'scanFunctions.obj' failed
+"../scanFunctions.c", line 75: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 79: error #20: identifier "obsArray" is undefined
+"../scanFunctions.c", line 82: warning #225-D: function "getLinWidth" declared implicitly
+"../scanFunctions.c", line 85: warning #994-D: missing return statement at end of non-void function "locateObjects"
+"../scanFunctions.c", line 72: warning #552-D: variable "midAngle" was set but never used
+"../scanFunctions.c", line 187: warning #161-D: declaration is incompatible with previous "getLinWidth" (declared at line 82)
+"../scanFunctions.c", line 195: error #20: identifier "degWidth" is undefined
+"../scanFunctions.c", line 201: error #20: identifier "degWidth" is undefined
+3 errors detected in the compilation of "../scanFunctions.c".
+gmake: *** [scanFunctions.obj] Error 1
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 29: warning #552-D: variable "numObjects" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'scanFunctions.obj' failed
+"../scanFunctions.c", line 75: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 82: warning #225-D: function "getLinWidth" declared implicitly
+"../scanFunctions.c", line 85: warning #994-D: missing return statement at end of non-void function "locateObjects"
+"../scanFunctions.c", line 187: warning #161-D: declaration is incompatible with previous "getLinWidth" (declared at line 82)
+"../scanFunctions.c", line 195: error #20: identifier "degWidth" is undefined
+"../scanFunctions.c", line 201: error #20: identifier "degWidth" is undefined
+2 errors detected in the compilation of "../scanFunctions.c".
+gmake: *** [scanFunctions.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+"../scanFunctions.c", line 75: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 82: warning #225-D: function "getLinWidth" declared implicitly
+"../scanFunctions.c", line 85: warning #994-D: missing return statement at end of non-void function "locateObjects"
+"../scanFunctions.c", line 187: warning #161-D: declaration is incompatible with previous "getLinWidth" (declared at line 82)
+Finished building: "../scanFunctions.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 141: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"../mapScanning.c", line 22: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 22: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 33: warning #179-D: variable "expectedWidth" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../scanFunctions.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="scanFunctions.d_raw"  "../scanFunctions.c"
+"../scanFunctions.c", line 75: warning #225-D: function "getObjectEdges" declared implicitly
+"../scanFunctions.c", line 82: warning #225-D: function "getLinWidth" declared implicitly
+"../scanFunctions.c", line 188: warning #161-D: declaration is incompatible with previous "getLinWidth" (declared at line 82)
+Finished building: "../scanFunctions.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./moveAndScan.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****

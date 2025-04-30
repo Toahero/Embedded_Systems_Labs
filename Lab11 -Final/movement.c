@@ -16,6 +16,9 @@
 #define RIGHT_ADJUST 0.90
 #define LEFT_ADJUST 0.90
 
+#define LEFT_MOTOR_ADJ 1.0
+#define RIGHT_MOTOR_ADJ 0.97
+
 
 
 double move_forward(oi_t *sensor_data, double distance_mm){
@@ -23,7 +26,7 @@ double move_forward(oi_t *sensor_data, double distance_mm){
     double currDist = 0.0;
 
     //lcd_init();
-    oi_setWheels(MOVE_SPEED, MOVE_SPEED);
+    oi_setWheels(MOVE_SPEED * LEFT_MOTOR_ADJ, MOVE_SPEED * RIGHT_MOTOR_ADJ);
 
     //Move until distance reaches assigned distance
     while (currDist < distance_mm * FORWARD_ADJUST){

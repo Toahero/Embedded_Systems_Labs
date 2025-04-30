@@ -17,7 +17,7 @@
 #define IR_RESCAN_THRESH 100
 #define IR_OBJ_THRESH 90
 #define SCAN_BUFFER_SIZE 5
-
+#define MINIMUM_OBJ_SIZE 5
 
 
 float pingAt(int angle){
@@ -64,6 +64,73 @@ int multiScanIR(int angle, int numScans){
 
 }
 
+int locateObjects(int startAng, int endAng, int horizOff[], int vertOff[], float objWidths[], int maxObj){
+    int startDegs[maxObj];
+    int endDegs[maxObj];
+
+    int degWidth;
+    int midAngle;
+    float dist;
+
+    int numObjects = getObjectEdges(startAng, endAng, startDegs, endDegs, maxObj);
+    int i;
+    for(i = 0; i < numObjects; i++){
+        degWidth = endDegs[i] - startDegs[i];
+        midAngle = startDegs[i] + (degWidth / 2);
+        dist = pingAt(midAngle);
+
+        objWidths[i] = getLinWidth(degWidth, dist);
+
+    }
+    return numObjects;
+}
+
+int getObjectEdges(int startDeg, int endDeg, int startAngles[], int endAngles[], int maxObj){
+    int scanBuffer[SCAN_BUFFER_SIZE];
+    int buffSum;
+    int buffAvg;
+    int currObj;
+
+    int i, j;
+    int numObjects = 0;
+    int numScans = 3;
+    int threshold = 90;
+    int currIR;
+
+    for(i = 0; i < SCAN_BUFFER_SIZE; i++){
+        scanBuffer[i] = multiScanIR(startDeg, numScans);
+    }
+
+    for(i = startDeg; i < endDeg; i++){
+
+        if(numObjects == maxObj){
+            return numObjects;
+        }
+
+        buffSum = 0;
+        for(j = 0; j < SCAN_BUFFER_SIZE; j++){
+            buffSum += scanBuffer[j];
+        }
+        buffAvg = buffSum / SCAN_BUFFER_SIZE;
+
+        currIR = multiScanIR(i, numScans);
+
+        if(currIR > buffAvg + threshold && !currObj){
+            currObj = 1;
+            startAngles[numObjects] = i;
+        }
+
+        if(currIR < buffAvg - threshold && currObj){
+            currObj = 0;
+            if(i - startAngles[numObjects] > MINIMUM_OBJ_SIZE){
+                endAngles[i] = currIR;
+                numObjects++;
+            }
+        }
+    }
+    return numObjects;
+}
+
 int ir_scanRange(int scanVals[], int startDeg, int endDeg, int numScans){
     int i;
     int j = 0;
@@ -103,7 +170,7 @@ int scan_containsObject(int dataArray[], int arraySize, int threshold){
         }
         if(dataArray[i] < bufferAvg - threshold && currentObj){
             currentObj = 0;
-            if(i - startAng > 5){
+            if(i - startAng > MINIMUM_OBJ_SIZE){
                 numObjects++;
             }
 
@@ -116,4 +183,23 @@ int scan_containsObject(int dataArray[], int arraySize, int threshold){
         return numObjects + 1;
     }
     return numObjects;
+}
+
+float getLinWidth(int degWidth, float dist){
+
+    float radAng = degWidth * (3.14 / 180);
+    float linWidth = 2* dist * tan(radAng / 2);
+    return linWidth;
+}
+
+float getHorizontalOffset(int angle, float dist){
+    float radAng = angle * (3.14 / 180);
+    float offset = cos(radAng) * dist;
+    return offset;
+}
+
+float getVerticalOffset(int angle, float dist){
+    float radAng = angle * (3.14 / 180);
+    float linWidth = 2* dist * tan(radAng / 2);
+    return linWidth;
 }

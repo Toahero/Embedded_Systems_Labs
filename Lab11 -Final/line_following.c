@@ -18,28 +18,34 @@
 #define CFR_UPPER_AVG 2800
 #define CFL_UPPER_AVG 2800
 
+/*2041-09
+ * L-  U:2816 L:2197
+ * FL- U:2758 L:1460
+ * FR- U:2752 L:1543
+ * R-  U:2761 L:1766
+ */
+
 /*2041-12
  * L-  U:2811 L:2103
- * FL- U:2863 L:2452
+ * FL- U:2863 L:1460
  * FR- U:2841 L:2133
  * R-  U:2866 L:2310
- *
  */
 
 
 
 
-volatile uint16_t cl_upper = 2811;
-volatile uint16_t cl_lower = 2103;
+volatile uint16_t cl_upper = 2816;
+volatile uint16_t cl_lower = 2197;
 
-volatile uint16_t cfl_upper = 2863;
+volatile uint16_t cfl_upper = 2758;
 volatile uint16_t cfl_lower = 2452;
 
-volatile uint16_t cfr_upper = 2841;
-volatile uint16_t cfr_lower = 2133;
+volatile uint16_t cfr_upper = 2752;
+volatile uint16_t cfr_lower = 1543;
 
-volatile uint16_t cr_upper = 2866;
-volatile uint16_t cr_lower = 2310;
+volatile uint16_t cr_upper = 2761;
+volatile uint16_t cr_lower = 1766;
 
 #define MOVE_SPEED 100
 
@@ -108,9 +114,11 @@ int followLine(oi_t *sensor_data, int* distance_mm){
 
     int cfr_UpperBound = cfr_upper - ((cfr_upper - cfr_lower) * boundMod);
     int cfr_LowerBound = cfr_lower + ((cfr_upper -cfr_lower) * boundMod);
+    int cfr_cliffBound = cfr_lower * 0.5;
 
     int cfl_UpperBound = cfl_upper - ((cfl_upper - cfl_lower) * boundMod);
     int cfl_LowerBound = cfl_lower + ((cfl_upper -cfl_lower) * boundMod);
+    int cfl_cliffBound = cfl_lower * 0.5;
 
     int cl_UpperBound = cl_upper - ((cl_upper - cl_lower) * boundMod);
     int cl_LowerBound = cl_lower + ((cl_upper -cl_lower) * boundMod);
@@ -153,6 +161,11 @@ int followLine(oi_t *sensor_data, int* distance_mm){
             return 2;
         }
 
+        if(cliffFR < cfr_cliffBound || cliffFL < cfl_cliffBound){
+            oi_setWheels(0, 0);
+            return 3;
+        }
+
         //If sensor FR senses an edge and R does not, the cybot is likely approaching the edge at a high angle. Immediately turn away.
         if(cliffFR > cfr_UpperBound && !(cliffR > cr_UpperBound)){
             turn_left(sensor_data, 30);
@@ -172,8 +185,8 @@ int followLine(oi_t *sensor_data, int* distance_mm){
         rightSpeed = MOVE_SPEED + adjust;
 
         oi_setWheels(leftSpeed, rightSpeed);
-        lcd_printf("L: %d  R: %d \nA: %d", leftSpeed, rightSpeed, adjust);
-        timer_waitMillis(50);
+        //lcd_printf("L: %d  R: %d \nA: %d", leftSpeed, rightSpeed, adjust);
+        //timer_waitMillis(50);
     }
 }
 
