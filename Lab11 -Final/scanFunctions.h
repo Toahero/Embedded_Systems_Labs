@@ -16,23 +16,33 @@
 #include "adc.h"
 #include "uart-interrupt.h"
 
+#include <math.h>
+
+struct obstacle{
+    int horiOffsetMM;
+    int vertOffsetMM;
+
+    int sizeMM;
+};
+
+double getObjectSize(int degWidth, double distance);
 
 int ir_scanRange(int scanVals[], int startDeg, int endDeg, int numScans);
 
 int multiScanIR(int angle, int numScans);
 
-int locateObjects(int startAng, int endAng, float horizOff[], float vertOff[], float objWidths[], int maxObj);
+int sweepNextObs(struct obstacle* currObs, int* currAng, int endAng);
 
-int getObjectEdges(int startDeg, int endDeg, int startAngles[], int endAngles[], int maxObj);
+int sweepEdges(struct obsEdges* currObs, int* angle, int endAng);
 
 float pingAt(int angle);
 
 int scan_containsObject(int dataArray[], int arraySize, int threshold);
 
-static float getLinWidth(int degWidth, float dist);
+double getLinWidth(int degWidth, double obsDist);
 
-float getHorizontalOffset(int angle, float dist);
+double getHorizontalOffset(int angle, double dist);
 
-float getVerticalOffset(int angle, float dist);
+double getVerticalOffset(int angle, double dist);
 
 #endif /* SCANFUNCTIONS_H_ */

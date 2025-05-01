@@ -18,7 +18,7 @@
 #include <open_interface.h>
 
 #include "dataCollection.h"
-#include "moveAndScan.h"
+
 #include "movementCalib.h"
 //#include "movement.h"
 
@@ -28,19 +28,18 @@
 
 //1318-02: Right: 312320 Left: 286400
 //1318-09: Right: 284480 Left: 312000
+//1318-10: Right: 311040 Left: 283200
 //1318-01: Right: 286720 Left 312640
 //2041-12: Right: 312320 Left: 275760
-#define RIGHT_CALIB 312320
-#define LEFT_CALIB 286400
+#define RIGHT_CALIB 311040
+#define LEFT_CALIB 283200
 
 
-
+void scanTests(void);
 
 void generateMap(void);
 
 void sensorTests(void);
-
-void moveAndScanTests(void);
 
 
 
@@ -57,10 +56,10 @@ int main(void) {
 
     //sensorTests();
     //moveTest();
-    //moveAndScanTests();
     //calibrateTest();
 
-    generateMap();
+    //generateMap();
+    scanTests();
     //lineFollowTest();
 
     //getData();
@@ -87,19 +86,15 @@ void calibrateTest(){
     oi_free(sensor_data); // do this once at end of main()
 }
 
-void moveAndScanTests(void){
+void scanTests(){
     oi_t *sensor_data = initSensors();
 
+    //servo_calibrate();
+    testSweep();
 
-
-    int distance = 1000;
-    int result;
-    result = move_forward_detect(sensor_data, &distance);
-
-    lcd_printf("distance left: %d\nMovement stop value: %d", distance, result);
-
-    oi_free(sensor_data); // do this once at end of main()
+    oi_free(sensor_data);
 }
+
 
 void lineFollowTest(){
     oi_t *sensor_data = initSensors();
@@ -159,9 +154,6 @@ void generateMap(void){
 
     }
 
-
-
-
     oi_free(sensor_data); // do this once at end of main()
 }
 
@@ -169,8 +161,9 @@ void generateMap(void){
 void getData(void){
     oi_t *sensor_data = initSensors();
 
-    collect_lineEdge(sensor_data);
+    //collect_lineEdge(sensor_data);
 
+    collectIR();
     oi_free(sensor_data); // do this once at end of main()
 }
 

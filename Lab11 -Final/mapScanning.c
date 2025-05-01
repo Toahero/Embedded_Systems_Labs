@@ -16,6 +16,20 @@
 #include "line_following.h"
 #include "scanFunctions.h"
 
+struct fieldObs{
+    //0 for hole, 1 for low obstacle, 2 for high
+    int itemType;
+    int xCoord;
+    int yCoord;
+    int sizeMM;
+};
+
+struct robotCoords{
+    int xCoord;
+    int yCoord;
+    int direction;
+};
+
 void scanPerimeter(oi_t *sensor_data){
     int totalDist;
     int numSides = 0;
@@ -92,11 +106,11 @@ void scanPerimeter(oi_t *sensor_data){
             numObjects = scan_containsObject(irArray, arraySize, 90);
 
             if(numObjects){
-                numObjects = locateObjects(45, 135, objectSizes, horizOffsets, vertOffsets, maxObjects);
+                /*numObjects = locateObjects(45, 135, objectSizes, horizOffsets, vertOffsets, maxObjects);
                 for(i = 0; i < numObjects; i++){
                     lcd_printf("X Offset:%.2f\nY Offset:%.2f\nWidth:%.2f", horizOffsets[i], vertOffsets[i], objectSizes[i]);
                     timer_waitMillis(500);
-                }
+                }*/
             }
 
             break;
@@ -153,4 +167,83 @@ void scanPerimeter(oi_t *sensor_data){
     numSides++;
 
     lcd_printf("Total Distance: %d", totalDist);
+}
+
+int sweepRange(int startAng, int endAng, struct robotCoords* botPosition, struct fieldObs* obsLoc, int maxToAdd){
+    int currentAngle = startAng;
+    int obsCount = 0;
+    struct obstacle obsArray[maxToAdd];
+    char output[100];
+
+    uart_sendStr("Starting Scan\n");
+
+    while(currentAngle < endAng && obsCount < maxToAdd){
+        obsCount += sweepNextObs(&obsArray[obsCount], &currentAngle, endAng);
+    }
+
+    int i;
+    for(i = 0; i < 1/*obsCount*/; i++){
+        obsLoc->itemType = 3;
+        obsLoc->sizeMM = obsArray[i].sizeMM;
+
+        switch(botPosition->direction){
+        case 3:
+
+            //The robot is facing west
+            obsLoc->xCoord = botPosition->xCoord - obsArray[i].vertOffsetMM;
+            obsLoc->yCoord = botPosition->yCoord - obsArray[i].horiOffsetMM;
+            break;
+        case 2:
+            //The robot is facing south
+            obsLoc->xCoord = botPosition->xCoord - obsArray[i].horiOffsetMM;
+            obsLoc->yCoord = botPosition->yCoord - obsArray[i].vertOffsetMM;
+            break;
+
+        case 1:
+            //The robot is facing east
+            obsLoc->xCoord = botPosition->xCoord + obsArray[i].vertOffsetMM;
+            obsLoc->yCoord = botPosition->yCoord + obsArray[i].horiOffsetMM;
+            break;
+
+        default:
+            //The robot is facing north
+            obsLoc->xCoord = botPosition->xCoord + obsArray[i].horiOffsetMM;
+            obsLoc->yCoord = botPosition->yCoord + obsArray[i].vertOffsetMM;
+        }
+    }
+
+
+    sprintf("Preconversion Data: %d new objects found\n", obsCount);
+    uart_sendStr(output);
+    lcd_printf("%s", output);
+
+    for(i = 0; i < 1; i++){
+        sprintf(output, "Object %d: x: %d   y: %d  size:%d\n", i, obsArray[i].horiOffsetMM, obsArray[i].vertOffsetMM, obsArray[i].sizeMM);
+        uart_sendStr(output);
+        lcd_printf("%s", output);
+    }
+}
+
+void testSweep(void){
+    struct robotCoords testCoords;
+    testCoords.xCoord = 100;
+    testCoords.yCoord = 100;
+    testCoords.direction = 3;
+
+    int maxObjects = 20;
+
+    struct fieldObs obsArray[maxObjects];
+
+    sweepRange(0, 180, &testCoords, &obsArray[0], maxObjects);
+
+    uart_sendStr("Postconversion data: True coordinates\n");
+    printObsData(&obsArray[0]);
+
+
+}
+
+void printObsData(struct fieldObs* obstacle){
+    char output[100];
+    sprintf(output,  "Item #: %d, Coords: (%d,%d), Size: %d\n", obstacle->itemType, obstacle->xCoord, obstacle->yCoord, obstacle->sizeMM);
+    uart_sendStr(output);
 }

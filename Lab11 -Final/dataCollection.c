@@ -8,7 +8,21 @@
 #include <lcd.h>
 #include "Timer.h"
 #include "uart-interrupt.h"
+#include "scanFunctions.h"
 
+
+void collectIR(void){
+    int i;
+    int irVal;
+    char output[100];
+
+    for(i = 0; i < 180; i++){
+        irVal = multiScanIR(i, 3);
+        sprintf(output, "%d, %d\n", i, irVal);
+        uart_sendStr(output);
+        lcd_printf("%s", output);
+    }
+}
 
 void collect_lineEdge(oi_t *sensor_data){
     //lcd_init();

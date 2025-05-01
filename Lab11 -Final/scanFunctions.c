@@ -12,6 +12,7 @@
 #include "adc.h"
 #include "uart-interrupt.h"
 
+#include <math.h>
 
 #define IR_MINIMUM 300
 #define IR_RESCAN_THRESH 100
@@ -19,6 +20,21 @@
 #define SCAN_BUFFER_SIZE 5
 #define MINIMUM_OBJ_SIZE 5
 
+double getObjectSize(int degWidth, double distance);
+double getHorizontalOffset(int angle, double dist);
+double getVerticalOffset(int angle, double dist);
+
+struct obstacle{
+    int horiOffsetMM;
+    int vertOffsetMM;
+
+    int sizeMM;
+};
+
+struct obsEdges{
+    int startDeg;
+    int endDeg;
+};
 
 float pingAt(int angle){
     servo_move(angle);
@@ -64,48 +80,53 @@ int multiScanIR(int angle, int numScans){
 
 }
 
-int locateObjects(int startAng, int endAng, int horizOff[], int vertOff[], float objWidths[], int maxObj){
-    int startDegs[maxObj];
-    int endDegs[maxObj];
 
-    int degWidth;
-    int midAngle;
-    float dist;
+int sweepNextObs(struct obstacle* currObs, int* currAng, int endAng){
+    struct obsEdges currentData;
 
-    int numObjects = getObjectEdges(startAng, endAng, startDegs, endDegs, maxObj);
-    int i;
-    for(i = 0; i < numObjects; i++){
-        degWidth = endDegs[i] - startDegs[i];
-        midAngle = startDegs[i] + (degWidth / 2);
-        dist = pingAt(midAngle);
+    int result;
+    int angle = *currAng;
+    result = sweepEdges(&currentData, currAng, endAng);
 
-        objWidths[i] = getLinWidth(degWidth, dist);
+    //*currAng = angle;
 
+    if(result == 0){
+        return 0;
     }
-    return numObjects;
+
+    int degWidth = currentData.endDeg - currentData.startDeg;
+    int midDeg = currentData.startDeg + (degWidth/2);
+    float midDist = pingAt(midDeg);
+
+    //float test = getObjectSize(90, 60.9);
+
+    double objectSize;
+    objectSize = getObjectSize(degWidth, midDist);
+    currObs->sizeMM = objectSize * 10;
+    //currObs->sizeMM = 10 * getObjectSize(degWidth, midDist);
+    double hOffset = getHorizontalOffset(midDeg, midDist);
+
+    currObs->horiOffsetMM = 10 * hOffset;
+    currObs->vertOffsetMM = 10 * getVerticalOffset(midDeg, midDist);
+    return 1;
 }
 
-int getObjectEdges(int startDeg, int endDeg, int startAngles[], int endAngles[], int maxObj){
+int sweepEdges(struct obsEdges* currObs, int* angle, int endAng){
     int scanBuffer[SCAN_BUFFER_SIZE];
     int buffSum;
     int buffAvg;
-    int currObj;
+    int foundObs = 0;
 
     int i, j;
-    int numObjects = 0;
     int numScans = 3;
     int threshold = 90;
     int currIR;
 
     for(i = 0; i < SCAN_BUFFER_SIZE; i++){
-        scanBuffer[i] = multiScanIR(startDeg, numScans);
+        scanBuffer[i] = multiScanIR(*angle, numScans);
     }
 
-    for(i = startDeg; i < endDeg; i++){
-
-        if(numObjects == maxObj){
-            return numObjects;
-        }
+    while(*angle < endAng){
 
         buffSum = 0;
         for(j = 0; j < SCAN_BUFFER_SIZE; j++){
@@ -113,22 +134,24 @@ int getObjectEdges(int startDeg, int endDeg, int startAngles[], int endAngles[],
         }
         buffAvg = buffSum / SCAN_BUFFER_SIZE;
 
-        currIR = multiScanIR(i, numScans);
+        currIR = multiScanIR(*angle, numScans);
 
-        if(currIR > buffAvg + threshold && !currObj){
-            currObj = 1;
-            startAngles[numObjects] = i;
+        if(currIR > buffAvg + threshold && !foundObs){
+            foundObs = 1;
+            currObs->startDeg = *angle;
         }
 
-        if(currIR < buffAvg - threshold && currObj){
-            currObj = 0;
-            if(i - startAngles[numObjects] > MINIMUM_OBJ_SIZE){
-                endAngles[i] = currIR;
-                numObjects++;
+        if(currIR < buffAvg - threshold && foundObs){
+            foundObs = 0;
+            if(*angle - currObs->startDeg > MINIMUM_OBJ_SIZE){
+                currObs->endDeg = *angle;
+                return 1;
             }
         }
+
+        *angle = *angle + 1;
     }
-    return numObjects;
+    return 0;
 }
 
 int ir_scanRange(int scanVals[], int startDeg, int endDeg, int numScans){
@@ -185,21 +208,27 @@ int scan_containsObject(int dataArray[], int arraySize, int threshold){
     return numObjects;
 }
 
-float getLinWidth(int degWidth, float dist){
+float getLinWidth(int degWidth, float obsDist){
 
-    float radAng = degWidth * (3.14 / 180);
-    float linWidth = 2* dist * tan(radAng / 2);
+    float radWidth = degWidth * (3.14 / 180.0);
+    float linWidth = 2.0 * obsDist * tan(radWidth / 2);
     return linWidth;
 }
 
-float getHorizontalOffset(int angle, float dist){
-    float radAng = angle * (3.14 / 180);
-    float offset = cos(radAng) * dist;
+double getObjectSize(int degWidth, double distance){
+    double radWidth = degWidth * (3.14 / 180.0);
+    double linWidth = 2.0 * distance * tan(radWidth / 2);
+    return linWidth;
+}
+
+double getHorizontalOffset(int angle, double dist){
+    double radAng = angle * (3.14 / 180);
+    double offset = cos(radAng) * dist;
     return offset;
 }
 
-float getVerticalOffset(int angle, float dist){
-    float radAng = angle * (3.14 / 180);
-    float linWidth = 2* dist * tan(radAng / 2);
+double getVerticalOffset(int angle, double dist){
+    double radAng = angle * (3.14 / 180);
+    double linWidth = 2* dist * tan(radAng / 2);
     return linWidth;
 }

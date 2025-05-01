@@ -18,6 +18,26 @@
 #include "line_following.h"
 #include "scanFunctions.h"
 
+struct fieldObs{
+    //0 for hole, 1 for low obstacle, 2 for high
+    int itemType;
+    int xCoord;
+    int yCoord;
+    int sizeMM;
+};
+
+struct robotCoords{
+    int xCoord;
+    int yCoord;
+    int direction;
+};
+
 void scanPerimeter(oi_t *sensor_data);
+
+int sweepRange(int startAng, int endAng);
+
+void testSweep(void);
+
+void printObsData(struct fieldObs* obstacle);
 
 #endif /* MAPSCANNING_H_ */

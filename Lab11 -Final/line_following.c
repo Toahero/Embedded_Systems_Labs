@@ -130,8 +130,6 @@ int followLine(oi_t *sensor_data, int* distance_mm){
             break;
         }
 
-
-
         oi_update(sensor_data);
 
         *distance_mm -= sensor_data->distance;
@@ -144,8 +142,6 @@ int followLine(oi_t *sensor_data, int* distance_mm){
             oi_setWheels(0, 0);
             return -1;
         }
-
-
 
         if(*distance_mm < 0){
             oi_setWheels(0, 0);
