@@ -44774,3 +44774,1436 @@ Finished building target: "Lab11 -Final.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 36: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 36: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 47: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 66: warning #179-D: variable "objectSizes" was declared but never referenced
+"../mapScanning.c", line 67: warning #179-D: variable "horizOffsets" was declared but never referenced
+"../mapScanning.c", line 68: warning #179-D: variable "vertOffsets" was declared but never referenced
+"../mapScanning.c", line 74: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 217: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 226: warning #994-D: missing return statement at end of non-void function "sweepRange"
+"../mapScanning.c", line 241: warning #225-D: function "printObsData" declared implicitly
+"../mapScanning.c", line 246: warning #161-D: declaration is incompatible with previous "printObsData" (declared at line 241)
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../main.c", line 136: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../main.c", line 93: warning #225-D: function "testSweep" declared implicitly
+"../main.c", line 136: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 36: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 36: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 47: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 66: warning #179-D: variable "objectSizes" was declared but never referenced
+"../mapScanning.c", line 67: warning #179-D: variable "horizOffsets" was declared but never referenced
+"../mapScanning.c", line 68: warning #179-D: variable "vertOffsets" was declared but never referenced
+"../mapScanning.c", line 74: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 217: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 226: warning #994-D: missing return statement at end of non-void function "sweepRange"
+"../mapScanning.c", line 241: warning #225-D: function "printObsData" declared implicitly
+"../mapScanning.c", line 246: warning #161-D: declaration is incompatible with previous "printObsData" (declared at line 241)
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 36: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 36: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 47: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 66: warning #179-D: variable "objectSizes" was declared but never referenced
+"../mapScanning.c", line 67: warning #179-D: variable "horizOffsets" was declared but never referenced
+"../mapScanning.c", line 68: warning #179-D: variable "vertOffsets" was declared but never referenced
+"../mapScanning.c", line 74: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 217: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 226: warning #994-D: missing return statement at end of non-void function "sweepRange"
+"../mapScanning.c", line 241: warning #225-D: function "printObsData" declared implicitly
+"../mapScanning.c", line 246: warning #161-D: declaration is incompatible with previous "printObsData" (declared at line 241)
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 36: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 36: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 47: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 66: warning #179-D: variable "objectSizes" was declared but never referenced
+"../mapScanning.c", line 67: warning #179-D: variable "horizOffsets" was declared but never referenced
+"../mapScanning.c", line 68: warning #179-D: variable "vertOffsets" was declared but never referenced
+"../mapScanning.c", line 74: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 217: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 247: warning #225-D: function "printObsData" declared implicitly
+"../mapScanning.c", line 238: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 254: warning #161-D: declaration is incompatible with previous "printObsData" (declared at line 247)
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 36: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 36: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 47: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 66: warning #179-D: variable "objectSizes" was declared but never referenced
+"../mapScanning.c", line 67: warning #179-D: variable "horizOffsets" was declared but never referenced
+"../mapScanning.c", line 68: warning #179-D: variable "vertOffsets" was declared but never referenced
+"../mapScanning.c", line 74: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 217: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 247: warning #225-D: function "printObsData" declared implicitly
+"../mapScanning.c", line 238: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 254: warning #161-D: declaration is incompatible with previous "printObsData" (declared at line 247)
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 38: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 38: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 49: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 68: warning #179-D: variable "objectSizes" was declared but never referenced
+"../mapScanning.c", line 69: warning #179-D: variable "horizOffsets" was declared but never referenced
+"../mapScanning.c", line 70: warning #179-D: variable "vertOffsets" was declared but never referenced
+"../mapScanning.c", line 76: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 219: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 240: warning #179-D: variable "obsAdded" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 61: error #20: identifier "followResult" is undefined
+"../mapScanning.c", line 37: warning #179-D: variable "totalDist" was declared but never referenced
+"../mapScanning.c", line 38: warning #179-D: variable "numSides" was declared but never referenced
+"../mapScanning.c", line 39: warning #179-D: variable "rightCliff" was declared but never referenced
+"../mapScanning.c", line 39: warning #179-D: variable "leftCliff" was declared but never referenced
+"../mapScanning.c", line 44: warning #179-D: variable "irArray" was declared but never referenced
+"../mapScanning.c", line 45: warning #179-D: variable "arraySize" was declared but never referenced
+"../mapScanning.c", line 46: warning #179-D: variable "numObjects" was declared but never referenced
+"../mapScanning.c", line 49: warning #179-D: variable "expectedLength" was declared but never referenced
+"../mapScanning.c", line 50: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 52: warning #552-D: variable "currPos" was set but never used
+"../mapScanning.c", line 63: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 65: warning #179-D: variable "intervalSize" was declared but never referenced
+"../mapScanning.c", line 67: warning #179-D: variable "output" was declared but never referenced
+"../mapScanning.c", line 69: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 76: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 76: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 77: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 78: error #171: expected a declaration
+"../mapScanning.c", line 90: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 92: error #80: expected a type specifier
+"../mapScanning.c", line 92: error #20: identifier "totalDist" is undefined
+"../mapScanning.c", line 92: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 92: error #148: declaration is incompatible with "void lcd_printf(const char *, ...)" (declared at line 44 of "..\lcd.h")
+"../mapScanning.c", line 93: error #171: expected a declaration
+"../mapScanning.c", line 116: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 117: error #171: expected a declaration
+"../mapScanning.c", line 120: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 129: error #171: expected a declaration
+"../mapScanning.c", line 152: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 153: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 153: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 153: error #148: declaration is incompatible with "void uart_sendStr(const char *)" (declared at line 53 of "..\uart-interrupt.h")
+"../mapScanning.c", line 155: error #171: expected a declaration
+"../mapScanning.c", line 162: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 164: error #171: expected a declaration
+"../mapScanning.c", line 166: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 166: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 168: error #171: expected a declaration
+"../mapScanning.c", line 175: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 176: error #171: expected a declaration
+"../mapScanning.c", line 200: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 201: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 201: error #66: expected a ";"
+"../mapScanning.c", line 202: error #171: expected a declaration
+"../mapScanning.c", line 203: error #171: expected a declaration
+"../mapScanning.c", line 206: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 206: error #66: expected a ";"
+"../mapScanning.c", line 207: error #171: expected a declaration
+"../mapScanning.c", line 209: error #171: expected a declaration
+"../mapScanning.c", line 212: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 212: error #66: expected a ";"
+"../mapScanning.c", line 213: error #171: expected a declaration
+"../mapScanning.c", line 215: error #171: expected a declaration
+"../mapScanning.c", line 218: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 218: error #66: expected a ";"
+"../mapScanning.c", line 219: error #171: expected a declaration
+"../mapScanning.c", line 221: error #171: expected a declaration
+"../mapScanning.c", line 224: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 225: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 225: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 226: error #80: expected a type specifier
+"../mapScanning.c", line 226: error #20: identifier "output" is undefined
+"../mapScanning.c", line 226: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 228: error #171: expected a declaration
+"../mapScanning.c", line 234: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 235: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+30 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 125: error #20: identifier "xCoord" is undefined
+"../mapScanning.c", line 125: error #20: identifier "yCoord" is undefined
+"../mapScanning.c", line 39: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 39: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 50: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 70: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 76: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 174: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 174: error #66: expected a ";"
+"../mapScanning.c", line 204: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 205: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 205: error #66: expected a ";"
+"../mapScanning.c", line 206: error #171: expected a declaration
+"../mapScanning.c", line 207: error #171: expected a declaration
+"../mapScanning.c", line 210: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 210: error #66: expected a ";"
+"../mapScanning.c", line 211: error #171: expected a declaration
+"../mapScanning.c", line 213: error #171: expected a declaration
+"../mapScanning.c", line 216: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 216: error #66: expected a ";"
+"../mapScanning.c", line 217: error #171: expected a declaration
+"../mapScanning.c", line 219: error #171: expected a declaration
+"../mapScanning.c", line 222: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 222: error #66: expected a ";"
+"../mapScanning.c", line 223: error #171: expected a declaration
+"../mapScanning.c", line 225: error #171: expected a declaration
+"../mapScanning.c", line 228: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 229: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 229: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 229: error #148: declaration is incompatible with "void uart_sendStr(const char *)" (declared at line 53 of "..\uart-interrupt.h")
+"../mapScanning.c", line 230: error #80: expected a type specifier
+"../mapScanning.c", line 230: error #20: identifier "output" is undefined
+"../mapScanning.c", line 230: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 230: error #148: declaration is incompatible with "void lcd_printf(const char *, ...)" (declared at line 44 of "..\lcd.h")
+"../mapScanning.c", line 232: error #171: expected a declaration
+"../mapScanning.c", line 238: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 239: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+21 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 125: error #20: identifier "xCoord" is undefined
+"../mapScanning.c", line 125: error #20: identifier "yCoord" is undefined
+"../mapScanning.c", line 39: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 39: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 50: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 70: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 76: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 174: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 174: error #66: expected a ";"
+"../mapScanning.c", line 204: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 205: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 205: error #66: expected a ";"
+"../mapScanning.c", line 206: error #171: expected a declaration
+"../mapScanning.c", line 207: error #171: expected a declaration
+"../mapScanning.c", line 210: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 210: error #66: expected a ";"
+"../mapScanning.c", line 211: error #171: expected a declaration
+"../mapScanning.c", line 213: error #171: expected a declaration
+"../mapScanning.c", line 216: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 216: error #66: expected a ";"
+"../mapScanning.c", line 217: error #171: expected a declaration
+"../mapScanning.c", line 219: error #171: expected a declaration
+"../mapScanning.c", line 222: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 222: error #66: expected a ";"
+"../mapScanning.c", line 223: error #171: expected a declaration
+"../mapScanning.c", line 225: error #171: expected a declaration
+"../mapScanning.c", line 228: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 229: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 229: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 229: error #148: declaration is incompatible with "void uart_sendStr(const char *)" (declared at line 53 of "..\uart-interrupt.h")
+"../mapScanning.c", line 230: error #80: expected a type specifier
+"../mapScanning.c", line 230: error #20: identifier "output" is undefined
+"../mapScanning.c", line 230: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 230: error #148: declaration is incompatible with "void lcd_printf(const char *, ...)" (declared at line 44 of "..\lcd.h")
+"../mapScanning.c", line 232: error #171: expected a declaration
+"../mapScanning.c", line 238: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 239: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+21 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 38: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 38: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 49: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 67: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 73: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 216: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 237: warning #179-D: variable "obsAdded" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 35: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 35: error #66: expected a ";"
+"../mapScanning.c", line 65: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 72: error #80: expected a type specifier
+"../mapScanning.c", line 72: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 72: error #148: declaration is incompatible with "void timer_waitMillis(unsigned int)" (declared at line 64 of "..\Timer.h")
+"../mapScanning.c", line 74: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 84: error #171: expected a declaration
+"../mapScanning.c", line 131: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 132: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 132: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 132: error #148: declaration is incompatible with "void uart_sendStr(const char *)" (declared at line 53 of "..\uart-interrupt.h")
+"../mapScanning.c", line 134: error #171: expected a declaration
+"../mapScanning.c", line 141: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 143: error #171: expected a declaration
+"../mapScanning.c", line 145: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 145: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 147: error #171: expected a declaration
+"../mapScanning.c", line 154: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 155: error #171: expected a declaration
+"../mapScanning.c", line 161: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 162: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 162: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 163: error #171: expected a declaration
+"../mapScanning.c", line 175: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 177: error #80: expected a type specifier
+"../mapScanning.c", line 177: error #20: identifier "totalDist" is undefined
+"../mapScanning.c", line 177: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 177: error #148: declaration is incompatible with "void lcd_printf(const char *, ...)" (declared at line 44 of "..\lcd.h")
+"../mapScanning.c", line 178: error #171: expected a declaration
+"../mapScanning.c", line 201: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 202: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 202: error #66: expected a ";"
+"../mapScanning.c", line 203: error #171: expected a declaration
+"../mapScanning.c", line 204: error #171: expected a declaration
+"../mapScanning.c", line 207: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 207: error #66: expected a ";"
+"../mapScanning.c", line 208: error #171: expected a declaration
+"../mapScanning.c", line 210: error #171: expected a declaration
+"../mapScanning.c", line 213: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 213: error #66: expected a ";"
+"../mapScanning.c", line 214: error #171: expected a declaration
+"../mapScanning.c", line 216: error #171: expected a declaration
+"../mapScanning.c", line 219: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 219: error #66: expected a ";"
+"../mapScanning.c", line 220: error #171: expected a declaration
+"../mapScanning.c", line 222: error #171: expected a declaration
+"../mapScanning.c", line 225: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 226: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 226: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 227: error #80: expected a type specifier
+"../mapScanning.c", line 227: error #760: variable "output" is not a type name
+"../mapScanning.c", line 227: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 229: error #171: expected a declaration
+"../mapScanning.c", line 235: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 236: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+31 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../sharedStructs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="sharedStructs.d_raw"  "../sharedStructs.c"
+Finished building: "../sharedStructs.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 35: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 35: error #66: expected a ";"
+"../mapScanning.c", line 65: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 72: error #80: expected a type specifier
+"../mapScanning.c", line 72: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 72: error #148: declaration is incompatible with "void timer_waitMillis(unsigned int)" (declared at line 64 of "..\Timer.h")
+"../mapScanning.c", line 74: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 84: error #171: expected a declaration
+"../mapScanning.c", line 131: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 132: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 132: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 132: error #148: declaration is incompatible with "void uart_sendStr(const char *)" (declared at line 53 of "..\uart-interrupt.h")
+"../mapScanning.c", line 134: error #171: expected a declaration
+"../mapScanning.c", line 141: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 143: error #171: expected a declaration
+"../mapScanning.c", line 145: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 145: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 147: error #171: expected a declaration
+"../mapScanning.c", line 154: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 155: error #171: expected a declaration
+"../mapScanning.c", line 161: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 162: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 162: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 163: error #171: expected a declaration
+"../mapScanning.c", line 175: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 177: error #80: expected a type specifier
+"../mapScanning.c", line 177: error #20: identifier "totalDist" is undefined
+"../mapScanning.c", line 177: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 177: error #148: declaration is incompatible with "void lcd_printf(const char *, ...)" (declared at line 44 of "..\lcd.h")
+"../mapScanning.c", line 178: error #171: expected a declaration
+"../mapScanning.c", line 201: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 202: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 202: error #66: expected a ";"
+"../mapScanning.c", line 203: error #171: expected a declaration
+"../mapScanning.c", line 204: error #171: expected a declaration
+"../mapScanning.c", line 207: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 207: error #66: expected a ";"
+"../mapScanning.c", line 208: error #171: expected a declaration
+"../mapScanning.c", line 210: error #171: expected a declaration
+"../mapScanning.c", line 213: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 213: error #66: expected a ";"
+"../mapScanning.c", line 214: error #171: expected a declaration
+"../mapScanning.c", line 216: error #171: expected a declaration
+"../mapScanning.c", line 219: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 219: error #66: expected a ";"
+"../mapScanning.c", line 220: error #171: expected a declaration
+"../mapScanning.c", line 222: error #171: expected a declaration
+"../mapScanning.c", line 225: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 226: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 226: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 227: error #80: expected a type specifier
+"../mapScanning.c", line 227: error #760: variable "output" is not a type name
+"../mapScanning.c", line 227: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 229: error #171: expected a declaration
+"../mapScanning.c", line 235: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 236: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+31 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 20: error #102: "fieldObs" has already been declared in the current scope
+"../mapScanning.c", line 36: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 36: error #66: expected a ";"
+"../mapScanning.c", line 66: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 73: error #80: expected a type specifier
+"../mapScanning.c", line 73: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 73: error #148: declaration is incompatible with "void timer_waitMillis(unsigned int)" (declared at line 64 of "..\Timer.h")
+"../mapScanning.c", line 75: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 85: error #171: expected a declaration
+"../mapScanning.c", line 132: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 133: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 133: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 133: error #148: declaration is incompatible with "void uart_sendStr(const char *)" (declared at line 53 of "..\uart-interrupt.h")
+"../mapScanning.c", line 135: error #171: expected a declaration
+"../mapScanning.c", line 142: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 144: error #171: expected a declaration
+"../mapScanning.c", line 146: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 146: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 148: error #171: expected a declaration
+"../mapScanning.c", line 155: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 156: error #171: expected a declaration
+"../mapScanning.c", line 162: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 163: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 163: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 164: error #171: expected a declaration
+"../mapScanning.c", line 176: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 178: error #80: expected a type specifier
+"../mapScanning.c", line 178: error #20: identifier "totalDist" is undefined
+"../mapScanning.c", line 178: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 178: error #148: declaration is incompatible with "void lcd_printf(const char *, ...)" (declared at line 44 of "..\lcd.h")
+"../mapScanning.c", line 179: error #171: expected a declaration
+"../mapScanning.c", line 202: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 203: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 203: error #66: expected a ";"
+"../mapScanning.c", line 204: error #171: expected a declaration
+"../mapScanning.c", line 205: error #171: expected a declaration
+"../mapScanning.c", line 208: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 208: error #66: expected a ";"
+"../mapScanning.c", line 209: error #171: expected a declaration
+"../mapScanning.c", line 211: error #171: expected a declaration
+"../mapScanning.c", line 214: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 214: error #66: expected a ";"
+"../mapScanning.c", line 215: error #171: expected a declaration
+"../mapScanning.c", line 217: error #171: expected a declaration
+"../mapScanning.c", line 220: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 220: error #66: expected a ";"
+"../mapScanning.c", line 221: error #171: expected a declaration
+"../mapScanning.c", line 223: error #171: expected a declaration
+"../mapScanning.c", line 226: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 227: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 227: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 228: error #80: expected a type specifier
+"../mapScanning.c", line 228: error #760: variable "output" is not a type name
+"../mapScanning.c", line 228: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 230: error #171: expected a declaration
+"../mapScanning.c", line 236: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 237: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+32 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 36: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 36: error #66: expected a ";"
+"../mapScanning.c", line 66: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 73: error #80: expected a type specifier
+"../mapScanning.c", line 73: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 73: error #148: declaration is incompatible with "void timer_waitMillis(unsigned int)" (declared at line 64 of "..\Timer.h")
+"../mapScanning.c", line 75: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 85: error #171: expected a declaration
+"../mapScanning.c", line 132: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 133: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 133: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 133: error #148: declaration is incompatible with "void uart_sendStr(const char *)" (declared at line 53 of "..\uart-interrupt.h")
+"../mapScanning.c", line 135: error #171: expected a declaration
+"../mapScanning.c", line 142: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 144: error #171: expected a declaration
+"../mapScanning.c", line 146: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 146: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 148: error #171: expected a declaration
+"../mapScanning.c", line 155: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 156: error #171: expected a declaration
+"../mapScanning.c", line 162: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 163: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 163: error #20: identifier "sensor_data" is undefined
+"../mapScanning.c", line 164: error #171: expected a declaration
+"../mapScanning.c", line 176: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 178: error #80: expected a type specifier
+"../mapScanning.c", line 178: error #20: identifier "totalDist" is undefined
+"../mapScanning.c", line 178: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 178: error #148: declaration is incompatible with "void lcd_printf(const char *, ...)" (declared at line 44 of "..\lcd.h")
+"../mapScanning.c", line 179: error #171: expected a declaration
+"../mapScanning.c", line 202: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 203: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 203: error #66: expected a ";"
+"../mapScanning.c", line 204: error #171: expected a declaration
+"../mapScanning.c", line 205: error #171: expected a declaration
+"../mapScanning.c", line 208: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 208: error #66: expected a ";"
+"../mapScanning.c", line 209: error #171: expected a declaration
+"../mapScanning.c", line 211: error #171: expected a declaration
+"../mapScanning.c", line 214: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 214: error #66: expected a ";"
+"../mapScanning.c", line 215: error #171: expected a declaration
+"../mapScanning.c", line 217: error #171: expected a declaration
+"../mapScanning.c", line 220: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 220: error #66: expected a ";"
+"../mapScanning.c", line 221: error #171: expected a declaration
+"../mapScanning.c", line 223: error #171: expected a declaration
+"../mapScanning.c", line 226: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 227: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 227: warning #93-D: identifier-list parameters may only be used in a function definition
+"../mapScanning.c", line 228: error #80: expected a type specifier
+"../mapScanning.c", line 228: error #760: variable "output" is not a type name
+"../mapScanning.c", line 228: warning #78-D: this declaration has no storage class or type specifier
+"../mapScanning.c", line 230: error #171: expected a declaration
+"../mapScanning.c", line 236: warning #12-D: parsing restarts here after previous syntax error
+"../mapScanning.c", line 237: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+31 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 41: error #20: identifier "roombaOffset" is undefined
+"../mapScanning.c", line 38: warning #552-D: variable "expectedSide" was set but never used
+"../mapScanning.c", line 50: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 50: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 61: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 79: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 85: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 228: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 249: warning #179-D: variable "obsAdded" was declared but never referenced
+1 error detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 40: warning #552-D: variable "expectedSide" was set but never used
+"../mapScanning.c", line 54: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 54: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 65: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 83: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 89: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 232: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 253: warning #179-D: variable "obsAdded" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./sharedStructs.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 28: error #102: "robotCoords" has already been declared in the current scope
+"../mapScanning.c", line 40: warning #552-D: variable "expectedSide" was set but never used
+"../mapScanning.c", line 54: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 54: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 65: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 83: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 89: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 232: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 253: warning #179-D: variable "obsAdded" was declared but never referenced
+1 error detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../sharedStructs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="sharedStructs.d_raw"  "../sharedStructs.c"
+Finished building: "../sharedStructs.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 40: warning #552-D: variable "expectedSide" was set but never used
+"../mapScanning.c", line 54: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 54: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 65: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 83: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 89: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 232: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 253: warning #179-D: variable "obsAdded" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./sharedStructs.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../line_following.c", line 69: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 56: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 56: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 102: warning #233-D: declaration is not visible outside of function
+"../line_following.c", line 102: warning #233-D: declaration is not visible outside of function
+"../line_following.c", line 104: warning #994-D: missing return statement at end of non-void function "scanLine"
+"../line_following.c", line 192: warning #994-D: missing return statement at end of non-void function "followLine"
+Finished building: "../line_following.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./sharedStructs.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../main.c", line 93: warning #225-D: function "testSweep" declared implicitly
+"../main.c", line 136: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../line_following.c", line 70: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 57: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 57: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 105: warning #994-D: missing return statement at end of non-void function "scanLine"
+"../line_following.c", line 193: warning #994-D: missing return statement at end of non-void function "followLine"
+Finished building: "../line_following.c"
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 40: warning #552-D: variable "expectedSide" was set but never used
+"../mapScanning.c", line 54: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 54: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 65: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 83: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 89: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 232: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 253: warning #179-D: variable "obsAdded" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./sharedStructs.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+"..\scanFunctions.h", line 36: warning #233-D: declaration is not visible outside of function
+"../line_following.c", line 66: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 53: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 53: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 187: warning #994-D: missing return statement at end of non-void function "scanLine"
+"../line_following.c", line 109: warning #179-D: variable "scanBuffer" was declared but never referenced
+"../line_following.c", line 275: warning #994-D: missing return statement at end of non-void function "followLine"
+Finished building: "../line_following.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./sharedStructs.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'line_following.obj' failed
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 38: warning #233-D: declaration is not visible outside of function
+"../line_following.c", line 66: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 53: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 53: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 99: error #148: declaration is incompatible with "int scanLine(oi_t *, struct robotCoords *, struct fieldObs *, int, int *)" (declared at line 28 of "..\scanFunctions.h")
+"../line_following.c", line 130: error #29: expected an expression
+"../line_following.c", line 130: error #20: identifier "i" is undefined
+"../line_following.c", line 194: warning #994-D: missing return statement at end of non-void function "scanLine"
+"../line_following.c", line 282: warning #994-D: missing return statement at end of non-void function "followLine"
+3 errors detected in the compilation of "../line_following.c".
+gmake: *** [line_following.obj] Error 1
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: error #148: declaration is incompatible with "int scanLine(oi_t *, int *, struct robotCoords *, struct fieldObs *, int)" (declared at line 22 of "..\line_following.h")
+"..\scanFunctions.h", line 38: warning #233-D: declaration is not visible outside of function
+"../main.c", line 93: warning #225-D: function "testSweep" declared implicitly
+"../main.c", line 136: warning #225-D: function "scanPerimeter" declared implicitly
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: error #148: declaration is incompatible with "int scanLine(oi_t *, int *, struct robotCoords *, struct fieldObs *, int)" (declared at line 22 of "..\line_following.h")
+"..\scanFunctions.h", line 38: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 49: error #20: identifier "travelDist" is undefined
+"../mapScanning.c", line 49: error #167: too few arguments in function call
+"../mapScanning.c", line 40: warning #552-D: variable "expectedSide" was set but never used
+"../mapScanning.c", line 48: warning #552-D: variable "followResult" was set but never used
+"../mapScanning.c", line 57: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 57: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 68: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 86: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 92: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 235: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 256: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 270: warning #552-D: variable "testCoords" was set but never used
+"../mapScanning.c", line 276: warning #179-D: variable "numObjects" was declared but never referenced
+"../mapScanning.c", line 277: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 279: warning #179-D: variable "obsArray" was declared but never referenced
+3 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../dataCollection.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="dataCollection.d_raw"  "../dataCollection.c"
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 38: warning #233-D: declaration is not visible outside of function
+Finished building: "../dataCollection.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'line_following.obj' failed
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 38: warning #233-D: declaration is not visible outside of function
+"../line_following.c", line 66: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 53: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 53: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 99: error #148: declaration is incompatible with "int scanLine(oi_t *, struct robotCoords *, struct fieldObs *, int, int *)" (declared at line 28 of "..\scanFunctions.h")
+"../line_following.c", line 130: error #29: expected an expression
+"../line_following.c", line 130: error #20: identifier "i" is undefined
+"../line_following.c", line 194: warning #994-D: missing return statement at end of non-void function "scanLine"
+"../line_following.c", line 282: warning #994-D: missing return statement at end of non-void function "followLine"
+3 errors detected in the compilation of "../line_following.c".
+gmake: *** [line_following.obj] Error 1
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: error #148: declaration is incompatible with "int scanLine(oi_t *, int *, struct robotCoords *, struct fieldObs *, int)" (declared at line 22 of "..\line_following.h")
+"..\scanFunctions.h", line 38: warning #233-D: declaration is not visible outside of function
+"../main.c", line 93: warning #225-D: function "testSweep" declared implicitly
+"../main.c", line 136: warning #225-D: function "scanPerimeter" declared implicitly
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 28: error #148: declaration is incompatible with "int scanLine(oi_t *, int *, struct robotCoords *, struct fieldObs *, int)" (declared at line 22 of "..\line_following.h")
+"..\scanFunctions.h", line 38: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 49: error #20: identifier "travelDist" is undefined
+"../mapScanning.c", line 49: warning #169-D: argument of type "struct robotCoords *" is incompatible with parameter of type "struct robotCoords *"
+"../mapScanning.c", line 49: warning #169-D: argument of type "struct fieldObs *" is incompatible with parameter of type "struct fieldObs *"
+"../mapScanning.c", line 40: warning #552-D: variable "expectedSide" was set but never used
+"../mapScanning.c", line 48: warning #552-D: variable "followResult" was set but never used
+"../mapScanning.c", line 57: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 57: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 68: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 86: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 92: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 235: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 256: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 270: warning #552-D: variable "testCoords" was set but never used
+"../mapScanning.c", line 276: warning #179-D: variable "numObjects" was declared but never referenced
+"../mapScanning.c", line 277: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 279: warning #179-D: variable "obsArray" was declared but never referenced
+2 errors detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'line_following.obj' failed
+"..\scanFunctions.h", line 37: warning #233-D: declaration is not visible outside of function
+"../line_following.c", line 66: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 53: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 53: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 130: error #29: expected an expression
+"../line_following.c", line 130: error #20: identifier "i" is undefined
+"../line_following.c", line 194: warning #994-D: missing return statement at end of non-void function "scanLine"
+"../line_following.c", line 282: warning #994-D: missing return statement at end of non-void function "followLine"
+2 errors detected in the compilation of "../line_following.c".
+gmake: *** [line_following.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 37: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 49: error #20: identifier "travelDist" is undefined
+"../mapScanning.c", line 49: warning #169-D: argument of type "struct robotCoords *" is incompatible with parameter of type "struct robotCoords *"
+"../mapScanning.c", line 49: warning #169-D: argument of type "struct fieldObs *" is incompatible with parameter of type "struct fieldObs *"
+"../mapScanning.c", line 40: warning #552-D: variable "expectedSide" was set but never used
+"../mapScanning.c", line 48: warning #552-D: variable "followResult" was set but never used
+"../mapScanning.c", line 57: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 57: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 68: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 86: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 92: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 235: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 256: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 270: warning #552-D: variable "testCoords" was set but never used
+"../mapScanning.c", line 276: warning #179-D: variable "numObjects" was declared but never referenced
+"../mapScanning.c", line 277: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 279: warning #179-D: variable "obsArray" was declared but never referenced
+1 error detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+Building file: "../dataCollection.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="dataCollection.d_raw"  "../dataCollection.c"
+"..\scanFunctions.h", line 37: warning #233-D: declaration is not visible outside of function
+Finished building: "../dataCollection.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 37: warning #233-D: declaration is not visible outside of function
+"../main.c", line 93: warning #225-D: function "testSweep" declared implicitly
+"../main.c", line 136: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'line_following.obj' failed
+"..\scanFunctions.h", line 37: warning #233-D: declaration is not visible outside of function
+"../line_following.c", line 66: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 53: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 53: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 130: error #29: expected an expression
+"../line_following.c", line 130: error #20: identifier "i" is undefined
+"../line_following.c", line 194: warning #994-D: missing return statement at end of non-void function "scanLine"
+"../line_following.c", line 282: warning #994-D: missing return statement at end of non-void function "followLine"
+2 errors detected in the compilation of "../line_following.c".
+gmake: *** [line_following.obj] Error 1
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\line_following.h", line 22: warning #233-D: declaration is not visible outside of function
+"..\scanFunctions.h", line 37: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 51: warning #169-D: argument of type "struct robotCoords *" is incompatible with parameter of type "struct robotCoords *"
+"../mapScanning.c", line 51: warning #169-D: argument of type "struct fieldObs *" is incompatible with parameter of type "struct fieldObs *"
+"../mapScanning.c", line 41: warning #552-D: variable "expectedSide" was set but never used
+"../mapScanning.c", line 50: warning #552-D: variable "followResult" was set but never used
+"../mapScanning.c", line 60: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 60: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 71: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 89: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 95: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 238: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 259: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 273: warning #552-D: variable "testCoords" was set but never used
+"../mapScanning.c", line 279: warning #179-D: variable "numObjects" was declared but never referenced
+"../mapScanning.c", line 280: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 282: warning #179-D: variable "obsArray" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'line_following.obj' failed
+"..\scanFunctions.h", line 37: warning #233-D: declaration is not visible outside of function
+"../line_following.c", line 66: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 53: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 53: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 130: error #29: expected an expression
+"../line_following.c", line 130: error #20: identifier "i" is undefined
+"../line_following.c", line 194: warning #994-D: missing return statement at end of non-void function "scanLine"
+"../line_following.c", line 282: warning #994-D: missing return statement at end of non-void function "followLine"
+2 errors detected in the compilation of "../line_following.c".
+gmake: *** [line_following.obj] Error 1
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"..\scanFunctions.h", line 37: warning #233-D: declaration is not visible outside of function
+"../main.c", line 93: warning #225-D: function "testSweep" declared implicitly
+"../main.c", line 136: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"..\scanFunctions.h", line 37: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 41: warning #552-D: variable "expectedSide" was set but never used
+"../mapScanning.c", line 50: warning #552-D: variable "followResult" was set but never used
+"../mapScanning.c", line 60: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 60: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 71: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 89: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 95: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 238: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 259: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 273: warning #552-D: variable "testCoords" was set but never used
+"../mapScanning.c", line 279: warning #179-D: variable "numObjects" was declared but never referenced
+"../mapScanning.c", line 280: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 282: warning #179-D: variable "obsArray" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../line_following.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="line_following.d_raw"  "../line_following.c"
+"..\scanFunctions.h", line 37: warning #233-D: declaration is not visible outside of function
+"../line_following.c", line 66: warning #225-D: function "followLine" declared implicitly
+"../line_following.c", line 53: warning #552-D: variable "rightCliff" was set but never used
+"../line_following.c", line 53: warning #552-D: variable "leftCliff" was set but never used
+"../line_following.c", line 195: warning #994-D: missing return statement at end of non-void function "scanLine"
+"../line_following.c", line 129: warning #552-D: variable "scanBuffer" was set but never used
+"../line_following.c", line 283: warning #994-D: missing return statement at end of non-void function "followLine"
+Finished building: "../line_following.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./sharedStructs.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'mapScanning.obj' failed
+"..\scanFunctions.h", line 37: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 41: warning #552-D: variable "expectedSide" was set but never used
+"../mapScanning.c", line 50: warning #552-D: variable "followResult" was set but never used
+"../mapScanning.c", line 60: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 60: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 71: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 89: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 95: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 238: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 259: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 284: error #169: argument of type "struct robotCoords" is incompatible with parameter of type "struct robotCoords *"
+"../mapScanning.c", line 279: warning #179-D: variable "numObjects" was declared but never referenced
+"../mapScanning.c", line 280: warning #179-D: variable "obsAdded" was declared but never referenced
+1 error detected in the compilation of "../mapScanning.c".
+gmake: *** [mapScanning.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../mapScanning.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="mapScanning.d_raw"  "../mapScanning.c"
+"..\scanFunctions.h", line 37: warning #233-D: declaration is not visible outside of function
+"../mapScanning.c", line 41: warning #552-D: variable "expectedSide" was set but never used
+"../mapScanning.c", line 50: warning #552-D: variable "followResult" was set but never used
+"../mapScanning.c", line 60: warning #552-D: variable "rightCliff" was set but never used
+"../mapScanning.c", line 60: warning #552-D: variable "leftCliff" was set but never used
+"../mapScanning.c", line 71: warning #179-D: variable "expectedWidth" was declared but never referenced
+"../mapScanning.c", line 89: warning #179-D: variable "maxObjects" was declared but never referenced
+"../mapScanning.c", line 95: warning #179-D: variable "i" was declared but never referenced
+"../mapScanning.c", line 238: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *__restrict__"
+"../mapScanning.c", line 259: warning #179-D: variable "obsAdded" was declared but never referenced
+"../mapScanning.c", line 279: warning #179-D: variable "numObjects" was declared but never referenced
+"../mapScanning.c", line 280: warning #179-D: variable "obsAdded" was declared but never referenced
+Finished building: "../mapScanning.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./sharedStructs.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="U:/spring2025/cpre288/Workspace/Lab11 -Final" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"..\scanFunctions.h", line 37: warning #233-D: declaration is not visible outside of function
+"../main.c", line 94: warning #225-D: function "lineScanTest" declared implicitly
+"../main.c", line 136: warning #225-D: function "scanPerimeter" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "Lab11 -Final.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Lab11 -Final.map" --heap_size=4096 --stack_size=4096 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab11 -Final_linkInfo.xml" --rom_model -o "Lab11 -Final.out" "./Timer.obj" "./adc.obj" "./button.obj" "./dataCollection.obj" "./helloworld.obj" "./lcd.obj" "./line_following.obj" "./main.obj" "./mapScanning.obj" "./movement.obj" "./movementCalib.obj" "./movement_functions.obj" "./open_interface.obj" "./ping.obj" "./scanFunctions.obj" "./servo.obj" "./sharedStructs.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart-interrupt.obj" "../libcybotScan.lib" "../libcybotUART.lib" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Lab11 -Final.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab11 -Final ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 24 all -O 
+ 
+gmake[1]: 'Lab11 -Final.out' is up to date.
+
+**** Build Finished ****

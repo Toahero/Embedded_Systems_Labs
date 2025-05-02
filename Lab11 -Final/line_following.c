@@ -10,13 +10,11 @@
 #include "Timer.h"
 #include "button.h"
 #include "movement.h"
+#include "scanFunctions.h"
+#include "sharedStructs.h"
 
-#define CR_LOWER_AVG 1400
 
-#define CR_UPPER_AVG 2500
-
-#define CFR_UPPER_AVG 2800
-#define CFL_UPPER_AVG 2800
+#define IR_BUFFER_SIZE 5
 
 /*2041-09
  * L-  U:2816 L:2197
@@ -96,6 +94,104 @@ void followPerimeter(oi_t *sensor_data){
     }
 
     lcd_printf("Total Distance: %d", totalDist);
+}
+
+int scanLine(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obsLoc, int maxToAdd, int* distance_mm)  {
+    int adjust = 0;
+    int numScans = 3;
+    oi_setWheels(MOVE_SPEED, MOVE_SPEED);
+    int button;
+    int cliffR, cliffFR, cliffFL;
+
+
+    float boundMod = 0.25;
+
+
+
+    //Set boundary values
+    int cr_UpperBound = cr_upper - ((cr_upper - cr_lower) * boundMod);
+    int cr_LowerBound = cr_lower + ((cr_upper -cr_lower) * boundMod);
+
+    int cfr_UpperBound = cfr_upper - ((cfr_upper - cfr_lower) * boundMod);
+    int cfr_LowerBound = cfr_lower + ((cfr_upper -cfr_lower) * boundMod);
+    int cfr_cliffBound = cfr_lower * 0.5;
+
+    int cfl_UpperBound = cfl_upper - ((cfl_upper - cfl_lower) * boundMod);
+    int cfl_LowerBound = cfl_lower + ((cfl_upper -cfl_lower) * boundMod);
+    int cfl_cliffBound = cfl_lower * 0.5;
+
+    int cl_UpperBound = cl_upper - ((cl_upper - cl_lower) * boundMod);
+    int cl_LowerBound = cl_lower + ((cl_upper -cl_lower) * boundMod);
+
+    int leftSpeed, rightSpeed;
+
+    //Before starting to follow the line, turn the sensor rightward and fill the buffer
+    int scanBuffer[IR_BUFFER_SIZE];
+    int i;
+    for(i = 0; i < IR_BUFFER_SIZE; i++){
+       scanBuffer[i] = multiScanIR(0, numScans);
+    }
+
+    while(1){
+        button = button_getButton();
+        if(button != 0){
+            break;
+        }
+
+        oi_update(sensor_data);
+
+        *distance_mm -= sensor_data->distance;
+
+        cliffR = sensor_data->cliffRightSignal;
+        cliffFR = sensor_data->cliffFrontRightSignal;
+        cliffFL = sensor_data->cliffFrontLeftSignal;
+
+        if(button != 0){
+            oi_setWheels(0, 0);
+            return -1;
+        }
+
+        if(*distance_mm < 0){
+            oi_setWheels(0, 0);
+            return 0;
+        }
+
+        if(cliffFR > cfr_UpperBound && cliffFL > cfl_UpperBound){
+            oi_setWheels(0, 0);
+            return 1;
+        }
+        if(sensor_data->bumpLeft || sensor_data-> bumpRight){
+            oi_setWheels(0, 0);
+            return 2;
+        }
+
+        if(cliffFR < cfr_cliffBound || cliffFL < cfl_cliffBound){
+            oi_setWheels(0, 0);
+            return 3;
+        }
+
+        //If sensor FR senses an edge and R does not, the cybot is likely approaching the edge at a high angle. Immediately turn away.
+        if(cliffFR > cfr_UpperBound && !(cliffR > cr_UpperBound)){
+            turn_left(sensor_data, 30);
+        }
+
+        if(cliffR < cr_LowerBound){
+            adjust = 25;
+        }
+        else if(cliffR > cr_UpperBound){
+            adjust = -25;
+        }
+        else{
+            adjust = 0;
+        }
+
+        leftSpeed = MOVE_SPEED - adjust;
+        rightSpeed = MOVE_SPEED + adjust;
+
+        oi_setWheels(leftSpeed, rightSpeed);
+        //lcd_printf("L: %d  R: %d \nA: %d", leftSpeed, rightSpeed, adjust);
+        //timer_waitMillis(50);
+    }
 }
 
 int followLine(oi_t *sensor_data, int* distance_mm){

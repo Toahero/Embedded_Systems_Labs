@@ -25,6 +25,7 @@ struct obstacle{
     int sizeMM;
 };
 
+
 double getObjectSize(int degWidth, double distance);
 
 int ir_scanRange(int scanVals[], int startDeg, int endDeg, int numScans);

@@ -90,8 +90,8 @@ void scanTests(){
     oi_t *sensor_data = initSensors();
 
     //servo_calibrate();
-    testSweep();
-
+    //testSweep();
+    lineScanTest(sensor_data);
     oi_free(sensor_data);
 }
 

@@ -15,20 +15,44 @@
 #include "uart-interrupt.h"
 #include "line_following.h"
 #include "scanFunctions.h"
+#include "sharedStructs.h"
 
-struct fieldObs{
+/*struct fieldObs{
     //0 for hole, 1 for low obstacle, 2 for high
     int itemType;
     int xCoord;
     int yCoord;
     int sizeMM;
-};
+};*/
 
-struct robotCoords{
+/*struct robotCoords{
     int xCoord;
     int yCoord;
     int direction;
-};
+};*/
+
+void printObsData(struct fieldObs* obstacle);
+
+int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obsLoc, int maxToAdd){
+
+    int roombaOffset = 300;
+    int intervalSize = 500;
+
+    int expectedSide;
+    if(botPos->direction %2 == 0){
+        expectedSide = 4270 - roombaOffset;
+    }
+    else{
+        expectedSide = 2440 - roombaOffset;
+    }
+
+    int distToTravel = intervalSize;
+    int followResult;
+    followResult = scanLine(sensor_data, botPos, obsLoc, maxToAdd, &distToTravel);
+
+
+    return 0;
+}
 
 void scanPerimeter(oi_t *sensor_data){
     int totalDist;
@@ -62,10 +86,7 @@ void scanPerimeter(oi_t *sensor_data){
 
     followResult = 0;
 
-    int maxObjects = 10;
-    float objectSizes[maxObjects];
-    float horizOffsets[maxObjects];
-    float vertOffsets[maxObjects];
+    int maxObjects = 100;
 
     int intervalSize = 500;
 
@@ -182,7 +203,7 @@ int sweepRange(int startAng, int endAng, struct robotCoords* botPosition, struct
     }
 
     int i;
-    for(i = 0; i < 1/*obsCount*/; i++){
+    for(i = 0; i < obsCount; i++){
         obsLoc->itemType = 3;
         obsLoc->sizeMM = obsArray[i].sizeMM;
 
@@ -210,6 +231,7 @@ int sweepRange(int startAng, int endAng, struct robotCoords* botPosition, struct
             obsLoc->xCoord = botPosition->xCoord + obsArray[i].horiOffsetMM;
             obsLoc->yCoord = botPosition->yCoord + obsArray[i].vertOffsetMM;
         }
+        obsLoc++;
     }
 
 
@@ -217,33 +239,53 @@ int sweepRange(int startAng, int endAng, struct robotCoords* botPosition, struct
     uart_sendStr(output);
     lcd_printf("%s", output);
 
-    for(i = 0; i < 1; i++){
+    for(i = 0; i < obsCount; i++){
         sprintf(output, "Object %d: x: %d   y: %d  size:%d\n", i, obsArray[i].horiOffsetMM, obsArray[i].vertOffsetMM, obsArray[i].sizeMM);
         uart_sendStr(output);
         lcd_printf("%s", output);
     }
+
+    return obsCount;
 }
 
 void testSweep(void){
     struct robotCoords testCoords;
     testCoords.xCoord = 100;
     testCoords.yCoord = 100;
-    testCoords.direction = 3;
+    testCoords.direction = 0;
 
     int maxObjects = 20;
+    int numObjects = 0;
+    int obsAdded;
 
     struct fieldObs obsArray[maxObjects];
 
-    sweepRange(0, 180, &testCoords, &obsArray[0], maxObjects);
+    numObjects += sweepRange(0, 180, &testCoords, &obsArray[0], maxObjects - numObjects);
 
-    uart_sendStr("Postconversion data: True coordinates\n");
-    printObsData(&obsArray[0]);
+    uart_sendStr("\nPostconversion data: True coordinates\n");
+    int i;
+    for(i = 0; i < numObjects; i++){
+        printObsData(&obsArray[i]);
+    }
+}
 
+void lineScanTest(oi_t *sensor_data){
+    struct robotCoords testCoords;
+    testCoords.xCoord = 100;
+    testCoords.yCoord = 100;
+    testCoords.direction = 0;
 
+    int maxObjects = 20;
+    int numObjects = 0;
+    int obsAdded;
+
+    struct fieldObs obsArray[maxObjects];
+
+    scanEdge(sensor_data, &testCoords, &obsArray[0], maxObjects);
 }
 
 void printObsData(struct fieldObs* obstacle){
     char output[100];
-    sprintf(output,  "Item #: %d, Coords: (%d,%d), Size: %d\n", obstacle->itemType, obstacle->xCoord, obstacle->yCoord, obstacle->sizeMM);
+    sprintf(output,  "Item Type: %d, Coords: (%d,%d), Size: %d\n", obstacle->itemType, obstacle->xCoord, obstacle->yCoord, obstacle->sizeMM);
     uart_sendStr(output);
 }
