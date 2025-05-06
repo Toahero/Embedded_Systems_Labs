@@ -21,7 +21,7 @@ int followLine(oi_t *sensor_data, int* distance_mm);
 
 void followPerimeter(oi_t *sensor_data);
 
-int scanLine(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obsLoc, int maxToAdd, int* distance_mm);
+int scanLine(oi_t *sensor_data, struct robotCoords* botPos, struct obSide* foundObs, int maxToAdd, int* distance_mm);
 
 void calibrate_CliffValue(oi_t *sensor_data);
 

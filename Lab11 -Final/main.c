@@ -91,7 +91,8 @@ void scanTests(){
 
     //servo_calibrate();
     //testSweep();
-    lineScanTest(sensor_data);
+    //lineScanTest(sensor_data);
+    edgeScanTest(sensor_data);
     oi_free(sensor_data);
 }
 

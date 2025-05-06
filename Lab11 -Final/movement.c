@@ -9,6 +9,7 @@
 #include <lcd.h>
 #include "Timer.h"
 #include "uart-interrupt.h"
+#include "sharedStructs.h"
 
 #define MOVE_SPEED 100
 #define FORWARD_ADJUST 1.01
@@ -19,7 +20,35 @@
 #define LEFT_MOTOR_ADJ 1.0
 #define RIGHT_MOTOR_ADJ 0.97
 
+void move_bot_forward(oi_t *sensor_data, struct robotCoords* botPos, int distance_mm){
 
+    double currDist = 0.0;
+
+    oi_setWheels(MOVE_SPEED * LEFT_MOTOR_ADJ, MOVE_SPEED * RIGHT_MOTOR_ADJ);
+    while (currDist < distance_mm * FORWARD_ADJUST){
+        oi_update(sensor_data);
+        currDist += sensor_data -> distance;
+    }
+    oi_setWheels(0,0);
+    updateBotPos(botPos, (int) currDist);
+}
+
+void turn_bot_right(oi_t *sensor_data, struct robotCoords* botPos){
+    double currAng = 0.0;
+    //lcd_init();
+
+    oi_setWheels(-MOVE_SPEED, MOVE_SPEED);
+
+
+    //Move until distance reaches assigned distance
+    while (currAng > -90 * RIGHT_ADJUST){
+        oi_update(sensor_data);
+        currAng += sensor_data -> angle;
+        //lcd_printf("Angle: %.2f\n Thresh: %.2f", currAng, -degrees * RIGHT_ADJUST);
+    }
+    oi_setWheels(0,0);
+    botPos->direction = (botPos->direction + 1) % 4;
+}
 
 double move_forward(oi_t *sensor_data, double distance_mm){
 

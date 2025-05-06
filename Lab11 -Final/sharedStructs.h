@@ -22,4 +22,15 @@ struct robotCoords{
     int direction;
 };
 
+struct obSide{
+    int size;
+    double midDist;
+};
+
+void lineScanToObs(struct fieldObs* outputObs, struct robotCoords* botPos, struct obSide* obsData);
+
+void updateBotPos(struct robotCoords* botPos, int moveDistMM);
+
+void addOnEdge(int obsID, struct robotCoords* botPos, struct fieldObs* outputObs);
+
 #endif /* SHAREDSTRUCTS_H_ */

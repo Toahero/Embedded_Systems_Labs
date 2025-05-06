@@ -10,8 +10,13 @@
 
 #include <open_interface.h>
 #include <lcd.h>
+#include "sharedStructs.h"
 
 double move_forward(oi_t *sensor_data, double distance_mm);
+
+void move_bot_forward(oi_t *sensor_data, struct robotCoords* botPos, int distance_mm);
+
+void turn_bot_right(oi_t *sensor_data, struct robotCoords* botPos);
 
 double move_backward(oi_t *sensor_data, double distance_mm);
 

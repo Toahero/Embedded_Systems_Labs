@@ -15,7 +15,8 @@
 
 
 #define IR_BUFFER_SIZE 5
-
+#define IR_OBJECT_THRESHOLD 45
+#define MIN_OBJECT_SIZE 50
 /*2041-09
  * L-  U:2816 L:2197
  * FL- U:2758 L:1460
@@ -45,7 +46,7 @@ volatile uint16_t cfr_lower = 1543;
 volatile uint16_t cr_upper = 2761;
 volatile uint16_t cr_lower = 1766;
 
-#define MOVE_SPEED 100
+#define MOVE_SPEED 75
 
 void followPerimeter(oi_t *sensor_data){
     int totalDist;
@@ -96,16 +97,17 @@ void followPerimeter(oi_t *sensor_data){
     lcd_printf("Total Distance: %d", totalDist);
 }
 
-int scanLine(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obsLoc, int maxToAdd, int* distance_mm)  {
+int scanLine(oi_t *sensor_data, struct robotCoords* botPos, struct obSide* foundObs, int maxToAdd, int* distance_mm)  {
     int adjust = 0;
     int numScans = 3;
-    oi_setWheels(MOVE_SPEED, MOVE_SPEED);
-    int button;
-    int cliffR, cliffFR, cliffFL;
 
+    int button = 0;
+    int cliffR, cliffFR, cliffFL;
+    int scanAngle = 180;
 
     float boundMod = 0.25;
 
+    //char tempOUT[100];
 
 
     //Set boundary values
@@ -129,19 +131,60 @@ int scanLine(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obs
     int scanBuffer[IR_BUFFER_SIZE];
     int i;
     for(i = 0; i < IR_BUFFER_SIZE; i++){
-       scanBuffer[i] = multiScanIR(0, numScans);
+       scanBuffer[i] = multiScanIR(scanAngle, numScans);
     }
 
-    while(1){
-        button = button_getButton();
-        if(button != 0){
-            break;
-        }
+    //Set variables for the object search
+    int irScan;
+    int scanSum;
+    int scanAvg;
+    int startPos;
+    int endPos;
+    int obsFound = 0;
 
+
+    while(1){
         oi_update(sensor_data);
 
         *distance_mm -= sensor_data->distance;
 
+        oi_setWheels(MOVE_SPEED, MOVE_SPEED);
+        scanSum = 0;
+        for(i = 0; i < IR_BUFFER_SIZE; i++){
+            scanSum += scanBuffer[i];
+        }
+        scanAvg = scanSum / IR_BUFFER_SIZE;
+        irScan = multiScanIR(scanAngle, numScans);
+
+        if(irScan >= scanAvg + IR_OBJECT_THRESHOLD && !obsFound){
+            startPos = *distance_mm;
+            obsFound = 1;
+        }
+
+        if(irScan <= scanAvg - IR_OBJECT_THRESHOLD && obsFound){
+            obsFound = 0;
+            if(startPos - *distance_mm > MIN_OBJECT_SIZE){
+                //Record the start and end positions of the object
+
+                endPos = *distance_mm;
+
+
+                foundObs->size = startPos - endPos;
+
+                //Move backwards to the object midpoint
+                //TODO: Possibly create backwards line following
+                move_backward(sensor_data, foundObs->size/2);
+
+                //Get the distance to the object.
+                foundObs->midDist = pingAt(scanAngle) * 10;
+                move_forward(sensor_data, foundObs->size/2);
+                oi_setWheels(0, 0);
+                //Return indicator that another object has been found.
+                return 4;
+            }
+        }
+
+        button = button_getButton();
         cliffR = sensor_data->cliffRightSignal;
         cliffFR = sensor_data->cliffFrontRightSignal;
         cliffFL = sensor_data->cliffFrontLeftSignal;
