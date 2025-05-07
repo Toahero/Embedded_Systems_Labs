@@ -26,15 +26,52 @@ struct obSide{
     double midDist;
 };
 
+void addInFront(int obsID, struct robotCoords* botPos, struct fieldObs* outputObs){
+    outputObs->itemType = obsID;
+
+    int obSize;
+        if(obsID == 0){
+            obSize = 610;
+        }
+        else{
+            obSize = 130;
+        }
+
+
+        outputObs->sizeMM = obSize;
+
+        switch(botPos->direction){
+
+        case 3: //Bot is pointing west
+            outputObs->xCoord = botPos->xCoord - obSize/2;
+            outputObs->yCoord = botPos->yCoord;
+            break;
+
+        case 2: //Bot is pointing south
+            outputObs->yCoord = botPos->yCoord - obSize/2;
+            outputObs->xCoord = botPos->xCoord;
+            break;
+
+        case 1: //Bot is pointing east
+            outputObs->xCoord = botPos->xCoord + obSize/2;
+            outputObs->yCoord = botPos->yCoord;
+            break;
+
+        default: //Bot is pointing north
+            outputObs->yCoord = botPos->yCoord + obSize/2;
+            outputObs->xCoord = botPos->xCoord;
+        }
+}
+
 void addOnEdge(int obsID, struct robotCoords* botPos, struct fieldObs* outputObs){
     outputObs->itemType = obsID;
 
     int obSize;
     if(obsID == 0){
-        obSize = 1000;
+        obSize = 610;
     }
     else{
-        obSize = 200;
+        obSize = 130;
     }
 
 
@@ -48,7 +85,7 @@ void addOnEdge(int obsID, struct robotCoords* botPos, struct fieldObs* outputObs
         break;
 
     case 2: //Bot is pointing south
-        outputObs->xCoord = FIELD_WIDTH - obSize/2;
+        outputObs->xCoord = obSize/2;
         outputObs->yCoord = botPos->yCoord - obSize/2;
         break;
 
@@ -58,7 +95,7 @@ void addOnEdge(int obsID, struct robotCoords* botPos, struct fieldObs* outputObs
         break;
 
     default: //Bot is pointing north
-        outputObs->xCoord = obSize/2;
+        outputObs->xCoord = FIELD_WIDTH - obSize/2;
         outputObs->yCoord = botPos->yCoord + obSize/2;
     }
 }
@@ -73,23 +110,23 @@ void lineScanToObs(struct fieldObs* outputObs, struct robotCoords* botPos, struc
     switch(botPos->direction){
 
     case 3: //Bot is pointing West
-        outputObs->xCoord = botPos->xCoord + halfSize;
+        outputObs->xCoord = botPos->xCoord - halfSize;
         outputObs->yCoord = FIELD_LENGTH - obsData->midDist - botOffset;
         break;
 
     case 2: //Bot is pointing South
-        outputObs->yCoord = botPos->yCoord + halfSize;
-        outputObs->xCoord = FIELD_WIDTH - obsData->midDist - botOffset;
+        outputObs->yCoord = botPos->yCoord - halfSize;
+        outputObs->xCoord = obsData->midDist;
         break;
 
     case 1: //Bot is pointing East
-        outputObs->xCoord = botPos->xCoord - halfSize;
+        outputObs->xCoord = botPos->xCoord + halfSize;
         outputObs->yCoord = obsData->midDist;
     break;
 
     default: //Bot is pointing North
         outputObs->yCoord = botPos->yCoord - halfSize;
-        outputObs->xCoord = obsData->midDist;
+        outputObs->xCoord = FIELD_WIDTH - obsData->midDist - botOffset;
     }
 }
 

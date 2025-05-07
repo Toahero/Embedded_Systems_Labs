@@ -18,6 +18,8 @@
 #include "line_following.h"
 #include "scanFunctions.h"
 
+void scanPerimeter(oi_t *sensor_data);
+
 /*struct fieldObs{
     //0 for hole, 1 for low obstacle, 2 for high
     int itemType;
@@ -32,7 +34,7 @@
     int direction;
 };*/
 
-void scanPerimeter(oi_t *sensor_data);
+
 int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obsLoc, int maxToAdd);
 
 int sweepRange(int startAng, int endAng);

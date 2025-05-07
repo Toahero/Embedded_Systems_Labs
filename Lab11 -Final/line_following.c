@@ -24,6 +24,13 @@
  * R-  U:2761 L:1766
  */
 
+/*2041-10
+ * L-  U:2838 L:2192
+ * FL- U:2763 L:1378
+ * FR- U:2851 L:2145
+ * R-  U:2733 L:1273
+ */
+
 /*2041-12
  * L-  U:2811 L:2103
  * FL- U:2863 L:1460
@@ -34,17 +41,17 @@
 
 
 
-volatile uint16_t cl_upper = 2816;
-volatile uint16_t cl_lower = 2197;
+volatile uint16_t cl_upper = 2838;
+volatile uint16_t cl_lower = 2192;
 
-volatile uint16_t cfl_upper = 2758;
-volatile uint16_t cfl_lower = 2452;
+volatile uint16_t cfl_upper = 2763;
+volatile uint16_t cfl_lower = 1378;
 
-volatile uint16_t cfr_upper = 2752;
-volatile uint16_t cfr_lower = 1543;
+volatile uint16_t cfr_upper = 2851;
+volatile uint16_t cfr_lower = 2145;
 
-volatile uint16_t cr_upper = 2761;
-volatile uint16_t cr_lower = 1766;
+volatile uint16_t cr_upper = 2733;
+volatile uint16_t cr_lower = 1273;
 
 #define MOVE_SPEED 75
 
@@ -72,7 +79,7 @@ void followPerimeter(oi_t *sensor_data){
 
             totalDist += expectedDist - travelDist;
             if(followResult == 2){
-                move_aroundObject(sensor_data, 0, 400, 600);
+                //move_aroundObject(sensor_data, 0, 400, 600);
             }
         }
 
@@ -194,7 +201,7 @@ int scanLine(oi_t *sensor_data, struct robotCoords* botPos, struct obSide* found
             return -1;
         }
 
-        if(*distance_mm < 0){
+        if(*distance_mm < 0 && !obsFound){
             oi_setWheels(0, 0);
             return 0;
         }

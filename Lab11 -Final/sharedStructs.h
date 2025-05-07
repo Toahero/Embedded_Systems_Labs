@@ -27,6 +27,8 @@ struct obSide{
     double midDist;
 };
 
+void addInFront(int obsID, struct robotCoords* botPos, struct fieldObs* outputObs);
+
 void lineScanToObs(struct fieldObs* outputObs, struct robotCoords* botPos, struct obSide* obsData);
 
 void updateBotPos(struct robotCoords* botPos, int moveDistMM);

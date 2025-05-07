@@ -14,9 +14,13 @@
 
 double move_forward(oi_t *sensor_data, double distance_mm);
 
-void move_bot_forward(oi_t *sensor_data, struct robotCoords* botPos, int distance_mm);
+int move_bot_forward(oi_t *sensor_data, struct robotCoords* botPos, int distance_mm);
+
+int move_bot_backward(oi_t *sensor_data, struct robotCoords* botPos, int distance_mm);
 
 void turn_bot_right(oi_t *sensor_data, struct robotCoords* botPos);
+
+void turn_bot_left (oi_t *sensor_data, struct robotCoords* botPos);
 
 double move_backward(oi_t *sensor_data, double distance_mm);
 
@@ -32,7 +36,7 @@ void forward_mm_detours(oi_t *sensor_data, int distance_mm);
 
 int forward_mm_nav(oi_t *sensor_data, int* distance_mm);
 
-int move_aroundObject(oi_t *sensor_data, int turnDirection, int sidewaysMove, int forwardsMove);
+//int move_aroundObject(oi_t *sensor_data, int turnDirection, int sidewaysMove, int forwardsMove);
 
 int cutCorner(oi_t *sensor_data, int turnDirection, int sidewaysMove);
 

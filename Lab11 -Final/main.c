@@ -25,6 +25,7 @@
 #include "line_following.h"
 
 #include "scanFunctions.h"
+#include "serverTests.h"
 
 //1318-02: Right: 312320 Left: 286400
 //1318-09: Right: 284480 Left: 312000
@@ -44,6 +45,7 @@ void sensorTests(void);
 
 
 oi_t* initSensors(void);
+void songInit();
 
 void moveTest(void);
 void getData(void);
@@ -51,6 +53,10 @@ void getData(void);
 void calibrateTest();
 
 void lineFollowTest();
+
+void musicTest();
+
+void guiTests();
 
 int main(void) {
 
@@ -60,6 +66,8 @@ int main(void) {
 
     //generateMap();
     scanTests();
+    //guiTests();
+    //musicTest();
     //lineFollowTest();
 
     //getData();
@@ -68,12 +76,55 @@ int main(void) {
 void moveTest(void){
     oi_t *sensor_data = initSensors();
 
-    double moveDist = 2000.0;
+    struct robotCoords testCoords;
+    testCoords.xCoord = 2400;
+    testCoords.yCoord = 100;
+    testCoords.direction = 0;
 
-    lcd_printf("Move forward %.2f", moveDist);
-    move_forward(sensor_data, moveDist);
+    int button = 0;
+    lcd_printf("Press any button to start");
+
+    while(button == 0){
+        button = button_getButton();
+    }
+    move_bot_forward(sensor_data, &testCoords, 2000);
 
     oi_free(sensor_data);
+}
+
+void musicTest(){
+    oi_t *sensor_data = initSensors();
+
+    int i;
+    int startNote = 48;
+    int noteLength = 16;
+    int restLength = 8;
+
+    for(i = 1; i <= 3; i++){
+        int songLength = 2 * i;
+        unsigned char noteArray[songLength];
+        unsigned char noteLengths[songLength];
+
+        int j;
+        for(j = 0; j < songLength; j++){
+            if(j % 2 == 0){
+                noteArray[j] = startNote + j;
+                noteLengths[j] = noteLength;
+            }
+            else{
+                noteArray[j] = 30;
+                noteLengths[j] = restLength;
+            }
+        }
+
+        oi_loadSong(i, songLength, noteArray, noteLengths);
+    }
+
+    for(i = 0; i < 4; i++){
+        oi_play_song(i);
+        timer_waitMillis(1000);
+    }
+    oi_free(sensor_data); // do this once at end of main()
 }
 
 void calibrateTest(){
@@ -89,10 +140,40 @@ void calibrateTest(){
 void scanTests(){
     oi_t *sensor_data = initSensors();
 
+    int button = 0;
+    lcd_printf("Press 2 to calibrate, 3 to edge test");
+
+    while(button == 0){
+        button = button_getButton();
+    }
     //servo_calibrate();
     //testSweep();
     //lineScanTest(sensor_data);
-    edgeScanTest(sensor_data);
+
+    while(button != 4){
+        button = button_getButton();
+        if(button == 2){
+            calibrate_CliffValue(sensor_data);
+            displayCliffVals();
+            timer_waitMillis(2000);
+        }
+
+        if(button == 3){
+            lcd_printf("Stand clear");
+            timer_waitMillis(5000);
+            //edgeScanTest(sensor_data);
+            scanPerimeter(sensor_data);
+        }
+    }
+
+    oi_free(sensor_data);
+}
+
+void guiTests(){
+    oi_t *sensor_data = initSensors();
+
+    echoTest();
+
     oi_free(sensor_data);
 }
 
@@ -134,7 +215,7 @@ void generateMap(void){
 
         switch(button){
         case 1:
-            scanPerimeter(sensor_data);
+            //scanPerimeter(sensor_data);
             break;
 
         case 2:
@@ -195,11 +276,40 @@ oi_t* initSensors(void){
     button_init();
     servo_init();
 
+
     oi_t *sensor_data = oi_alloc(); // do this only once at start of main()
     oi_init(sensor_data); // do this only once at start of main()
 
     servo_setLeft(LEFT_CALIB);
     servo_setRight(RIGHT_CALIB);
 
+    songInit(); //song cannot be initialized until oi is active
     return sensor_data;
+}
+
+void songInit(){
+    int i;
+    int startNote = 48;
+    int noteLength = 32;
+    int restLength = 16;
+
+    for(i = 1; i <= 3; i++){
+        int songLength = 2 * i;
+        unsigned char noteArray[songLength];
+        unsigned char noteLengths[songLength];
+
+        int j;
+        for(j = 0; j < songLength; j++){
+            if(j % 2 == 0){
+                noteArray[j] = startNote + j;
+                noteLengths[j] = noteLength;
+            }
+            else{
+                noteArray[j] = 30;
+                noteLengths[j] = restLength;
+            }
+        }
+
+        oi_loadSong(i, songLength, noteArray, noteLengths);
+    }
 }

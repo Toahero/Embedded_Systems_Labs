@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="struct robotCoords botLocation;"/>
+		<item key="selection" value="turn_bot_right"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="turn_bot_Right"/>
+			<item value="turn_bot_Left"/>
+			<item value="if(turnDir == 0){"/>
+			<item value="turnDist"/>
+			<item value="botPos_yCoord"/>
+			<item value="botPos_xCoord"/>
+			<item value="_"/>
 			<item value="typedef"/>
 			<item value="getLinWidth"/>
 			<item value="nextObs"/>
@@ -16,13 +23,13 @@
 			<item value="void manAndAuto(){"/>
 			<item value="calibrateServos"/>
 			<item value="calibrateS"/>
-			<item value="calibrate"/>
-			<item value="multiScanPing"/>
-			<item value="0x40005420"/>
-			<item value="PORTE_DIR"/>
-			<item value="getWidth"/>
 		</list>
 		<list key="replacehistory">
+			<item value="turn_bot_right"/>
+			<item value="turn_bot_left"/>
+			<item value="turnDir"/>
+			<item value="botPos-&gt;yCoord"/>
+			<item value="botPos-&gt;xCoord"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
