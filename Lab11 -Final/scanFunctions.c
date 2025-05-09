@@ -23,6 +23,8 @@
 double getObjectSize(int degWidth, double distance);
 double getHorizontalOffset(int angle, double dist);
 double getVerticalOffset(int angle, double dist);
+
+
 //int sweepNextObs(struct obstacle* currObs, int* currAng, int endAng, int obsThresh);
 //int sweepEdges(struct obsEdges* currObs, int* angle, int endAng, int threshold);
 
@@ -82,37 +84,6 @@ int multiScanIR(int angle, int numScans){
 
 }
 
-
-int sweepNextObs(struct obstacle* currObs, int* currAng, int endAng, int obsThresh){
-    struct obsEdges currentData;
-
-    int result;
-    int angle = *currAng;
-    result = sweepEdges(&currentData, currAng, endAng, obsThresh);
-
-    //*currAng = angle;
-
-    if(result == 0){
-        return 0;
-    }
-
-    int degWidth = currentData.endDeg - currentData.startDeg;
-    int midDeg = currentData.startDeg + (degWidth/2);
-    float midDist = pingAt(midDeg);
-
-    //float test = getObjectSize(90, 60.9);
-
-    double objectSize;
-    objectSize = getObjectSize(degWidth, midDist);
-    currObs->sizeMM = objectSize * 10;
-    //currObs->sizeMM = 10 * getObjectSize(degWidth, midDist);
-    double hOffset = getHorizontalOffset(midDeg, midDist);
-
-    currObs->horiOffsetMM = 10 * hOffset;
-    currObs->vertOffsetMM = 10 * getVerticalOffset(midDeg, midDist);
-    return 1;
-}
-
 int sweepEdges(struct obsEdges* currObs, int* angle, int endAng, int threshold){
     int scanBuffer[SCAN_BUFFER_SIZE];
     int buffSum;
@@ -153,7 +124,7 @@ int sweepEdges(struct obsEdges* currObs, int* angle, int endAng, int threshold){
             }
             else{
                 for(i = 0; i < SCAN_BUFFER_SIZE; i++){
-                    scanBuffer[i] = multiScanIR(*angle, numScans);
+                    //scanBuffer[i] = multiScanIR(*angle, numScans);
                 }
             }
 
@@ -164,6 +135,38 @@ int sweepEdges(struct obsEdges* currObs, int* angle, int endAng, int threshold){
     }
     return 0;
 }
+
+int sweepNextObs(struct obstacle* currObs, int* currAng, int endAng, int obsThresh){
+    struct obsEdges currentData;
+
+    int result;
+    int angle = *currAng;
+    result = sweepEdges(&currentData, currAng, endAng, obsThresh);
+
+    //*currAng = angle;
+
+    if(result == 0){
+        return 0;
+    }
+
+    int degWidth = currentData.endDeg - currentData.startDeg;
+    int midDeg = currentData.startDeg + (degWidth/2);
+    float midDist = pingAt(midDeg);
+
+    //float test = getObjectSize(90, 60.9);
+
+    double objectSize;
+    objectSize = getObjectSize(degWidth, midDist);
+    currObs->sizeMM = objectSize * 10;
+    //currObs->sizeMM = 10 * getObjectSize(degWidth, midDist);
+    double hOffset = getHorizontalOffset(midDeg, midDist);
+
+    currObs->horiOffsetMM = 10 * hOffset;
+    currObs->vertOffsetMM = 10 * getVerticalOffset(midDeg, midDist);
+    return 1;
+}
+
+
 
 int ir_scanRange(int scanVals[], int startDeg, int endDeg, int numScans){
     int i;

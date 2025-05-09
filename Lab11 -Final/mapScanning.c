@@ -147,13 +147,13 @@ int navigateDistance(oi_t *sensor_data, struct robotCoords* botPos, struct field
     int sweepCount;
     int moveProgress;
     int moveResult;
-    int moveInterval = 200;
+    int moveInterval = 250;
 
     do{
         lcd_printf("Coords: %d-(%d,%d)\nGoalDir:%d GoalDist:%d", botPos->direction, botPos->xCoord, botPos->yCoord, goalDir, goal);
 
 
-        sweepCount = sweepRange(45, 135, botPos, &obArray[0], 5, 300);
+        sweepCount = sweepRange(35, 145, botPos, &obArray[0], 5, 150);
 
         if(sweepCount > 0){
             oi_play_song(2);
@@ -172,6 +172,9 @@ int navigateDistance(oi_t *sensor_data, struct robotCoords* botPos, struct field
                 turn_bot_left(sensor_data, botPos);
             }
             else{
+                if(moveResult == 5){
+                    move_bot_backward(sensor_data, botPos, 50);
+                }
                 //lcd_printf("Bump/Cliff found item");
                 //timer_waitMillis(1000);
                 turn_bot_left(sensor_data, botPos);
@@ -252,7 +255,7 @@ int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obs
     int numObs = 0;
 
     int roombaOffset = 300;
-    int intervalSize = 500;
+    int intervalSize = 400;
 
     startDir = botPos->direction;
     if(botPos->direction %2 == 0){
@@ -339,7 +342,7 @@ int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obs
 
             //move_Around_Object(sensor_data, botPos, 610);
             move_bot_backward(sensor_data, botPos, 50);
-            sideSize = 610;
+            sideSize = 800;
             frontSize = 800;
             numObs += moveAroundObs(sensor_data, botPos, obsLoc, addLimit, frontSize, sideSize);
             break;
@@ -412,17 +415,17 @@ void scanPerimeter(oi_t *sensor_data){
     turn_bot_left(sensor_data, &botCoords);
 
     //West
-    numObjects += scanEdge(sensor_data, &botCoords, &obsArray[0], maxObjects, MAP_WIDTH);
+    numObjects += scanEdge(sensor_data, &botCoords, &obsArray[numObjects], maxObjects, MAP_WIDTH);
     botCoords.xCoord = 0;
     turn_bot_left(sensor_data, &botCoords);
 
     //South
-    numObjects += scanEdge(sensor_data, &botCoords, &obsArray[0], maxObjects, MAP_LENGTH);
+    numObjects += scanEdge(sensor_data, &botCoords, &obsArray[numObjects], maxObjects, MAP_LENGTH);
     botCoords.yCoord = 0;
     turn_bot_left(sensor_data, &botCoords);
 
     //East
-    numObjects += scanEdge(sensor_data, &botCoords, &obsArray[0], maxObjects, MAP_WIDTH);
+    numObjects += scanEdge(sensor_data, &botCoords, &obsArray[numObjects], maxObjects, MAP_WIDTH);
     botCoords.xCoord = MAP_WIDTH;
     turn_bot_left(sensor_data, &botCoords);
 

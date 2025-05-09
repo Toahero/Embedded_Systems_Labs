@@ -301,7 +301,7 @@ oi_t* initSensors(void){
 
 void songInit(){
     int i;
-    int startNote = 48;
+    int startNote = 72;
     int noteLength = 32;
     int restLength = 16;
 
@@ -329,7 +329,7 @@ void songInit(){
     unsigned char victoryLengths[16];
     for(i = 0; i < 16; i++){
         victorySong[i] = startNote + i;
-        victoryLengths[16] = 64;
+        victoryLengths[16] = 32;
     }
     oi_loadSong(0, 16, victorySong, victoryLengths);
 }

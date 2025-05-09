@@ -60,7 +60,7 @@ volatile uint16_t cfr_lower = 2133;
 volatile uint16_t cr_upper = 2866;
 volatile uint16_t cr_lower = 2310;
 
-#define MOVE_SPEED 200
+#define MOVE_SPEED 150
 
 void followPerimeter(oi_t *sensor_data){
     int totalDist;

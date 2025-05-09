@@ -11,11 +11,11 @@
 #include "uart-interrupt.h"
 #include "sharedStructs.h"
 
-#define MOVE_SPEED 200
+#define MOVE_SPEED 100
 #define FORWARD_ADJUST 0.97
 #define BACKWARD_ADJUST 0.97
-#define RIGHT_ADJUST 0.962
-#define LEFT_ADJUST 0.962
+#define RIGHT_ADJUST 0.95
+#define LEFT_ADJUST 0.95
 
 #define LEFT_MOTOR_ADJ 1.0
 #define RIGHT_MOTOR_ADJ 1.0
@@ -79,8 +79,8 @@ int move_bot_forward(oi_t *sensor_data, struct robotCoords* botPos, int distance
             break;
         }
 
-        if(sensor_data->cliffFrontLeftSignal < 1000 || sensor_data->cliffFrontRightSignal < 1000){
-            result = 2;
+        if(sensor_data->cliffFrontLeftSignal < 1000 || sensor_data->cliffFrontRightSignal < 1000 /*|| sensor_data->cliffLeft < 1000 || sensor_data->cliffRight < 1000*/){
+            result = 5;
             break;
         }
 
