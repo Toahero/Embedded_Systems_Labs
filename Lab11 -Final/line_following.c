@@ -60,7 +60,7 @@ volatile uint16_t cfr_lower = 2133;
 volatile uint16_t cr_upper = 2866;
 volatile uint16_t cr_lower = 2310;
 
-#define MOVE_SPEED 75
+#define MOVE_SPEED 200
 
 void followPerimeter(oi_t *sensor_data){
     int totalDist;
@@ -238,10 +238,10 @@ int scanLine(oi_t *sensor_data, struct robotCoords* botPos, struct obSide* found
         }
 
         if(cliffR < cr_LowerBound){
-            adjust = 25;
+            adjust = 50;
         }
         else if(cliffR > cr_UpperBound){
-            adjust = -25;
+            adjust = -50;
         }
         else{
             adjust = 0;
@@ -326,10 +326,10 @@ int followLine(oi_t *sensor_data, int* distance_mm){
         }
 
         if(cliffR < cr_LowerBound){
-            adjust = 25;
+            adjust = 50;
         }
         else if(cliffR > cr_UpperBound){
-            adjust = -25;
+            adjust = -50;
         }
         else{
             adjust = 0;

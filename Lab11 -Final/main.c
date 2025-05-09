@@ -83,36 +83,19 @@ void moveTest(void){
     char output[100];
 
     struct robotCoords testCoords;
-    testCoords.xCoord = 2400;
-    testCoords.yCoord = 100;
+    testCoords.xCoord = 0;
+    testCoords.yCoord = 0;
     testCoords.direction = 0;
 
     int button = 0;
     lcd_printf("Press any button to start");
-
     while(button == 0){
         button = button_getButton();
     }
-    //move_bot_forward(sensor_data, &testCoords, 2000);
 
-    button = 0;
-    timer_waitMillis(500);
-    int i;
-    int robotDir;
-    while(button == 0){
-        button = button_getButton();
-        robotDir = testCoords.direction;
-        sprintf(output, "Turning Left\nDirection:%d\n", robotDir);
-        uart_sendStr(output);
-        lcd_printf("%s", output);
-        turn_bot_left(sensor_data, &testCoords);
-        timer_waitMillis(1000);
 
-        /*lcd_printf("Turning Left");
-        turn_bot_left(sensor_data, &testCoords);
-        timer_waitMillis(1000);*/
-    }
-    lcd_printf("");
+    move_bot_forward(sensor_data, &testCoords, 2440);
+    lcd_printf("Dir:%d\nPos(%d,%d)", testCoords.direction, testCoords.xCoord, testCoords.yCoord);
 
     oi_free(sensor_data);
 }
@@ -189,6 +172,8 @@ void scanTests(){
             timer_waitMillis(3000);
             //edgeScanTest(sensor_data);
             scanPerimeter(sensor_data);
+            oi_play_song(0);
+            turn_right (sensor_data, 720);
         }
     }
 
@@ -339,6 +324,14 @@ void songInit(){
 
         oi_loadSong(i, songLength, noteArray, noteLengths);
     }
+
+    unsigned char victorySong[16];
+    unsigned char victoryLengths[16];
+    for(i = 0; i < 16; i++){
+        victorySong[i] = startNote + i;
+        victoryLengths[16] = 64;
+    }
+    oi_loadSong(0, 16, victorySong, victoryLengths);
 }
 
 void servoCal(){

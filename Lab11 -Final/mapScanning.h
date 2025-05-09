@@ -21,7 +21,7 @@
 void scanPerimeter(oi_t *sensor_data);
 int navigateToCoords(oi_t *sensor_data, struct robotCoords* botPos, struct robotCoords* goalPos, struct fieldObs* obsLoc, int addLimit);
 
-int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obsLoc, int maxToAdd);
+int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obsLoc, int maxToAdd, int maxDist);
 
 int sweepRange(int startAng, int endAng, struct robotCoords* botPosition, struct fieldObs* obsLoc, int maxToAdd);
 

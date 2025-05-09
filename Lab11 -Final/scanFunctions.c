@@ -15,10 +15,10 @@
 #include <math.h>
 
 #define IR_MINIMUM 300
-#define IR_RESCAN_THRESH 100
-#define IR_OBJ_THRESH 150 //Changed from 90
+#define IR_RESCAN_THRESH 50
+//#define IR_OBJ_THRESH 150 //Changed from 90
 #define SCAN_BUFFER_SIZE 5
-#define MINIMUM_OBJ_SIZE 5
+#define MINIMUM_OBJ_SIZE 3
 
 double getObjectSize(int degWidth, double distance);
 double getHorizontalOffset(int angle, double dist);
@@ -142,12 +142,22 @@ int sweepEdges(struct obsEdges* currObs, int* angle, int endAng, int threshold){
             currObs->startDeg = *angle;
         }
 
-        if(currIR < buffAvg - threshold && foundObs){
-            foundObs = 0;
-            if(*angle - currObs->startDeg > MINIMUM_OBJ_SIZE){
-                currObs->endDeg = *angle;
-                return 1;
+        if(currIR < buffAvg - threshold){
+
+            if(foundObs){
+                foundObs = 0;
+                if(*angle - currObs->startDeg > MINIMUM_OBJ_SIZE){
+                    currObs->endDeg = *angle;
+                    return 1;
+                }
             }
+            else{
+                for(i = 0; i < SCAN_BUFFER_SIZE; i++){
+                    scanBuffer[i] = multiScanIR(*angle, numScans);
+                }
+            }
+
+
         }
 
         *angle = *angle + 1;

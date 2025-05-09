@@ -40,7 +40,7 @@
 void scanPerimeter(oi_t *sensor_data);
 int navigateToCoords(oi_t *sensor_data, struct robotCoords* botPos, struct robotCoords* goalPos, struct fieldObs* obsLoc, int addLimit);
 
-int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obsLoc, int maxToAdd);
+int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obsLoc, int maxToAdd, int maxDist);
 
 int sweepRange(int startAng, int endAng, struct robotCoords* botPosition, struct fieldObs* obsLoc, int maxToAdd, int thresh);
 
@@ -52,24 +52,55 @@ void printObsData(struct fieldObs* obstacle);
 int deleteDuplicates(struct fieldObs obArray[], int arraySize);
 
 int moveAroundObs(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obsLoc, int addLimit, int frontSize, int sideSize){
+    int cutCornerThresh;
+    int cutCorners;
+
+    switch(botPos->direction){
+    case 3: //West
+        if(botPos->xCoord - frontSize < cutCornerThresh){
+            cutCorners = 1;
+        }
+        break;
+
+    case 2://South
+        if(botPos->yCoord - frontSize < cutCornerThresh){
+            cutCorners = 1;
+        }
+        break;
+
+    case 1: //East
+        if(botPos->xCoord + frontSize > MAP_WIDTH - cutCornerThresh){
+            cutCorners = 1;
+        }
+        break;
+
+    default: //North
+        if(botPos->yCoord + frontSize > MAP_LENGTH - cutCornerThresh){
+            cutCorners = 1;
+        }
+        break;
+    }
 
     turn_bot_left(sensor_data, botPos);
-    int moveSide = sideSize * 1.25 + BOT_OFFSET;;
+    int moveSide = sideSize  + BOT_OFFSET;
     int numSide = navigateDistance(sensor_data, botPos, obsLoc, addLimit, moveSide);
 
     lcd_printf("SideMove completed");
     //timer_waitMillis(3000);
 
     turn_bot_right(sensor_data, botPos);
-    int movefront = frontSize * 2 + BOT_OFFSET;
+    int movefront = frontSize * 1.5 + BOT_OFFSET;
     int numFront = navigateDistance(sensor_data, botPos, obsLoc, addLimit, movefront);
 
 
 
-    turn_bot_right(sensor_data, botPos);
-    int numBack = navigateDistance(sensor_data, botPos, obsLoc, addLimit, moveSide);
+    if(cutCorners != 0){
+        turn_bot_right(sensor_data, botPos);
+        int numBack = navigateDistance(sensor_data, botPos, obsLoc, addLimit, moveSide);
 
-    turn_bot_left(sensor_data, botPos);
+        turn_bot_left(sensor_data, botPos);
+    }
+
 
     return 0;
 }
@@ -119,10 +150,10 @@ int navigateDistance(oi_t *sensor_data, struct robotCoords* botPos, struct field
     int moveInterval = 200;
 
     do{
-        lcd_printf("Coords: (%d,%d)\nGoalDir:%d GoalDist:%d", botPos->yCoord, botPos->xCoord, goalDir, goal);
+        lcd_printf("Coords: %d-(%d,%d)\nGoalDir:%d GoalDist:%d", botPos->direction, botPos->xCoord, botPos->yCoord, goalDir, goal);
 
 
-        sweepCount = sweepRange(45, 135, botPos, &obArray[0], 5, 500);
+        sweepCount = sweepRange(45, 135, botPos, &obArray[0], 5, 300);
 
         if(sweepCount > 0){
             oi_play_song(2);
@@ -136,6 +167,9 @@ int navigateDistance(oi_t *sensor_data, struct robotCoords* botPos, struct field
                 if(botPos->direction != goalDir){
                     turn_bot_right(sensor_data, botPos);
                 }
+            }
+            else if(moveResult == 4){
+                turn_bot_left(sensor_data, botPos);
             }
             else{
                 //lcd_printf("Bump/Cliff found item");
@@ -191,20 +225,41 @@ int middleScan(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* o
     return sweepCount;
 }
 
-int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obsLoc, int maxToAdd){
+/*int goToLargest(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs obArray[], int arraySize, int goalDist){
+    int startVal = botPos->yCoord;
+    int distTravelled = 0;
+    int i;
+    int intervalSize = 500;
 
+    int yThresh = 100;
+    int xThresh = 100;
+
+    while(distTravelled < goalDist){
+        distTravelled = botPos->yCoord - startVal;
+
+        for(i = 0; i < arraySize, i++){
+            struct fieldObs currOb = obArray[i];
+            if(abs(currOb.xCoord - botPos.xCoord) < xThresh && botPos->yCoord)
+        }
+
+    }*/
+
+int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obsLoc, int maxToAdd, int maxDist){
+
+    int start;
+    int startDir;
 
     int numObs = 0;
 
     int roombaOffset = 300;
-    int intervalSize = 400;
+    int intervalSize = 500;
 
-    int expectedSide;
+    startDir = botPos->direction;
     if(botPos->direction %2 == 0){
-        expectedSide = MAP_LENGTH - roombaOffset;
+        start = botPos->yCoord;
     }
     else{
-        expectedSide = MAP_WIDTH - roombaOffset;
+        start = botPos->xCoord;
     }
 
     int addLimit = maxToAdd;
@@ -215,12 +270,14 @@ int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obs
     int sideSize;
     int frontSize;
 
+    int totalDist = 0;
+
     while(1){
         if(addLimit <= 0){
             return numObs;
         }
 
-        sweepCount = sweepRange(70, 120, botPos, obsLoc, addLimit, 90);
+        sweepCount = sweepRange(45, 135, botPos, obsLoc, addLimit, 90);
         numObs += sweepCount;
         obsLoc += sweepCount;
         addLimit -= sweepCount;
@@ -234,20 +291,7 @@ int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obs
             obsLoc--;
             lcd_printf("Object Coords: (%d, %d)", obsLoc->xCoord, obsLoc->yCoord);
             timer_waitMillis(2000);
-            switch(botPos->direction){
-            case 3://West
-                sideSize = MAP_LENGTH - obsLoc->yCoord;
-                break;
-            case 2://South
-                sideSize = obsLoc->xCoord;
-                break;
-            case 1://East
-                sideSize = obsLoc->yCoord;
-                break;
-            case 0://North
-                sideSize = MAP_WIDTH - obsLoc->xCoord;
-                break;
-            }
+
 
             if(botPos->direction % 2 == 0){
                 frontSize = abs(botPos->yCoord - obsLoc->yCoord);
@@ -261,6 +305,7 @@ int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obs
 
             numObs += moveAroundObs(sensor_data, botPos, obsLoc, addLimit, frontSize, sideSize);
         }
+
 
         distToTravel = intervalSize;
         lcd_printf("Running");
@@ -295,7 +340,7 @@ int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obs
             //move_Around_Object(sensor_data, botPos, 610);
             move_bot_backward(sensor_data, botPos, 50);
             sideSize = 610;
-            frontSize = 610;
+            frontSize = 800;
             numObs += moveAroundObs(sensor_data, botPos, obsLoc, addLimit, frontSize, sideSize);
             break;
 
@@ -329,6 +374,17 @@ int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obs
         default://If a button is pressed, immediately terminate
             return 0;
         }
+
+        if(startDir %2 == 0){
+            totalDist = abs(botPos->yCoord - start);
+        }
+        else{
+            totalDist = abs(botPos->xCoord - start);
+        }
+
+        if(totalDist >= maxDist){
+            return numObs;
+        }
     }
     lcd_printf("End of Edge");
     timer_waitMillis(1000);
@@ -350,16 +406,32 @@ void scanPerimeter(oi_t *sensor_data){
     struct fieldObs obsArray[maxObjects];
     int i;
 
-    for(i = 0; i < 4; i++){
-        numObjects += scanEdge(sensor_data, &botCoords, &obsArray[0], maxObjects);
-        turn_bot_left(sensor_data, &botCoords);
-    }
+    //North
+    numObjects += scanEdge(sensor_data, &botCoords, &obsArray[0], maxObjects, MAP_LENGTH);
+    botCoords.yCoord = MAP_LENGTH;
+    turn_bot_left(sensor_data, &botCoords);
+
+    //West
+    numObjects += scanEdge(sensor_data, &botCoords, &obsArray[0], maxObjects, MAP_WIDTH);
+    botCoords.xCoord = 0;
+    turn_bot_left(sensor_data, &botCoords);
+
+    //South
+    numObjects += scanEdge(sensor_data, &botCoords, &obsArray[0], maxObjects, MAP_LENGTH);
+    botCoords.yCoord = 0;
+    turn_bot_left(sensor_data, &botCoords);
+
+    //East
+    numObjects += scanEdge(sensor_data, &botCoords, &obsArray[0], maxObjects, MAP_WIDTH);
+    botCoords.xCoord = MAP_WIDTH;
+    turn_bot_left(sensor_data, &botCoords);
+
 
     int maxObjectSize = 0;
     struct fieldObs largestObs;
 
     for(i = 0; i < numObjects; i++){
-        if(obsArray[i].sizeMM > maxObjectSize && obsArray[i].itemType != 0){
+        if(obsArray[i].sizeMM > maxObjectSize && obsArray[i].itemType == 2){
             largestObs = obsArray[i];
             maxObjectSize = obsArray[i].sizeMM;
         }
@@ -374,7 +446,44 @@ void scanPerimeter(oi_t *sensor_data){
     int xGoal = largestObs.xCoord;
     int yGoal = largestObs.yCoord;
     int navDir;
-    while(1){
+
+    struct fieldObs otherObs[10];
+    scanEdge(sensor_data, &botCoords, &otherObs[0], maxObjects, yGoal);
+
+    /*int yDistToEdge;
+    int xDistToEdge;
+    int closestEdgeX;
+    int closestEdgeY;
+
+    if(yGoal < MAP_LENGTH/2){
+        yDistToEdge = yGoal;
+        closestEdgeY = 2;
+    }
+    else{
+        yDistToEdge = MAP_LENGTH - yGoal;
+        closestEdgeY = 0;
+    }
+
+    if(xGoal < MAP_WIDTH/2){
+        xDistToEdge = xGoal;
+        closestEdgeX = 1;
+    }
+    else{
+        xDistToEdge = MAP_WIDTH - xGoal;
+        closestEdgeX = 3;
+    }
+
+    int closestEdge;
+    if(yDistToEdge < xDistToEdge){
+        closestEdge = yDistToEdge;
+    }
+    else{
+        closestEdge = xDistToEdge;
+    }
+    */
+
+
+    /*while(1){
 
         if(abs(botCoords.xCoord - xGoal) < 100 && abs(botCoords.yCoord - yGoal) < 100){
             return;
@@ -405,7 +514,7 @@ void scanPerimeter(oi_t *sensor_data){
             navigateDistance(sensor_data, &botCoords, &obsArray[0],  5, abs(botCoords.yCoord - yGoal));
         }
 
-    }
+    }*/
 }
 
 int sweepRange(int startAng, int endAng, struct robotCoords* botPosition, struct fieldObs* obsLoc, int maxToAdd, int thresh){
@@ -527,7 +636,7 @@ void edgeScanTest(oi_t *sensor_data){
     struct fieldObs obsArray[maxObjects];
 
     int result;
-    result = scanEdge(sensor_data, &testCoords, &obsArray[0], maxObjects);
+    result = scanEdge(sensor_data, &testCoords, &obsArray[0], maxObjects, MAP_LENGTH);
     int i;
     sprintf(output, "\n%d Objects Found.\n", result);
     uart_sendStr(output);

@@ -11,11 +11,11 @@
 #include "uart-interrupt.h"
 #include "sharedStructs.h"
 
-#define MOVE_SPEED 100
-#define FORWARD_ADJUST 1.01
-#define BACKWARD_ADJUST 1.01
-#define RIGHT_ADJUST 0.93
-#define LEFT_ADJUST 0.93
+#define MOVE_SPEED 200
+#define FORWARD_ADJUST 0.97
+#define BACKWARD_ADJUST 0.97
+#define RIGHT_ADJUST 0.962
+#define LEFT_ADJUST 0.962
 
 #define LEFT_MOTOR_ADJ 1.0
 #define RIGHT_MOTOR_ADJ 1.0
@@ -67,10 +67,15 @@ int move_bot_forward(oi_t *sensor_data, struct robotCoords* botPos, int distance
     double currDist = 0.0;
 
     oi_setWheels(MOVE_SPEED * LEFT_MOTOR_ADJ, MOVE_SPEED * RIGHT_MOTOR_ADJ);
-    while (currDist < distance_mm * FORWARD_ADJUST){
-        if(sensor_data -> bumpLeft || sensor_data->bumpRight){
+    while (currDist/FORWARD_ADJUST < distance_mm){
+        if(sensor_data -> bumpLeft){
             oi_setWheels(0, 0);
             result = 1;
+            break;
+        }
+
+        if(sensor_data->bumpRight){
+            result = 4;
             break;
         }
 
@@ -95,7 +100,7 @@ int move_bot_forward(oi_t *sensor_data, struct robotCoords* botPos, int distance
         currDist += sensor_data -> distance;
     }
     oi_setWheels(0,0);
-    updateBotPos(botPos, (int) currDist);
+    updateBotPos(botPos, (int) currDist/FORWARD_ADJUST);
     return result;
 }
 
@@ -104,12 +109,12 @@ int move_bot_backward(oi_t *sensor_data, struct robotCoords* botPos, int distanc
     double currDist = 0.0;
 
     oi_setWheels(-MOVE_SPEED * LEFT_MOTOR_ADJ, -MOVE_SPEED * RIGHT_MOTOR_ADJ);
-    while (currDist > -distance_mm * FORWARD_ADJUST){
+    while (currDist/FORWARD_ADJUST > -distance_mm){
         oi_update(sensor_data);
         currDist += sensor_data -> distance;
     }
     oi_setWheels(0,0);
-    updateBotPos(botPos, (int) currDist);
+    updateBotPos(botPos, (int) currDist/FORWARD_ADJUST);
     return 0;
 }
 
