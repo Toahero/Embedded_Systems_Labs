@@ -16,13 +16,15 @@
 
 #define IR_MINIMUM 300
 #define IR_RESCAN_THRESH 100
-#define IR_OBJ_THRESH 90
+#define IR_OBJ_THRESH 150 //Changed from 90
 #define SCAN_BUFFER_SIZE 5
 #define MINIMUM_OBJ_SIZE 5
 
 double getObjectSize(int degWidth, double distance);
 double getHorizontalOffset(int angle, double dist);
 double getVerticalOffset(int angle, double dist);
+//int sweepNextObs(struct obstacle* currObs, int* currAng, int endAng, int obsThresh);
+//int sweepEdges(struct obsEdges* currObs, int* angle, int endAng, int threshold);
 
 struct obstacle{
     int horiOffsetMM;
@@ -81,12 +83,12 @@ int multiScanIR(int angle, int numScans){
 }
 
 
-int sweepNextObs(struct obstacle* currObs, int* currAng, int endAng){
+int sweepNextObs(struct obstacle* currObs, int* currAng, int endAng, int obsThresh){
     struct obsEdges currentData;
 
     int result;
     int angle = *currAng;
-    result = sweepEdges(&currentData, currAng, endAng);
+    result = sweepEdges(&currentData, currAng, endAng, obsThresh);
 
     //*currAng = angle;
 
@@ -111,7 +113,7 @@ int sweepNextObs(struct obstacle* currObs, int* currAng, int endAng){
     return 1;
 }
 
-int sweepEdges(struct obsEdges* currObs, int* angle, int endAng){
+int sweepEdges(struct obsEdges* currObs, int* angle, int endAng, int threshold){
     int scanBuffer[SCAN_BUFFER_SIZE];
     int buffSum;
     int buffAvg;
@@ -119,7 +121,6 @@ int sweepEdges(struct obsEdges* currObs, int* angle, int endAng){
 
     int i, j;
     int numScans = 3;
-    int threshold = 90;
     int currIR;
 
     for(i = 0; i < SCAN_BUFFER_SIZE; i++){

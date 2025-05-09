@@ -18,6 +18,8 @@ int move_bot_forward(oi_t *sensor_data, struct robotCoords* botPos, int distance
 
 int move_bot_backward(oi_t *sensor_data, struct robotCoords* botPos, int distance_mm);
 
+void right_angle_turn(int turnDir, oi_t *sensor_data, struct robotCoords* botPos);
+
 void turn_bot_right(oi_t *sensor_data, struct robotCoords* botPos);
 
 void turn_bot_left (oi_t *sensor_data, struct robotCoords* botPos);

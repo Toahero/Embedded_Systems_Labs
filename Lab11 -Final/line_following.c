@@ -17,6 +17,13 @@
 #define IR_BUFFER_SIZE 5
 #define IR_OBJECT_THRESHOLD 45
 #define MIN_OBJECT_SIZE 50
+/*2041-06
+ * L-  U:2757 L:1616
+ * FL- U:2836 L:2343
+ * FR- U:2779 L:1699
+ * R-  U:2790 L:1999
+ */
+
 /*2041-09
  * L-  U:2816 L:2197
  * FL- U:2758 L:1460
@@ -41,17 +48,17 @@
 
 
 
-volatile uint16_t cl_upper = 2838;
-volatile uint16_t cl_lower = 2192;
+volatile uint16_t cl_upper = 2811;
+volatile uint16_t cl_lower = 2103;
 
-volatile uint16_t cfl_upper = 2763;
-volatile uint16_t cfl_lower = 1378;
+volatile uint16_t cfl_upper = 2863;
+volatile uint16_t cfl_lower = 2145;
 
-volatile uint16_t cfr_upper = 2851;
-volatile uint16_t cfr_lower = 2145;
+volatile uint16_t cfr_upper = 2841;
+volatile uint16_t cfr_lower = 2133;
 
-volatile uint16_t cr_upper = 2733;
-volatile uint16_t cr_lower = 1273;
+volatile uint16_t cr_upper = 2866;
+volatile uint16_t cr_lower = 2310;
 
 #define MOVE_SPEED 75
 
@@ -202,6 +209,11 @@ int scanLine(oi_t *sensor_data, struct robotCoords* botPos, struct obSide* found
         }
 
         if(*distance_mm < 0 && !obsFound){
+            oi_setWheels(0, 0);
+            return 0;
+        }
+
+        if(*distance_mm < -100){
             oi_setWheels(0, 0);
             return 0;
         }

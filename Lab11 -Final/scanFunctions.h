@@ -15,7 +15,7 @@
 #include "ping.h"
 #include "adc.h"
 #include "uart-interrupt.h"
-
+#include "sharedStructs.h"
 #include <math.h>
 
 struct obstacle{
@@ -32,9 +32,9 @@ int ir_scanRange(int scanVals[], int startDeg, int endDeg, int numScans);
 
 int multiScanIR(int angle, int numScans);
 
-int sweepNextObs(struct obstacle* currObs, int* currAng, int endAng);
+int sweepNextObs(struct obstacle* currObs, int* currAng, int endAng, int obsThresh);
 
-int sweepEdges(struct obsEdges* currObs, int* angle, int endAng);
+int sweepEdges(struct obsEdges* currObs, int* angle, int endAng, int threshold);
 
 float pingAt(int angle);
 

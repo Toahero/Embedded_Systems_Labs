@@ -14,11 +14,11 @@
 #define MOVE_SPEED 100
 #define FORWARD_ADJUST 1.01
 #define BACKWARD_ADJUST 1.01
-#define RIGHT_ADJUST 0.90
-#define LEFT_ADJUST 0.90
+#define RIGHT_ADJUST 0.93
+#define LEFT_ADJUST 0.93
 
 #define LEFT_MOTOR_ADJ 1.0
-#define RIGHT_MOTOR_ADJ 0.97
+#define RIGHT_MOTOR_ADJ 1.0
 
 #define MAP_LENGTH 4270
 #define MAP_WIDTH 2440
@@ -29,6 +29,8 @@ double move_forward(oi_t *sensor_data, double distance_mm);
 int move_bot_forward(oi_t *sensor_data, struct robotCoords* botPos, int distance_mm);
 
 int move_bot_backward(oi_t *sensor_data, struct robotCoords* botPos, int distance_mm);
+
+void right_angle_turn(int turnDir, oi_t *sensor_data, struct robotCoords* botPos);
 
 void turn_bot_right(oi_t *sensor_data, struct robotCoords* botPos);
 
@@ -50,92 +52,12 @@ int forward_mm_nav(oi_t *sensor_data, int* distance_mm);
 
 int cutCorner(oi_t *sensor_data, int turnDirection, int sidewaysMove);
 
-int move_Around_Object(oi_t *sensor_data, struct robotCoords* botPos, int objectSize){
-
-    int turnDir; //Indicate whether robot should navigate to the left (0) or to the right (1)
-
-    switch(botPos->direction){
-    //Turn direction depends on robot direction and position
-
-    case 3: //Robot is pointing west
-        if(botPos->xCoord > MAP_LENGTH/2){
-            turnDir = 0;
-        }
-        else{
-            turnDir = 1;
-        }
-        break;
-
-    case 2: //Robot is pointing south
-        if(botPos->xCoord > MAP_WIDTH/2){
-            turnDir = 1;
-        }
-        else{
-            turnDir = 0;
-        }
-        break;
-
-    case 1: //Robot is pointing east
-        if(botPos->yCoord > MAP_LENGTH/2){
-            turnDir = 1;
-        }
-        else{
-            turnDir = 0;
-        }
-        break;
-
-    default: //Robot is pointing north
-        if(botPos->xCoord > MAP_WIDTH/2){
-            turnDir = 0;
-        }
-        else{
-            turnDir = 1;
-        }
-        break;
-    }
-
-    int moveDist = objectSize * 1.5 + BOT_OFFSET;
-
-    //Turn away from obstacle
-    move_bot_backward(sensor_data, botPos, 50); //Move backwards 50 mm
-    if(turnDir == 0){
-        turn_bot_left(sensor_data, botPos);
-    }
-    else{
-        turn_bot_right(sensor_data, botPos);
-    }
-
-    //Move to the side
-    move_bot_forward(sensor_data, botPos, moveDist);
-
-    //turn the opposite way (parallel with original path)
-    if(turnDir == 0){
+void right_angle_turn(int turnDir, oi_t *sensor_data, struct robotCoords* botPos){
+    if(turnDir){
         turn_bot_right(sensor_data, botPos);
     }
     else{
         turn_bot_left(sensor_data, botPos);
-    }
-
-    //Move past the object
-    move_bot_forward(sensor_data, botPos, moveDist);
-
-    //Turn towards the original path
-    if(turnDir == 0){
-        turn_bot_right(sensor_data, botPos);
-    }
-    else{
-        turn_bot_left(sensor_data, botPos);
-    }
-
-    //Move back to the original line
-    move_bot_forward(sensor_data, botPos, moveDist - 5);
-
-    //Turn back onto the original line
-    if(turnDir == 0){
-        turn_bot_left(sensor_data, botPos);
-    }
-    else{
-        turn_bot_right(sensor_data, botPos);
     }
 }
 
@@ -149,6 +71,11 @@ int move_bot_forward(oi_t *sensor_data, struct robotCoords* botPos, int distance
         if(sensor_data -> bumpLeft || sensor_data->bumpRight){
             oi_setWheels(0, 0);
             result = 1;
+            break;
+        }
+
+        if(sensor_data->cliffFrontLeftSignal < 1000 || sensor_data->cliffFrontRightSignal < 1000){
+            result = 2;
             break;
         }
 

@@ -19,25 +19,11 @@
 #include "scanFunctions.h"
 
 void scanPerimeter(oi_t *sensor_data);
-
-/*struct fieldObs{
-    //0 for hole, 1 for low obstacle, 2 for high
-    int itemType;
-    int xCoord;
-    int yCoord;
-    int sizeMM;
-};*/
-
-/*struct robotCoords{
-    int xCoord;
-    int yCoord;
-    int direction;
-};*/
-
+int navigateToCoords(oi_t *sensor_data, struct robotCoords* botPos, struct robotCoords* goalPos, struct fieldObs* obsLoc, int addLimit);
 
 int scanEdge(oi_t *sensor_data, struct robotCoords* botPos, struct fieldObs* obsLoc, int maxToAdd);
 
-int sweepRange(int startAng, int endAng);
+int sweepRange(int startAng, int endAng, struct robotCoords* botPosition, struct fieldObs* obsLoc, int maxToAdd);
 
 void testSweep(void);
 

@@ -31,9 +31,10 @@
 //1318-09: Right: 284480 Left: 312000
 //1318-10: Right: 311040 Left: 283200
 //1318-01: Right: 286720 Left 312640
+//2041-06: Right: 311680 Left: 285120
 //2041-12: Right: 312320 Left: 275760
-#define RIGHT_CALIB 311040
-#define LEFT_CALIB 283200
+#define RIGHT_CALIB 311680
+#define LEFT_CALIB 285120
 
 
 void scanTests(void);
@@ -58,6 +59,8 @@ void musicTest();
 
 void guiTests();
 
+void servoCal();
+
 int main(void) {
 
     //sensorTests();
@@ -71,10 +74,13 @@ int main(void) {
     //lineFollowTest();
 
     //getData();
+    //servoCal();
 }
 
 void moveTest(void){
     oi_t *sensor_data = initSensors();
+
+    char output[100];
 
     struct robotCoords testCoords;
     testCoords.xCoord = 2400;
@@ -87,7 +93,26 @@ void moveTest(void){
     while(button == 0){
         button = button_getButton();
     }
-    move_bot_forward(sensor_data, &testCoords, 2000);
+    //move_bot_forward(sensor_data, &testCoords, 2000);
+
+    button = 0;
+    timer_waitMillis(500);
+    int i;
+    int robotDir;
+    while(button == 0){
+        button = button_getButton();
+        robotDir = testCoords.direction;
+        sprintf(output, "Turning Left\nDirection:%d\n", robotDir);
+        uart_sendStr(output);
+        lcd_printf("%s", output);
+        turn_bot_left(sensor_data, &testCoords);
+        timer_waitMillis(1000);
+
+        /*lcd_printf("Turning Left");
+        turn_bot_left(sensor_data, &testCoords);
+        timer_waitMillis(1000);*/
+    }
+    lcd_printf("");
 
     oi_free(sensor_data);
 }
@@ -139,9 +164,9 @@ void calibrateTest(){
 
 void scanTests(){
     oi_t *sensor_data = initSensors();
-
+    oi_setWheels(0, 0);
     int button = 0;
-    lcd_printf("Press 2 to calibrate, 3 to edge test");
+    lcd_printf("2 to calibrate\n3 to edge test\n4 to quit");
 
     while(button == 0){
         button = button_getButton();
@@ -151,6 +176,7 @@ void scanTests(){
     //lineScanTest(sensor_data);
 
     while(button != 4){
+        lcd_printf("2 to calibrate\n3 to edge test\n4 to quit");
         button = button_getButton();
         if(button == 2){
             calibrate_CliffValue(sensor_data);
@@ -160,12 +186,13 @@ void scanTests(){
 
         if(button == 3){
             lcd_printf("Stand clear");
-            timer_waitMillis(5000);
+            timer_waitMillis(3000);
             //edgeScanTest(sensor_data);
             scanPerimeter(sensor_data);
         }
     }
 
+    lcd_printf("FINISHED!");
     oi_free(sensor_data);
 }
 
@@ -312,4 +339,12 @@ void songInit(){
 
         oi_loadSong(i, songLength, noteArray, noteLengths);
     }
+}
+
+void servoCal(){
+    oi_t *sensor_data = initSensors();
+
+    servo_calibrate();
+
+    oi_free(sensor_data);
 }
